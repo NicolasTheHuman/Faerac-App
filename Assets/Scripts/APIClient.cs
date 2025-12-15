@@ -28,7 +28,7 @@ public class APIClient : MonoBehaviour
     public async Task<T> Get<T>(string endpoint, Action<string> onError = null)
     {
         var request = UnityWebRequest.Get($"{BASE_URL}{endpoint}");
-        Debug.Log("GET URL: {BASE_URL}{endpoint}");
+        Debug.Log($"GET URL: {BASE_URL}{endpoint}");
 
         request.SetRequestHeader("Content-Type", CONTENT_TYPE);
         request.timeout = 10;

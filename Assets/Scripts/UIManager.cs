@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using JetBrains.Annotations;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
 
@@ -15,6 +16,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private CanvasGroup _loginPanelCG;
     [SerializeField] private CanvasGroup _registerPanelCG;
     [SerializeField] private CanvasGroup _credentialPanelCG;
+    [SerializeField] private CanvasGroup _locationPanelCG;
     [SerializeField] private CanvasGroup _discountsPanelCG;
 
     [SerializeField] private float _transitionTime = 0.2f;
@@ -37,7 +39,17 @@ public class UIManager : MonoBehaviour
     [Header("Shops")] 
     [SerializeField] private ContentSizeFitter _discountsContent;
     [SerializeField] private DiscountUIElement _discountsPrefab;
+
+    [Header("Selected Shop")] 
+    [SerializeField] private GameObject _selectedShopContainer;
+    [SerializeField] private TMP_Text _selectedShopName;
+    [SerializeField] private TMP_Text _selectedShopDescription;
+    [SerializeField] private TMP_Text _selectedShopDiscount;
     
+    [Space]
+    public UnityEvent hidePanelEvent;
+
+    private Comercio _currentSelectedShop;
     
     [UsedImplicitly]
     public async void Register()
@@ -142,11 +154,34 @@ public class UIManager : MonoBehaviour
             Debug.LogError("No shops received");
             return;
         }
-
+        
         foreach (var shop in response.records)
         {
             Debug.Log($"{shop.nombre} / {shop.categoria}");
-            Instantiate(_discountsPrefab, _discountsContent.transform).Initialize(shop);
+
+            var discounts = await LoadPromotions(shop.id);
+            if (discounts.Count <= 0)
+            {
+                var uiElement = Instantiate(_discountsPrefab,_discountsContent.transform);
+                uiElement.Initialize(shop);
+                continue;
+            }
+            
+            foreach (var discount in discounts)
+            {
+                var uiElement = Instantiate(_discountsPrefab, _discountsContent.transform);
+                uiElement.Initialize(shop, discount);
+                uiElement.OnClick += (comercio, promocion) =>
+                {
+                    _selectedShopName.text = comercio.nombre;
+                    _selectedShopDescription.text = $"{comercio.direccion} \n {comercio.horarios}" ;
+                    _selectedShopDiscount.text = promocion.descuento + "%";
+                    _selectedShopContainer.SetActive(true);
+                    _currentSelectedShop = comercio;
+                    hidePanelEvent?.Invoke();
+                };
+            }
+
         }
     }
 
@@ -166,23 +201,35 @@ public class UIManager : MonoBehaviour
         }
     }
     
-    public async void LoadPromotions(int shopID)
+    public async Task<List<Promocion>> LoadPromotions(int shopID)
     {
         var response = await APIClient.Instance.Get<PromocionesResponse>($"promociones/comercio/{shopID}");
 
         if (response?.records == null)
         {
             Debug.LogError("No Promotions");
-            return;
+            return null;
         }
 
         foreach (var discount in response.records)
         {
             Debug.Log($"{discount.titulo} ({discount.comercio_nombre})");
         }
+
+        return response.records;
     }
-
-
+    
+    public void OpenSelectedShopInMaps()
+    {
+        if (_currentSelectedShop == null)
+        {
+            Debug.LogError("No shop selected");
+            return;
+        }
+        
+        MapsUtils.OpenGoogleMaps(_currentSelectedShop.latitud,_currentSelectedShop.longitud);
+    }
+    
     void SaveUserDataToPlayerPrefs(UserData userData)
     {
         PlayerPrefs.SetString("name", userData.nombres);
