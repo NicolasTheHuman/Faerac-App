@@ -12,7 +12,7 @@ public class APIClient : MonoBehaviour
 
     private const string BASE_URL = "https://aconcaguastudios.com/faerac-api/";
     private const string CONTENT_TYPE = "application/json";
-
+    
     private void Awake()
     {
         if (Instance != null)
@@ -24,21 +24,12 @@ public class APIClient : MonoBehaviour
         Instance = this;
         DontDestroyOnLoad(gameObject);
     }
-    
-    public async Task<LoginResponse> Login(string dni, string password, Action<string> onError = null)
-    {
-        var request = new LoginRequest()
-        {
-            dni = dni,
-            password = password,
-        };
-
-        return await Post<LoginResponse>("usuarios/login", request, onError);
-    }
 
     public async Task<T> Get<T>(string endpoint, Action<string> onError = null)
     {
-        using UnityWebRequest request = UnityWebRequest.Get($"{BASE_URL}{endpoint}");
+        var request = UnityWebRequest.Get($"{BASE_URL}{endpoint}");
+        Debug.Log("GET URL: {BASE_URL}{endpoint}");
+
         request.SetRequestHeader("Content-Type", CONTENT_TYPE);
         request.timeout = 10;
 
@@ -47,10 +38,13 @@ public class APIClient : MonoBehaviour
         {
             await Task.Yield();
         }
+        
+        Debug.Log("RAW RESPONSE: " + request.downloadHandler.text);
 
         if (request.result != UnityWebRequest.Result.Success)
         {
             onError?.Invoke(request.error);
+            Debug.LogError($"GET Error {request.responseCode}: {request.error}");
             return default;
         }
 
@@ -81,7 +75,8 @@ public class APIClient : MonoBehaviour
         request.timeout = 10;
 
         var op = request.SendWebRequest();
-        while (!op.isDone) await Task.Yield();
+        while (!op.isDone) 
+            await Task.Yield();
 
         Debug.Log("HTTP result: " + request.result);
         Debug.Log("HTTP code: " + request.responseCode);

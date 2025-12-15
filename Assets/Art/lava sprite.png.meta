@@ -1,0 +1,6617 @@
+fileFormatVersion: 2
+guid: 91421b353afcdd345a23d705c0877d81
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8455175083815497151
+    second: lava sprite_0
+  - first:
+      213: 3329985947966233608
+    second: lava sprite_1
+  - first:
+      213: 7150653225103393771
+    second: lava sprite_2
+  - first:
+      213: -97992518336599374
+    second: lava sprite_3
+  - first:
+      213: 3321705131969747212
+    second: lava sprite_4
+  - first:
+      213: 6030408516987100541
+    second: lava sprite_5
+  - first:
+      213: -8633513079300977083
+    second: lava sprite_6
+  - first:
+      213: -6707999231372877403
+    second: lava sprite_7
+  - first:
+      213: -3491466083682614463
+    second: lava sprite_8
+  - first:
+      213: 8396416613302125409
+    second: lava sprite_9
+  - first:
+      213: -2263430294109369982
+    second: lava sprite_10
+  - first:
+      213: -7675447037271995598
+    second: lava sprite_11
+  - first:
+      213: -8521435089724393583
+    second: lava sprite_12
+  - first:
+      213: -1198793608268037741
+    second: lava sprite_13
+  - first:
+      213: -8757905796473064329
+    second: lava sprite_14
+  - first:
+      213: -8352077203396728648
+    second: lava sprite_15
+  - first:
+      213: 4364590544366788649
+    second: lava sprite_16
+  - first:
+      213: 1437518084769092826
+    second: lava sprite_17
+  - first:
+      213: 6864637937265645782
+    second: lava sprite_18
+  - first:
+      213: -3355283269465067458
+    second: lava sprite_19
+  - first:
+      213: 8169000016204845239
+    second: lava sprite_20
+  - first:
+      213: -2549241587847763444
+    second: lava sprite_21
+  - first:
+      213: -7532856830558757104
+    second: lava sprite_22
+  - first:
+      213: 4833132393367727642
+    second: lava sprite_23
+  - first:
+      213: -2187294471836875300
+    second: lava sprite_24
+  - first:
+      213: 9142714328609718082
+    second: lava sprite_25
+  - first:
+      213: 3579085825510675627
+    second: lava sprite_26
+  - first:
+      213: -8503268496834833009
+    second: lava sprite_27
+  - first:
+      213: -5303537277223957588
+    second: lava sprite_28
+  - first:
+      213: 507829877336382254
+    second: lava sprite_29
+  - first:
+      213: -3016722258922242181
+    second: lava sprite_30
+  - first:
+      213: -8104316091808788405
+    second: lava sprite_31
+  - first:
+      213: 6316136602779468870
+    second: lava sprite_32
+  - first:
+      213: 7898514702532275090
+    second: lava sprite_33
+  - first:
+      213: -6478460397848495910
+    second: lava sprite_34
+  - first:
+      213: -7113226504549344016
+    second: lava sprite_35
+  - first:
+      213: -3287841533032063653
+    second: lava sprite_36
+  - first:
+      213: 4083886009204650572
+    second: lava sprite_37
+  - first:
+      213: -6123805409697863048
+    second: lava sprite_38
+  - first:
+      213: 5195546316599080770
+    second: lava sprite_39
+  - first:
+      213: -3188719024246356289
+    second: lava sprite_40
+  - first:
+      213: -4426309503137736659
+    second: lava sprite_41
+  - first:
+      213: -5596825748637978263
+    second: lava sprite_42
+  - first:
+      213: -8595568689676582980
+    second: lava sprite_43
+  - first:
+      213: -2131415657381604175
+    second: lava sprite_44
+  - first:
+      213: 3617863680691118227
+    second: lava sprite_45
+  - first:
+      213: 9118709400090400993
+    second: lava sprite_46
+  - first:
+      213: -4059747600778458497
+    second: lava sprite_47
+  - first:
+      213: -5550820310343762844
+    second: lava sprite_48
+  - first:
+      213: -5773318901434364425
+    second: lava sprite_49
+  - first:
+      213: 2834933012421214283
+    second: lava sprite_50
+  - first:
+      213: 4074349922774975398
+    second: lava sprite_51
+  - first:
+      213: 496614334804807910
+    second: lava sprite_52
+  - first:
+      213: 3058095328520779943
+    second: lava sprite_53
+  - first:
+      213: -4896681206861693388
+    second: lava sprite_54
+  - first:
+      213: 8293173986275082972
+    second: lava sprite_55
+  - first:
+      213: -3208425446775106176
+    second: lava sprite_56
+  - first:
+      213: 691181215464358595
+    second: lava sprite_57
+  - first:
+      213: 3658707419177419477
+    second: lava sprite_58
+  - first:
+      213: 3447768628902916095
+    second: lava sprite_59
+  - first:
+      213: 8090361732863025384
+    second: lava sprite_60
+  - first:
+      213: -7349181792568853974
+    second: lava sprite_61
+  - first:
+      213: -4545477783173694490
+    second: lava sprite_62
+  - first:
+      213: 3742792084706919770
+    second: lava sprite_63
+  - first:
+      213: -5880066663211700797
+    second: lava sprite_64
+  - first:
+      213: 1366456698918882646
+    second: lava sprite_65
+  - first:
+      213: 5037436254987501631
+    second: lava sprite_66
+  - first:
+      213: 7288347003003718348
+    second: lava sprite_67
+  - first:
+      213: -5369401176089695453
+    second: lava sprite_68
+  - first:
+      213: 8693009953400376101
+    second: lava sprite_69
+  - first:
+      213: -72640048896622464
+    second: lava sprite_70
+  - first:
+      213: -1797723148030732767
+    second: lava sprite_71
+  - first:
+      213: -1610719761689557172
+    second: lava sprite_72
+  - first:
+      213: -3837312749250955976
+    second: lava sprite_73
+  - first:
+      213: -6385943367669952242
+    second: lava sprite_74
+  - first:
+      213: -7599047272405008536
+    second: lava sprite_75
+  - first:
+      213: -8693861983012294224
+    second: lava sprite_76
+  - first:
+      213: 4359345026472602375
+    second: lava sprite_77
+  - first:
+      213: -2209196974477624509
+    second: lava sprite_78
+  - first:
+      213: -149781841154228795
+    second: lava sprite_79
+  - first:
+      213: -462139328983237454
+    second: lava sprite_80
+  - first:
+      213: -2875991049893531750
+    second: lava sprite_81
+  - first:
+      213: -1593519905776861437
+    second: lava sprite_82
+  - first:
+      213: 577461919563683445
+    second: lava sprite_83
+  - first:
+      213: -1276201916138780675
+    second: lava sprite_84
+  - first:
+      213: -6341384248819830480
+    second: lava sprite_85
+  - first:
+      213: 7948972236063388593
+    second: lava sprite_86
+  - first:
+      213: 2587898916354729376
+    second: lava sprite_87
+  - first:
+      213: -9032177718356167511
+    second: lava sprite_88
+  - first:
+      213: 5551095813587075107
+    second: lava sprite_89
+  - first:
+      213: 4333684886249435028
+    second: lava sprite_90
+  - first:
+      213: 1962464401341048039
+    second: lava sprite_91
+  - first:
+      213: 8900548670383055474
+    second: lava sprite_92
+  - first:
+      213: 1291605734675307557
+    second: lava sprite_93
+  - first:
+      213: 7131957980508070551
+    second: lava sprite_94
+  - first:
+      213: 6551631626400120355
+    second: lava sprite_95
+  - first:
+      213: -78188053623453104
+    second: lava sprite_96
+  - first:
+      213: -5557018106010198747
+    second: lava sprite_97
+  - first:
+      213: 8400535067353043214
+    second: lava sprite_98
+  - first:
+      213: 120647258337232394
+    second: lava sprite_99
+  - first:
+      213: -2951578055891250932
+    second: lava sprite_100
+  - first:
+      213: 8097040341485471375
+    second: lava sprite_101
+  - first:
+      213: 8057620577488829358
+    second: lava sprite_102
+  - first:
+      213: -1216025026859408063
+    second: lava sprite_103
+  - first:
+      213: -4667870730955997499
+    second: lava sprite_104
+  - first:
+      213: 4796270598069337533
+    second: lava sprite_105
+  - first:
+      213: 8952669576720342283
+    second: lava sprite_106
+  - first:
+      213: -3176477032064580172
+    second: lava sprite_107
+  - first:
+      213: -3009150389205547686
+    second: lava sprite_108
+  - first:
+      213: 8002954238547228413
+    second: lava sprite_109
+  - first:
+      213: 2465009142760473138
+    second: lava sprite_110
+  - first:
+      213: -5392970338453737475
+    second: lava sprite_111
+  - first:
+      213: 4001946898069998331
+    second: lava sprite_112
+  - first:
+      213: -4546484507822574681
+    second: lava sprite_113
+  - first:
+      213: 4742099496457447841
+    second: lava sprite_114
+  - first:
+      213: 437886110385755290
+    second: lava sprite_115
+  - first:
+      213: 47775918246199094
+    second: lava sprite_116
+  - first:
+      213: -7686681727282786292
+    second: lava sprite_117
+  - first:
+      213: 7710664696434028945
+    second: lava sprite_118
+  - first:
+      213: 5708777216133675326
+    second: lava sprite_119
+  - first:
+      213: 3276455051093285036
+    second: lava sprite_120
+  - first:
+      213: 4700905031795251014
+    second: lava sprite_121
+  - first:
+      213: -5695501950664188607
+    second: lava sprite_122
+  - first:
+      213: 1085742148965383383
+    second: lava sprite_123
+  - first:
+      213: 8781864505488311402
+    second: lava sprite_124
+  - first:
+      213: -506570388083131350
+    second: lava sprite_125
+  - first:
+      213: -7438058348477687526
+    second: lava sprite_126
+  - first:
+      213: -7282788177396444734
+    second: lava sprite_127
+  - first:
+      213: 4209630689054229844
+    second: lava sprite_128
+  - first:
+      213: 2608629071824935806
+    second: lava sprite_129
+  - first:
+      213: 6264903828326085696
+    second: lava sprite_130
+  - first:
+      213: 7363443121097431465
+    second: lava sprite_131
+  - first:
+      213: 1548779565112325090
+    second: lava sprite_132
+  - first:
+      213: -725571388830338471
+    second: lava sprite_133
+  - first:
+      213: 4720586310048517034
+    second: lava sprite_134
+  - first:
+      213: -2112784928668521271
+    second: lava sprite_135
+  - first:
+      213: -6759601927129093132
+    second: lava sprite_136
+  - first:
+      213: -8450269169381228305
+    second: lava sprite_137
+  - first:
+      213: 2357782149882537184
+    second: lava sprite_138
+  - first:
+      213: -1473943748150773017
+    second: lava sprite_139
+  - first:
+      213: -7108058972496756652
+    second: lava sprite_140
+  - first:
+      213: 8915390191126994500
+    second: lava sprite_141
+  - first:
+      213: 4887033190604927203
+    second: lava sprite_142
+  - first:
+      213: 1799602265759592323
+    second: lava sprite_143
+  - first:
+      213: -6913368741729620401
+    second: lava sprite_144
+  - first:
+      213: -505382475452643729
+    second: lava sprite_145
+  - first:
+      213: 5255174644955053096
+    second: lava sprite_146
+  - first:
+      213: -7686470869758222915
+    second: lava sprite_147
+  - first:
+      213: -7047401057821979030
+    second: lava sprite_148
+  - first:
+      213: -4956471047142740573
+    second: lava sprite_149
+  - first:
+      213: -1065522103910686816
+    second: lava sprite_150
+  - first:
+      213: 881414984030059309
+    second: lava sprite_151
+  - first:
+      213: 8130092830749303338
+    second: lava sprite_152
+  - first:
+      213: 7923185225561316392
+    second: lava sprite_153
+  - first:
+      213: 1207538291030755005
+    second: lava sprite_154
+  - first:
+      213: 327403378637539772
+    second: lava sprite_155
+  - first:
+      213: -2794947441204212223
+    second: lava sprite_156
+  - first:
+      213: 5706751477917320511
+    second: lava sprite_157
+  - first:
+      213: -31305410000470102
+    second: lava sprite_158
+  - first:
+      213: 7275558477460596787
+    second: lava sprite_159
+  - first:
+      213: 5209433921496870074
+    second: lava sprite_160
+  - first:
+      213: -6345293714355815008
+    second: lava sprite_161
+  - first:
+      213: 3099890952151525928
+    second: lava sprite_162
+  - first:
+      213: -8080477057231737202
+    second: lava sprite_163
+  - first:
+      213: 7395719583827214965
+    second: lava sprite_164
+  - first:
+      213: 3586265684314786267
+    second: lava sprite_165
+  - first:
+      213: 6866556640434975151
+    second: lava sprite_166
+  - first:
+      213: -2015899782064553274
+    second: lava sprite_167
+  - first:
+      213: 4907407556236378876
+    second: lava sprite_168
+  - first:
+      213: -5439388345459352129
+    second: lava sprite_169
+  - first:
+      213: -7245574782490842624
+    second: lava sprite_170
+  - first:
+      213: 8474650772325212169
+    second: lava sprite_171
+  - first:
+      213: -7509024661856822968
+    second: lava sprite_172
+  - first:
+      213: -7149560485780587645
+    second: lava sprite_173
+  - first:
+      213: 6018427891004846018
+    second: lava sprite_174
+  - first:
+      213: -2091699937997176088
+    second: lava sprite_175
+  - first:
+      213: 6358977214664603308
+    second: lava sprite_176
+  - first:
+      213: 8378656452254763194
+    second: lava sprite_177
+  - first:
+      213: -1636454534505900679
+    second: lava sprite_178
+  - first:
+      213: 9025377810569910592
+    second: lava sprite_179
+  - first:
+      213: 5191148908540522847
+    second: lava sprite_180
+  - first:
+      213: 1541755064642890012
+    second: lava sprite_181
+  - first:
+      213: 338737267391483964
+    second: lava sprite_182
+  - first:
+      213: -1974633403171261406
+    second: lava sprite_183
+  - first:
+      213: 1756547723868702031
+    second: lava sprite_184
+  - first:
+      213: 6467090005721298919
+    second: lava sprite_185
+  - first:
+      213: -8636045588326127395
+    second: lava sprite_186
+  - first:
+      213: -3799927754194537158
+    second: lava sprite_187
+  - first:
+      213: -7375140290912548517
+    second: lava sprite_188
+  - first:
+      213: -4976141109704877078
+    second: lava sprite_189
+  - first:
+      213: -9059261162292083422
+    second: lava sprite_190
+  - first:
+      213: 4308039452219931196
+    second: lava sprite_191
+  - first:
+      213: -5516438726503938594
+    second: lava sprite_192
+  - first:
+      213: 5974475096354227056
+    second: lava sprite_193
+  - first:
+      213: 4543115459605804088
+    second: lava sprite_194
+  - first:
+      213: 6484965616002678054
+    second: lava sprite_195
+  - first:
+      213: 8679903321035054262
+    second: lava sprite_196
+  - first:
+      213: -937691038413094973
+    second: lava sprite_197
+  - first:
+      213: 5677669009832551295
+    second: lava sprite_198
+  - first:
+      213: 2753656950423174207
+    second: lava sprite_199
+  - first:
+      213: 8639287653223886500
+    second: lava sprite_200
+  - first:
+      213: 3406992515741339826
+    second: lava sprite_201
+  - first:
+      213: -8918200789822121085
+    second: lava sprite_202
+  - first:
+      213: 8277220034133230171
+    second: lava sprite_203
+  - first:
+      213: 3487229434772347083
+    second: lava sprite_204
+  - first:
+      213: 5533419394734371187
+    second: lava sprite_205
+  - first:
+      213: -5948069865987748480
+    second: lava sprite_206
+  - first:
+      213: 36321108585501298
+    second: lava sprite_207
+  - first:
+      213: -2334989696409711131
+    second: lava sprite_208
+  - first:
+      213: 3219224784080923315
+    second: lava sprite_209
+  - first:
+      213: -6023032438000164580
+    second: lava sprite_210
+  - first:
+      213: 9053140492048194785
+    second: lava sprite_211
+  - first:
+      213: 1715574295258127087
+    second: lava sprite_212
+  - first:
+      213: -5545092628227251515
+    second: lava sprite_213
+  - first:
+      213: -4639681101301774860
+    second: lava sprite_214
+  - first:
+      213: 1873832939081906342
+    second: lava sprite_215
+  - first:
+      213: -1779687659708198269
+    second: lava sprite_216
+  - first:
+      213: -2055748266818712312
+    second: lava sprite_217
+  - first:
+      213: 5327291192249834624
+    second: lava sprite_218
+  - first:
+      213: -3665339945788896278
+    second: lava sprite_219
+  - first:
+      213: -2707746243868363967
+    second: lava sprite_220
+  - first:
+      213: -907636782121062297
+    second: lava sprite_221
+  - first:
+      213: 2785751241841380916
+    second: lava sprite_222
+  - first:
+      213: -9021847319995269695
+    second: lava sprite_223
+  - first:
+      213: -6134627824423646967
+    second: lava sprite_224
+  - first:
+      213: 4208951124058013398
+    second: lava sprite_225
+  - first:
+      213: 7611919818222008362
+    second: lava sprite_226
+  - first:
+      213: -8433215658862585399
+    second: lava sprite_227
+  - first:
+      213: 7959241101008491941
+    second: lava sprite_228
+  - first:
+      213: 3995190773339843704
+    second: lava sprite_229
+  - first:
+      213: 7415562328694873236
+    second: lava sprite_230
+  - first:
+      213: -4347884152949899756
+    second: lava sprite_231
+  - first:
+      213: -6377618068425193530
+    second: lava sprite_232
+  - first:
+      213: -3759732378112734045
+    second: lava sprite_233
+  - first:
+      213: 5171217245270465972
+    second: lava sprite_234
+  - first:
+      213: -6672005043691524633
+    second: lava sprite_235
+  - first:
+      213: -761977944409344174
+    second: lava sprite_236
+  - first:
+      213: -1658236510529672596
+    second: lava sprite_237
+  - first:
+      213: 1169949384945009380
+    second: lava sprite_238
+  - first:
+      213: 6852433986527791876
+    second: lava sprite_239
+  - first:
+      213: 4717400898255617550
+    second: lava sprite_240
+  - first:
+      213: 4645661226835318446
+    second: lava sprite_241
+  - first:
+      213: -1792780122726088749
+    second: lava sprite_242
+  - first:
+      213: 8921007724185786095
+    second: lava sprite_243
+  - first:
+      213: 5420505400802874159
+    second: lava sprite_244
+  - first:
+      213: 5012437852932808808
+    second: lava sprite_245
+  - first:
+      213: 1242616379838357490
+    second: lava sprite_246
+  - first:
+      213: 5878575057743395682
+    second: lava sprite_247
+  - first:
+      213: -4210110187301067222
+    second: lava sprite_248
+  - first:
+      213: -357829029943185496
+    second: lava sprite_249
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: lava sprite_0
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 12295
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbd6e88f0f0d65570800000000000000
+      internalID: 8455175083815497151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_1
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 12295
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80cd19f939c763e20800000000000000
+      internalID: 3329985947966233608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_2
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 12295
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be30a42f8393c3360800000000000000
+      internalID: 7150653225103393771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_3
+      rect:
+        serializedVersion: 2
+        x: 1557
+        y: 12295
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2baa6e1e25cd3aef0800000000000000
+      internalID: -97992518336599374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_4
+      rect:
+        serializedVersion: 2
+        x: 2069
+        y: 12295
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0916a7e731191e20800000000000000
+      internalID: 3321705131969747212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_5
+      rect:
+        serializedVersion: 2
+        x: 2581
+        y: 12295
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7d9181889050b350800000000000000
+      internalID: 6030408516987100541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_6
+      rect:
+        serializedVersion: 2
+        x: 3093
+        y: 12295
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54e8390c8999f2880800000000000000
+      internalID: -8633513079300977083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_7
+      rect:
+        serializedVersion: 2
+        x: 3605
+        y: 12295
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a12d645d3668e2a0800000000000000
+      internalID: -6707999231372877403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_8
+      rect:
+        serializedVersion: 2
+        x: 4117
+        y: 12295
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14306c07812db8fc0800000000000000
+      internalID: -3491466083682614463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_9
+      rect:
+        serializedVersion: 2
+        x: 4629
+        y: 12295
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 163cf067c60168470800000000000000
+      internalID: 8396416613302125409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_10
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 11783
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 289c0c1c32ea690e0800000000000000
+      internalID: -2263430294109369982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_11
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 11783
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23b041bf5955b7590800000000000000
+      internalID: -7675447037271995598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_12
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 11783
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 197bd643fe7cdb980800000000000000
+      internalID: -8521435089724393583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_13
+      rect:
+        serializedVersion: 2
+        x: 1557
+        y: 11783
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 391cc2490970d5fe0800000000000000
+      internalID: -1198793608268037741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_14
+      rect:
+        serializedVersion: 2
+        x: 2069
+        y: 11783
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77473e8541ba57680800000000000000
+      internalID: -8757905796473064329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_15
+      rect:
+        serializedVersion: 2
+        x: 2581
+        y: 11783
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b866e2e806771c80800000000000000
+      internalID: -8352077203396728648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_16
+      rect:
+        serializedVersion: 2
+        x: 3093
+        y: 11783
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 920e20bb9f3229c30800000000000000
+      internalID: 4364590544366788649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_17
+      rect:
+        serializedVersion: 2
+        x: 3605
+        y: 11783
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad49cd0f41713f310800000000000000
+      internalID: 1437518084769092826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_18
+      rect:
+        serializedVersion: 2
+        x: 4117
+        y: 11783
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d8936265d7144f50800000000000000
+      internalID: 6864637937265645782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_19
+      rect:
+        serializedVersion: 2
+        x: 4629
+        y: 11783
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3039bab4a3af61d0800000000000000
+      internalID: -3355283269465067458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_20
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 11271
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b0dc08cb3e1e5170800000000000000
+      internalID: 8169000016204845239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_21
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 11271
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0a6ea548464f9cd0800000000000000
+      internalID: -2549241587847763444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_22
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 11271
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01f9ba69f9ae57790800000000000000
+      internalID: -7532856830558757104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_23
+      rect:
+        serializedVersion: 2
+        x: 1557
+        y: 11271
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1eed130e4cb21340800000000000000
+      internalID: 4833132393367727642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_24
+      rect:
+        serializedVersion: 2
+        x: 2069
+        y: 11271
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd5ccf2444b25a1e0800000000000000
+      internalID: -2187294471836875300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_25
+      rect:
+        serializedVersion: 2
+        x: 2581
+        y: 11271
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24ff7afdd3271ee70800000000000000
+      internalID: 9142714328609718082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_26
+      rect:
+        serializedVersion: 2
+        x: 3093
+        y: 11271
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba4133278977ba130800000000000000
+      internalID: 3579085825510675627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_27
+      rect:
+        serializedVersion: 2
+        x: 3605
+        y: 11271
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f85d368ba525ef980800000000000000
+      internalID: -8503268496834833009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_28
+      rect:
+        serializedVersion: 2
+        x: 4117
+        y: 11271
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cab060a12fc0666b0800000000000000
+      internalID: -5303537277223957588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_29
+      rect:
+        serializedVersion: 2
+        x: 4629
+        y: 11271
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2b17f4359c2c0700800000000000000
+      internalID: 507829877336382254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_30
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 10759
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7ffceab6137226d0800000000000000
+      internalID: -3016722258922242181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_31
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 10759
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b405148f37fa78f80800000000000000
+      internalID: -8104316091808788405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_32
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 10759
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6444381a6cc67a750800000000000000
+      internalID: 6316136602779468870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_33
+      rect:
+        serializedVersion: 2
+        x: 1557
+        y: 10759
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29be2a916492d9d60800000000000000
+      internalID: 7898514702532275090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_34
+      rect:
+        serializedVersion: 2
+        x: 2069
+        y: 10759
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad8fdcea792e716a0800000000000000
+      internalID: -6478460397848495910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_35
+      rect:
+        serializedVersion: 2
+        x: 2581
+        y: 10759
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fc517d7e2eb84d90800000000000000
+      internalID: -7113226504549344016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_36
+      rect:
+        serializedVersion: 2
+        x: 3093
+        y: 10759
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5d19d1ab8d3f52d0800000000000000
+      internalID: -3287841533032063653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_37
+      rect:
+        serializedVersion: 2
+        x: 3605
+        y: 10759
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c42b4d120b0eca830800000000000000
+      internalID: 4083886009204650572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_38
+      rect:
+        serializedVersion: 2
+        x: 4117
+        y: 10759
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87ae759dc6fd30ba0800000000000000
+      internalID: -6123805409697863048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_39
+      rect:
+        serializedVersion: 2
+        x: 4629
+        y: 10759
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2473af609d94a1840800000000000000
+      internalID: 5195546316599080770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_40
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 10247
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb6044721f46fb3d0800000000000000
+      internalID: -3188719024246356289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_41
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 10247
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d281a8f55f69292c0800000000000000
+      internalID: -4426309503137736659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_42
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 10247
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9617ca682a41452b0800000000000000
+      internalID: -5596825748637978263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_43
+      rect:
+        serializedVersion: 2
+        x: 1557
+        y: 10247
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbf7b5961d766b880800000000000000
+      internalID: -8595568689676582980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_44
+      rect:
+        serializedVersion: 2
+        x: 2069
+        y: 10247
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b4501990c0bb62e0800000000000000
+      internalID: -2131415657381604175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_45
+      rect:
+        serializedVersion: 2
+        x: 2581
+        y: 10247
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 390a16d69db353230800000000000000
+      internalID: 3617863680691118227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_46
+      rect:
+        serializedVersion: 2
+        x: 3093
+        y: 10247
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e8576ae2e92c8e70800000000000000
+      internalID: 9118709400090400993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_47
+      rect:
+        serializedVersion: 2
+        x: 3605
+        y: 10247
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7a0bd90111e8a7c0800000000000000
+      internalID: -4059747600778458497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_48
+      rect:
+        serializedVersion: 2
+        x: 4117
+        y: 10247
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46cbfe5565687f2b0800000000000000
+      internalID: -5550820310343762844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_49
+      rect:
+        serializedVersion: 2
+        x: 4629
+        y: 10247
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fdc4f82c0d01efa0800000000000000
+      internalID: -5773318901434364425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_50
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 9735
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b40056ffd84b75720800000000000000
+      internalID: 2834933012421214283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_51
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 9735
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a384adfaaffa8830800000000000000
+      internalID: 4074349922774975398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_52
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 9735
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e058683b1454e600800000000000000
+      internalID: 496614334804807910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_53
+      rect:
+        serializedVersion: 2
+        x: 1557
+        y: 9735
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a833c1bf79807a20800000000000000
+      internalID: 3058095328520779943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_54
+      rect:
+        serializedVersion: 2
+        x: 2069
+        y: 9735
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43e7da6d26e7b0cb0800000000000000
+      internalID: -4896681206861693388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_55
+      rect:
+        serializedVersion: 2
+        x: 2581
+        y: 9735
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd2cf682dc5471370800000000000000
+      internalID: 8293173986275082972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_56
+      rect:
+        serializedVersion: 2
+        x: 3093
+        y: 9735
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08555ac1e026973d0800000000000000
+      internalID: -3208425446775106176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_57
+      rect:
+        serializedVersion: 2
+        x: 3605
+        y: 9735
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c20d2747a1979900800000000000000
+      internalID: 691181215464358595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_58
+      rect:
+        serializedVersion: 2
+        x: 4117
+        y: 9735
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d20829530756c230800000000000000
+      internalID: 3658707419177419477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_59
+      rect:
+        serializedVersion: 2
+        x: 4629
+        y: 9735
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fff6e790d4fe8df20800000000000000
+      internalID: 3447768628902916095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_60
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 9223
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e0e6b7a12db64070800000000000000
+      internalID: 8090361732863025384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_61
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 9223
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2a3a28e816720a90800000000000000
+      internalID: -7349181792568853974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_62
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 9223
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6eb70870a083be0c0800000000000000
+      internalID: -4545477783173694490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_63
+      rect:
+        serializedVersion: 2
+        x: 1557
+        y: 9223
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a558915229111f330800000000000000
+      internalID: 3742792084706919770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_64
+      rect:
+        serializedVersion: 2
+        x: 2069
+        y: 9223
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cd66a3168ec56ea0800000000000000
+      internalID: -5880066663211700797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_65
+      rect:
+        serializedVersion: 2
+        x: 2581
+        y: 9223
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65d430cb021a6f210800000000000000
+      internalID: 1366456698918882646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_66
+      rect:
+        serializedVersion: 2
+        x: 3093
+        y: 9223
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f30443d959198e540800000000000000
+      internalID: 5037436254987501631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_67
+      rect:
+        serializedVersion: 2
+        x: 3605
+        y: 9223
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccac1d1ebf8652560800000000000000
+      internalID: 7288347003003718348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_68
+      rect:
+        serializedVersion: 2
+        x: 4117
+        y: 9223
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32beb92241e0c75b0800000000000000
+      internalID: -5369401176089695453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_69
+      rect:
+        serializedVersion: 2
+        x: 4629
+        y: 9223
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52b4d5dbe76c3a870800000000000000
+      internalID: 8693009953400376101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_70
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 8711
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 080cc09a24eedfef0800000000000000
+      internalID: -72640048896622464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_71
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 8711
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 126912552543d07e0800000000000000
+      internalID: -1797723148030732767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_72
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 8711
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c47cac329e295a9e0800000000000000
+      internalID: -1610719761689557172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_73
+      rect:
+        serializedVersion: 2
+        x: 1557
+        y: 8711
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 835b1d0b2602fbac0800000000000000
+      internalID: -3837312749250955976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_74
+      rect:
+        serializedVersion: 2
+        x: 2069
+        y: 8711
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e01554e57529067a0800000000000000
+      internalID: -6385943367669952242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_75
+      rect:
+        serializedVersion: 2
+        x: 2581
+        y: 8711
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86ff5e864c2ca8690800000000000000
+      internalID: -7599047272405008536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_76
+      rect:
+        serializedVersion: 2
+        x: 3093
+        y: 8711
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b17748a692395780800000000000000
+      internalID: -8693861983012294224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_77
+      rect:
+        serializedVersion: 2
+        x: 3605
+        y: 8711
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70be34c64318f7c30800000000000000
+      internalID: 4359345026472602375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_78
+      rect:
+        serializedVersion: 2
+        x: 4117
+        y: 8711
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34bb4697e0b5751e0800000000000000
+      internalID: -2209196974477624509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_79
+      rect:
+        serializedVersion: 2
+        x: 4629
+        y: 8711
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cdb234853edbedf0800000000000000
+      internalID: -149781841154228795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_80
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 8199
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bc77339ab62699f0800000000000000
+      internalID: -462139328983237454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_81
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 8199
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9fa4e5b06d6618d0800000000000000
+      internalID: -2875991049893531750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_82
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 8199
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30ff7a9a61ea2e9e0800000000000000
+      internalID: -1593519905776861437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_83
+      rect:
+        serializedVersion: 2
+        x: 1557
+        y: 8199
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57698ea6e8e830800800000000000000
+      internalID: 577461919563683445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_84
+      rect:
+        serializedVersion: 2
+        x: 2069
+        y: 8199
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df700ee6e150a4ee0800000000000000
+      internalID: -1276201916138780675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_85
+      rect:
+        serializedVersion: 2
+        x: 2581
+        y: 8199
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03136d0bf90eef7a0800000000000000
+      internalID: -6341384248819830480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_86
+      rect:
+        serializedVersion: 2
+        x: 3093
+        y: 8199
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b3300c122c605e60800000000000000
+      internalID: 7948972236063388593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_87
+      rect:
+        serializedVersion: 2
+        x: 3605
+        y: 8199
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a521f76a501ae320800000000000000
+      internalID: 2587898916354729376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_88
+      rect:
+        serializedVersion: 2
+        x: 4117
+        y: 8199
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a4be2d383247a280800000000000000
+      internalID: -9032177718356167511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_89
+      rect:
+        serializedVersion: 2
+        x: 4629
+        y: 8199
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32004034b34790d40800000000000000
+      internalID: 5551095813587075107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_90
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 7687
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49f60657177542c30800000000000000
+      internalID: 4333684886249435028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_91
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 7687
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e46846b9f21c3b10800000000000000
+      internalID: 1962464401341048039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_92
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 7687
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 272e14ccbd9158b70800000000000000
+      internalID: 8900548670383055474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_93
+      rect:
+        serializedVersion: 2
+        x: 1557
+        y: 7687
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52cdd2d8294bce110800000000000000
+      internalID: 1291605734675307557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_94
+      rect:
+        serializedVersion: 2
+        x: 2069
+        y: 7687
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 792223d1ffdc9f260800000000000000
+      internalID: 7131957980508070551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_95
+      rect:
+        serializedVersion: 2
+        x: 2581
+        y: 7687
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32e3bce80421cea50800000000000000
+      internalID: 6551631626400120355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_96
+      rect:
+        serializedVersion: 2
+        x: 3093
+        y: 7687
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05a481621683aeef0800000000000000
+      internalID: -78188053623453104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_97
+      rect:
+        serializedVersion: 2
+        x: 3605
+        y: 7687
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52d19d4997181e2b0800000000000000
+      internalID: -5557018106010198747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_98
+      rect:
+        serializedVersion: 2
+        x: 4117
+        y: 7687
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e015ac4c222b49470800000000000000
+      internalID: 8400535067353043214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_99
+      rect:
+        serializedVersion: 2
+        x: 4629
+        y: 7687
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a06c050da00aca100800000000000000
+      internalID: 120647258337232394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_100
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 7175
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0193c37563e907d0800000000000000
+      internalID: -2951578055891250932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_101
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 7175
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f86cf366a477e5070800000000000000
+      internalID: 8097040341485471375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_102
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 7175
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eab7910693b62df60800000000000000
+      internalID: 8057620577488829358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_103
+      rect:
+        serializedVersion: 2
+        x: 1557
+        y: 7175
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1456f0c4eafcf1fe0800000000000000
+      internalID: -1216025026859408063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_104
+      rect:
+        serializedVersion: 2
+        x: 2069
+        y: 7175
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cebce73d44683fb0800000000000000
+      internalID: -4667870730955997499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_105
+      rect:
+        serializedVersion: 2
+        x: 2581
+        y: 7175
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbdb29c72b6cf8240800000000000000
+      internalID: 4796270598069337533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_106
+      rect:
+        serializedVersion: 2
+        x: 3093
+        y: 7175
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0ddcd7fb854e3c70800000000000000
+      internalID: 8952669576720342283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_107
+      rect:
+        serializedVersion: 2
+        x: 3605
+        y: 7175
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b58a9218f2eae3d0800000000000000
+      internalID: -3176477032064580172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_108
+      rect:
+        serializedVersion: 2
+        x: 4117
+        y: 7175
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a55cca70aa95d36d0800000000000000
+      internalID: -3009150389205547686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_109
+      rect:
+        serializedVersion: 2
+        x: 4629
+        y: 7175
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df6705e7a74301f60800000000000000
+      internalID: 8002954238547228413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_110
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 6663
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 232045251c8753220800000000000000
+      internalID: 2465009142760473138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_111
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 6663
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dff2f34ec025825b0800000000000000
+      internalID: -5392970338453737475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_112
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 6663
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfa40752085c98730800000000000000
+      internalID: 4001946898069998331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_113
+      rect:
+        serializedVersion: 2
+        x: 1557
+        y: 6663
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a33b6ead64a7e0c0800000000000000
+      internalID: -4546484507822574681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_114
+      rect:
+        serializedVersion: 2
+        x: 2069
+        y: 6663
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a9a7e70e525fc140800000000000000
+      internalID: 4742099496457447841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_115
+      rect:
+        serializedVersion: 2
+        x: 2581
+        y: 6663
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a94de9de81fa31600800000000000000
+      internalID: 437886110385755290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_116
+      rect:
+        serializedVersion: 2
+        x: 3093
+        y: 6663
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63ff1ebc1fbb9a000800000000000000
+      internalID: 47775918246199094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_117
+      rect:
+        serializedVersion: 2
+        x: 3605
+        y: 6663
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c00d2dfd1bb635590800000000000000
+      internalID: -7686681727282786292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_118
+      rect:
+        serializedVersion: 2
+        x: 4117
+        y: 6663
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 191781540b8c10b60800000000000000
+      internalID: 7710664696434028945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_119
+      rect:
+        serializedVersion: 2
+        x: 4629
+        y: 6663
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e39bd75b1a6a93f40800000000000000
+      internalID: 5708777216133675326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_120
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 6151
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca813f2728e487d20800000000000000
+      internalID: 3276455051093285036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_121
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 6151
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 647900f4838fc3140800000000000000
+      internalID: 4700905031795251014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_122
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 6151
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14ddd15e62385f0b0800000000000000
+      internalID: -5695501950664188607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_123
+      rect:
+        serializedVersion: 2
+        x: 1557
+        y: 6151
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dc30c26bb4511f00800000000000000
+      internalID: 1085742148965383383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_124
+      rect:
+        serializedVersion: 2
+        x: 2069
+        y: 6151
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a640e3b4d337fd970800000000000000
+      internalID: 8781864505488311402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_125
+      rect:
+        serializedVersion: 2
+        x: 2581
+        y: 6151
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2cb29c7aec48f8f0800000000000000
+      internalID: -506570388083131350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_126
+      rect:
+        serializedVersion: 2
+        x: 3093
+        y: 6151
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a19db503755b6c890800000000000000
+      internalID: -7438058348477687526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_127
+      rect:
+        serializedVersion: 2
+        x: 3605
+        y: 6151
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c1dedf0db65eea90800000000000000
+      internalID: -7282788177396444734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_128
+      rect:
+        serializedVersion: 2
+        x: 4117
+        y: 6151
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45509a0eecc9b6a30800000000000000
+      internalID: 4209630689054229844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_129
+      rect:
+        serializedVersion: 2
+        x: 4629
+        y: 6151
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7bd1e8d156b33420800000000000000
+      internalID: 2608629071824935806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_130
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 5639
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0447c57c6d861f650800000000000000
+      internalID: 6264903828326085696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_131
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 5639
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a95ec46184303660800000000000000
+      internalID: 7363443121097431465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_132
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 5639
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e377e50fce5e7510800000000000000
+      internalID: 1548779565112325090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_133
+      rect:
+        serializedVersion: 2
+        x: 1557
+        y: 5639
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 952b4958aa04ee5f0800000000000000
+      internalID: -725571388830338471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_134
+      rect:
+        serializedVersion: 2
+        x: 2069
+        y: 5639
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aab830efc34e28140800000000000000
+      internalID: 4720586310048517034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_135
+      rect:
+        serializedVersion: 2
+        x: 2581
+        y: 5639
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cce9e72d41eda2e0800000000000000
+      internalID: -2112784928668521271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_136
+      rect:
+        serializedVersion: 2
+        x: 3093
+        y: 5639
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fbac667cd11132a0800000000000000
+      internalID: -6759601927129093132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_137
+      rect:
+        serializedVersion: 2
+        x: 3605
+        y: 5639
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe0c89e36fc9aba80800000000000000
+      internalID: -8450269169381228305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_138
+      rect:
+        serializedVersion: 2
+        x: 4117
+        y: 5639
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e4618d8f5688b020800000000000000
+      internalID: 2357782149882537184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_139
+      rect:
+        serializedVersion: 2
+        x: 4629
+        y: 5639
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7eab09868ff7b8be0800000000000000
+      internalID: -1473943748150773017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_140
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 5127
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4508dcd460a1b5d90800000000000000
+      internalID: -7108058972496756652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_141
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 5127
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44e5020a424d9bb70800000000000000
+      internalID: 8915390191126994500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_142
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 5127
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e0fc835bca32d340800000000000000
+      internalID: 4887033190604927203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_143
+      rect:
+        serializedVersion: 2
+        x: 1557
+        y: 5127
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38fa69bd9b879f810800000000000000
+      internalID: 1799602265759592323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_144
+      rect:
+        serializedVersion: 2
+        x: 2069
+        y: 5127
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4eaaeb02c7ce00a0800000000000000
+      internalID: -6913368741729620401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_145
+      rect:
+        serializedVersion: 2
+        x: 2581
+        y: 5127
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6600f2f0558cf8f0800000000000000
+      internalID: -505382475452643729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_146
+      rect:
+        serializedVersion: 2
+        x: 3093
+        y: 5127
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82c7f291f712ee840800000000000000
+      internalID: 5255174644955053096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_147
+      rect:
+        serializedVersion: 2
+        x: 3605
+        y: 5127
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbd5ca7f77b245590800000000000000
+      internalID: -7686470869758222915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_148
+      rect:
+        serializedVersion: 2
+        x: 4117
+        y: 5127
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6e0fce931a923e90800000000000000
+      internalID: -7047401057821979030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_149
+      rect:
+        serializedVersion: 2
+        x: 4629
+        y: 5127
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ad6c87d7d3173bb0800000000000000
+      internalID: -4956471047142740573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_150
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 4615
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0af9318ba418631f0800000000000000
+      internalID: -1065522103910686816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_151
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 4615
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2b71de024a6b3c00800000000000000
+      internalID: 881414984030059309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_152
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 4615
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2223cfba54e3d070800000000000000
+      internalID: 8130092830749303338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_153
+      rect:
+        serializedVersion: 2
+        x: 1557
+        y: 4615
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82c943bdbfec4fd60800000000000000
+      internalID: 7923185225561316392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_154
+      rect:
+        serializedVersion: 2
+        x: 2069
+        y: 4615
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db602998da902c010800000000000000
+      internalID: 1207538291030755005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_155
+      rect:
+        serializedVersion: 2
+        x: 2581
+        y: 4615
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb904f163ab2b8400800000000000000
+      internalID: 327403378637539772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_156
+      rect:
+        serializedVersion: 2
+        x: 3093
+        y: 4615
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10ec2294c1a5639d0800000000000000
+      internalID: -2794947441204212223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_157
+      rect:
+        serializedVersion: 2
+        x: 3605
+        y: 4615
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3582b6cb34723f40800000000000000
+      internalID: 5706751477917320511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_158
+      rect:
+        serializedVersion: 2
+        x: 4117
+        y: 4615
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aafbf5d35e7c09ff0800000000000000
+      internalID: -31305410000470102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_159
+      rect:
+        serializedVersion: 2
+        x: 4629
+        y: 4615
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 338ee9f33e9f7f460800000000000000
+      internalID: 7275558477460596787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_160
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 4103
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abce0b30d80ab4840800000000000000
+      internalID: 5209433921496870074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_161
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 4103
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ad7d405cfcf0f7a0800000000000000
+      internalID: -6345293714355815008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_162
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 4103
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82a6075a566050b20800000000000000
+      internalID: 3099890952151525928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_163
+      rect:
+        serializedVersion: 2
+        x: 1557
+        y: 4103
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8e220cbde06cdf80800000000000000
+      internalID: -8080477057231737202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_164
+      rect:
+        serializedVersion: 2
+        x: 2069
+        y: 4103
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 572cb6cf6cfd2a660800000000000000
+      internalID: 7395719583827214965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_165
+      rect:
+        serializedVersion: 2
+        x: 2581
+        y: 4103
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd981c793a9f4c130800000000000000
+      internalID: 3586265684314786267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_166
+      rect:
+        serializedVersion: 2
+        x: 3093
+        y: 4103
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa1f93742e8ea4f50800000000000000
+      internalID: 6866556640434975151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_167
+      rect:
+        serializedVersion: 2
+        x: 3605
+        y: 4103
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c2414334d51604e0800000000000000
+      internalID: -2015899782064553274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_168
+      rect:
+        serializedVersion: 2
+        x: 4117
+        y: 4103
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf2898dfb2d9a1440800000000000000
+      internalID: 4907407556236378876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_169
+      rect:
+        serializedVersion: 2
+        x: 4629
+        y: 4103
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbdde717e196384b0800000000000000
+      internalID: -5439388345459352129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_170
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 3591
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00aea10cf1c827b90800000000000000
+      internalID: -7245574782490842624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_171
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 3591
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9002fef0af10c9570800000000000000
+      internalID: 8474650772325212169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_172
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 3591
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8495064cad59ac790800000000000000
+      internalID: -7509024661856822968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_173
+      rect:
+        serializedVersion: 2
+        x: 1557
+        y: 3591
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38bf0e04e98a7cc90800000000000000
+      internalID: -7149560485780587645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_174
+      rect:
+        serializedVersion: 2
+        x: 2069
+        y: 3591
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cfa5a5a740c58350800000000000000
+      internalID: 6018427891004846018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_175
+      rect:
+        serializedVersion: 2
+        x: 2581
+        y: 3591
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e2c8fa1df9c8f2e0800000000000000
+      internalID: -2091699937997176088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_176
+      rect:
+        serializedVersion: 2
+        x: 3093
+        y: 3591
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca6f2eed510af3850800000000000000
+      internalID: 6358977214664603308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_177
+      rect:
+        serializedVersion: 2
+        x: 3605
+        y: 3591
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab80eabb6a7f64470800000000000000
+      internalID: 8378656452254763194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_178
+      rect:
+        serializedVersion: 2
+        x: 4117
+        y: 3591
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 975d2bb65452a49e0800000000000000
+      internalID: -1636454534505900679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_179
+      rect:
+        serializedVersion: 2
+        x: 4629
+        y: 3591
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04956badc45904d70800000000000000
+      internalID: 9025377810569910592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_180
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 3079
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f51f6bdad6aaa0840800000000000000
+      internalID: 5191148908540522847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_181
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 3079
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c19e2be001a656510800000000000000
+      internalID: 1541755064642890012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_182
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 3079
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c305e0fffbf63b400800000000000000
+      internalID: 338737267391483964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_183
+      rect:
+        serializedVersion: 2
+        x: 1557
+        y: 3079
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2243b52c161b894e0800000000000000
+      internalID: -1974633403171261406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_184
+      rect:
+        serializedVersion: 2
+        x: 2069
+        y: 3079
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f45073829d2806810800000000000000
+      internalID: 1756547723868702031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_185
+      rect:
+        serializedVersion: 2
+        x: 2581
+        y: 3079
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e73f799818bfb950800000000000000
+      internalID: 6467090005721298919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_186
+      rect:
+        serializedVersion: 2
+        x: 3093
+        y: 3079
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd8edbb0b4a962880800000000000000
+      internalID: -8636045588326127395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_187
+      rect:
+        serializedVersion: 2
+        x: 3605
+        y: 3079
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a35361727d1f34bc0800000000000000
+      internalID: -3799927754194537158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_188
+      rect:
+        serializedVersion: 2
+        x: 4117
+        y: 3079
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b598c770bfc36a990800000000000000
+      internalID: -7375140290912548517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_189
+      rect:
+        serializedVersion: 2
+        x: 4629
+        y: 3079
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aeb92d3860231fab0800000000000000
+      internalID: -4976141109704877078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_190
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 2567
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 225861e88f9074280800000000000000
+      internalID: -9059261162292083422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_191
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 2567
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3affeb8e0b39cb30800000000000000
+      internalID: 4308039452219931196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_192
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 2567
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed54681a43ca173b0800000000000000
+      internalID: -5516438726503938594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_193
+      rect:
+        serializedVersion: 2
+        x: 1557
+        y: 2567
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0738c9d227999e250800000000000000
+      internalID: 5974475096354227056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_194
+      rect:
+        serializedVersion: 2
+        x: 2069
+        y: 2567
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 834b367a0736c0f30800000000000000
+      internalID: 4543115459605804088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_195
+      rect:
+        serializedVersion: 2
+        x: 2581
+        y: 2567
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62d36727ed93ff950800000000000000
+      internalID: 6484965616002678054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_196
+      rect:
+        serializedVersion: 2
+        x: 3093
+        y: 2567
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bc17071516357870800000000000000
+      internalID: 8679903321035054262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_197
+      rect:
+        serializedVersion: 2
+        x: 3605
+        y: 2567
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cff15af7f6acf2f0800000000000000
+      internalID: -937691038413094973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_198
+      rect:
+        serializedVersion: 2
+        x: 4117
+        y: 2567
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f73205302e12bce40800000000000000
+      internalID: 5677669009832551295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_199
+      rect:
+        serializedVersion: 2
+        x: 4629
+        y: 2567
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3c324b2864f63620800000000000000
+      internalID: 2753656950423174207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_200
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 2055
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4aee3d2095ae4e770800000000000000
+      internalID: 8639287653223886500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_201
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 2055
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b05d2d54a1184f20800000000000000
+      internalID: 3406992515741339826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_202
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 2055
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38b5b0fd1af2c3480800000000000000
+      internalID: -8918200789822121085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_203
+      rect:
+        serializedVersion: 2
+        x: 1557
+        y: 2055
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b52024634c79ed270800000000000000
+      internalID: 8277220034133230171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_204
+      rect:
+        serializedVersion: 2
+        x: 2069
+        y: 2055
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc854edd1b0256030800000000000000
+      internalID: 3487229434772347083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_205
+      rect:
+        serializedVersion: 2
+        x: 2581
+        y: 2055
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37136684f97aacc40800000000000000
+      internalID: 5533419394734371187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_206
+      rect:
+        serializedVersion: 2
+        x: 3093
+        y: 2055
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08d489a98f5347da0800000000000000
+      internalID: -5948069865987748480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_207
+      rect:
+        serializedVersion: 2
+        x: 3605
+        y: 2055
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27256171bd9018000800000000000000
+      internalID: 36321108585501298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_208
+      rect:
+        serializedVersion: 2
+        x: 4117
+        y: 2055
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ed4d4f0e33789fd0800000000000000
+      internalID: -2334989696409711131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_209
+      rect:
+        serializedVersion: 2
+        x: 4629
+        y: 2055
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bae64b82ebfcac20800000000000000
+      internalID: 3219224784080923315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_210
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 1543
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c116856b8e3e96ca0800000000000000
+      internalID: -6023032438000164580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_211
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 1543
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ecdc3adf4733ad70800000000000000
+      internalID: 9053140492048194785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_212
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 1543
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fead6a66bb1fec710800000000000000
+      internalID: 1715574295258127087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_213
+      rect:
+        serializedVersion: 2
+        x: 1557
+        y: 1543
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c2a0ef32afdb03b0800000000000000
+      internalID: -5545092628227251515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_214
+      rect:
+        serializedVersion: 2
+        x: 2069
+        y: 1543
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f580d5de9a8c9fb0800000000000000
+      internalID: -4639681101301774860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_215
+      rect:
+        serializedVersion: 2
+        x: 2581
+        y: 1543
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a8376e4121310a10800000000000000
+      internalID: 1873832939081906342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_216
+      rect:
+        serializedVersion: 2
+        x: 3093
+        y: 1543
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38252ffa0874d47e0800000000000000
+      internalID: -1779687659708198269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_217
+      rect:
+        serializedVersion: 2
+        x: 3605
+        y: 1543
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80d45a8d7d38873e0800000000000000
+      internalID: -2055748266818712312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_218
+      rect:
+        serializedVersion: 2
+        x: 4117
+        y: 1543
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08c5e193d175ee940800000000000000
+      internalID: 5327291192249834624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_219
+      rect:
+        serializedVersion: 2
+        x: 4629
+        y: 1543
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aeb04363db8122dc0800000000000000
+      internalID: -3665339945788896278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_220
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 1031
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 143f35033272c6ad0800000000000000
+      internalID: -2707746243868363967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_221
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 1031
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7607890d72d6763f0800000000000000
+      internalID: -907636782121062297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_222
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 1031
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43e0f82bef9f8a620800000000000000
+      internalID: 2785751241841380916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_223
+      rect:
+        serializedVersion: 2
+        x: 1557
+        y: 1031
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cd3fd989a5fbc280800000000000000
+      internalID: -9021847319995269695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_224
+      rect:
+        serializedVersion: 2
+        x: 2069
+        y: 1031
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90940001f7c6ddaa0800000000000000
+      internalID: -6134627824423646967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_225
+      rect:
+        serializedVersion: 2
+        x: 2581
+        y: 1031
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6de75725fb2396a30800000000000000
+      internalID: 4208951124058013398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_226
+      rect:
+        serializedVersion: 2
+        x: 3093
+        y: 1031
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a28f0e7beb8f2a960800000000000000
+      internalID: 7611919818222008362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_227
+      rect:
+        serializedVersion: 2
+        x: 3605
+        y: 1031
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c9db331a0337fa80800000000000000
+      internalID: -8433215658862585399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_228
+      rect:
+        serializedVersion: 2
+        x: 4117
+        y: 1031
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a5dc4b8c97e47e60800000000000000
+      internalID: 7959241101008491941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_229
+      rect:
+        serializedVersion: 2
+        x: 4629
+        y: 1031
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87ce6d647d4c17730800000000000000
+      internalID: 3995190773339843704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_230
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 519
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49c50ab06ae59e660800000000000000
+      internalID: 7415562328694873236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_231
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 519
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41efed2266639a3c0800000000000000
+      internalID: -4347884152949899756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_232
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 519
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c7476628262e77a0800000000000000
+      internalID: -6377618068425193530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_233
+      rect:
+        serializedVersion: 2
+        x: 1557
+        y: 519
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ac4e00725fb2dbc0800000000000000
+      internalID: -3759732378112734045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_234
+      rect:
+        serializedVersion: 2
+        x: 2069
+        y: 519
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bd58b0bfaad3c740800000000000000
+      internalID: 5171217245270465972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_235
+      rect:
+        serializedVersion: 2
+        x: 2581
+        y: 519
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ede62733c64863a0800000000000000
+      internalID: -6672005043691524633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_236
+      rect:
+        serializedVersion: 2
+        x: 3093
+        y: 519
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2577cc0c819ec65f0800000000000000
+      internalID: -761977944409344174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_237
+      rect:
+        serializedVersion: 2
+        x: 3605
+        y: 519
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6aab4ceda2ccf8e0800000000000000
+      internalID: -1658236510529672596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_238
+      rect:
+        serializedVersion: 2
+        x: 4117
+        y: 519
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e285d654ce7c3010800000000000000
+      internalID: 1169949384945009380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_239
+      rect:
+        serializedVersion: 2
+        x: 4629
+        y: 519
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40b8dcda76cb81f50800000000000000
+      internalID: 6852433986527791876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_240
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 7
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0e72a38f13977140800000000000000
+      internalID: 4717400898255617550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_241
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 7
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea61354a544b87040800000000000000
+      internalID: 4645661226835318446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_242
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 7
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dfb7881af3ce17e0800000000000000
+      internalID: -1792780122726088749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_243
+      rect:
+        serializedVersion: 2
+        x: 1557
+        y: 7
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe61c967249cdcb70800000000000000
+      internalID: 8921007724185786095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_244
+      rect:
+        serializedVersion: 2
+        x: 2069
+        y: 7
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2311f561f0893b40800000000000000
+      internalID: 5420505400802874159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_245
+      rect:
+        serializedVersion: 2
+        x: 2581
+        y: 7
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86028c29ba1cf8540800000000000000
+      internalID: 5012437852932808808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_246
+      rect:
+        serializedVersion: 2
+        x: 3093
+        y: 7
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ffd8588309ae3110800000000000000
+      internalID: 1242616379838357490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_247
+      rect:
+        serializedVersion: 2
+        x: 3605
+        y: 7
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26b34467ed4e49150800000000000000
+      internalID: 5878575057743395682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_248
+      rect:
+        serializedVersion: 2
+        x: 4117
+        y: 7
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a26aaac371fa295c0800000000000000
+      internalID: -4210110187301067222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lava sprite_249
+      rect:
+        serializedVersion: 2
+        x: 4629
+        y: 7
+        width: 466
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8afe9e3a46cb80bf0800000000000000
+      internalID: -357829029943185496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      lava sprite_0: 8455175083815497151
+      lava sprite_1: 3329985947966233608
+      lava sprite_10: -2263430294109369982
+      lava sprite_100: -2951578055891250932
+      lava sprite_101: 8097040341485471375
+      lava sprite_102: 8057620577488829358
+      lava sprite_103: -1216025026859408063
+      lava sprite_104: -4667870730955997499
+      lava sprite_105: 4796270598069337533
+      lava sprite_106: 8952669576720342283
+      lava sprite_107: -3176477032064580172
+      lava sprite_108: -3009150389205547686
+      lava sprite_109: 8002954238547228413
+      lava sprite_11: -7675447037271995598
+      lava sprite_110: 2465009142760473138
+      lava sprite_111: -5392970338453737475
+      lava sprite_112: 4001946898069998331
+      lava sprite_113: -4546484507822574681
+      lava sprite_114: 4742099496457447841
+      lava sprite_115: 437886110385755290
+      lava sprite_116: 47775918246199094
+      lava sprite_117: -7686681727282786292
+      lava sprite_118: 7710664696434028945
+      lava sprite_119: 5708777216133675326
+      lava sprite_12: -8521435089724393583
+      lava sprite_120: 3276455051093285036
+      lava sprite_121: 4700905031795251014
+      lava sprite_122: -5695501950664188607
+      lava sprite_123: 1085742148965383383
+      lava sprite_124: 8781864505488311402
+      lava sprite_125: -506570388083131350
+      lava sprite_126: -7438058348477687526
+      lava sprite_127: -7282788177396444734
+      lava sprite_128: 4209630689054229844
+      lava sprite_129: 2608629071824935806
+      lava sprite_13: -1198793608268037741
+      lava sprite_130: 6264903828326085696
+      lava sprite_131: 7363443121097431465
+      lava sprite_132: 1548779565112325090
+      lava sprite_133: -725571388830338471
+      lava sprite_134: 4720586310048517034
+      lava sprite_135: -2112784928668521271
+      lava sprite_136: -6759601927129093132
+      lava sprite_137: -8450269169381228305
+      lava sprite_138: 2357782149882537184
+      lava sprite_139: -1473943748150773017
+      lava sprite_14: -8757905796473064329
+      lava sprite_140: -7108058972496756652
+      lava sprite_141: 8915390191126994500
+      lava sprite_142: 4887033190604927203
+      lava sprite_143: 1799602265759592323
+      lava sprite_144: -6913368741729620401
+      lava sprite_145: -505382475452643729
+      lava sprite_146: 5255174644955053096
+      lava sprite_147: -7686470869758222915
+      lava sprite_148: -7047401057821979030
+      lava sprite_149: -4956471047142740573
+      lava sprite_15: -8352077203396728648
+      lava sprite_150: -1065522103910686816
+      lava sprite_151: 881414984030059309
+      lava sprite_152: 8130092830749303338
+      lava sprite_153: 7923185225561316392
+      lava sprite_154: 1207538291030755005
+      lava sprite_155: 327403378637539772
+      lava sprite_156: -2794947441204212223
+      lava sprite_157: 5706751477917320511
+      lava sprite_158: -31305410000470102
+      lava sprite_159: 7275558477460596787
+      lava sprite_16: 4364590544366788649
+      lava sprite_160: 5209433921496870074
+      lava sprite_161: -6345293714355815008
+      lava sprite_162: 3099890952151525928
+      lava sprite_163: -8080477057231737202
+      lava sprite_164: 7395719583827214965
+      lava sprite_165: 3586265684314786267
+      lava sprite_166: 6866556640434975151
+      lava sprite_167: -2015899782064553274
+      lava sprite_168: 4907407556236378876
+      lava sprite_169: -5439388345459352129
+      lava sprite_17: 1437518084769092826
+      lava sprite_170: -7245574782490842624
+      lava sprite_171: 8474650772325212169
+      lava sprite_172: -7509024661856822968
+      lava sprite_173: -7149560485780587645
+      lava sprite_174: 6018427891004846018
+      lava sprite_175: -2091699937997176088
+      lava sprite_176: 6358977214664603308
+      lava sprite_177: 8378656452254763194
+      lava sprite_178: -1636454534505900679
+      lava sprite_179: 9025377810569910592
+      lava sprite_18: 6864637937265645782
+      lava sprite_180: 5191148908540522847
+      lava sprite_181: 1541755064642890012
+      lava sprite_182: 338737267391483964
+      lava sprite_183: -1974633403171261406
+      lava sprite_184: 1756547723868702031
+      lava sprite_185: 6467090005721298919
+      lava sprite_186: -8636045588326127395
+      lava sprite_187: -3799927754194537158
+      lava sprite_188: -7375140290912548517
+      lava sprite_189: -4976141109704877078
+      lava sprite_19: -3355283269465067458
+      lava sprite_190: -9059261162292083422
+      lava sprite_191: 4308039452219931196
+      lava sprite_192: -5516438726503938594
+      lava sprite_193: 5974475096354227056
+      lava sprite_194: 4543115459605804088
+      lava sprite_195: 6484965616002678054
+      lava sprite_196: 8679903321035054262
+      lava sprite_197: -937691038413094973
+      lava sprite_198: 5677669009832551295
+      lava sprite_199: 2753656950423174207
+      lava sprite_2: 7150653225103393771
+      lava sprite_20: 8169000016204845239
+      lava sprite_200: 8639287653223886500
+      lava sprite_201: 3406992515741339826
+      lava sprite_202: -8918200789822121085
+      lava sprite_203: 8277220034133230171
+      lava sprite_204: 3487229434772347083
+      lava sprite_205: 5533419394734371187
+      lava sprite_206: -5948069865987748480
+      lava sprite_207: 36321108585501298
+      lava sprite_208: -2334989696409711131
+      lava sprite_209: 3219224784080923315
+      lava sprite_21: -2549241587847763444
+      lava sprite_210: -6023032438000164580
+      lava sprite_211: 9053140492048194785
+      lava sprite_212: 1715574295258127087
+      lava sprite_213: -5545092628227251515
+      lava sprite_214: -4639681101301774860
+      lava sprite_215: 1873832939081906342
+      lava sprite_216: -1779687659708198269
+      lava sprite_217: -2055748266818712312
+      lava sprite_218: 5327291192249834624
+      lava sprite_219: -3665339945788896278
+      lava sprite_22: -7532856830558757104
+      lava sprite_220: -2707746243868363967
+      lava sprite_221: -907636782121062297
+      lava sprite_222: 2785751241841380916
+      lava sprite_223: -9021847319995269695
+      lava sprite_224: -6134627824423646967
+      lava sprite_225: 4208951124058013398
+      lava sprite_226: 7611919818222008362
+      lava sprite_227: -8433215658862585399
+      lava sprite_228: 7959241101008491941
+      lava sprite_229: 3995190773339843704
+      lava sprite_23: 4833132393367727642
+      lava sprite_230: 7415562328694873236
+      lava sprite_231: -4347884152949899756
+      lava sprite_232: -6377618068425193530
+      lava sprite_233: -3759732378112734045
+      lava sprite_234: 5171217245270465972
+      lava sprite_235: -6672005043691524633
+      lava sprite_236: -761977944409344174
+      lava sprite_237: -1658236510529672596
+      lava sprite_238: 1169949384945009380
+      lava sprite_239: 6852433986527791876
+      lava sprite_24: -2187294471836875300
+      lava sprite_240: 4717400898255617550
+      lava sprite_241: 4645661226835318446
+      lava sprite_242: -1792780122726088749
+      lava sprite_243: 8921007724185786095
+      lava sprite_244: 5420505400802874159
+      lava sprite_245: 5012437852932808808
+      lava sprite_246: 1242616379838357490
+      lava sprite_247: 5878575057743395682
+      lava sprite_248: -4210110187301067222
+      lava sprite_249: -357829029943185496
+      lava sprite_25: 9142714328609718082
+      lava sprite_26: 3579085825510675627
+      lava sprite_27: -8503268496834833009
+      lava sprite_28: -5303537277223957588
+      lava sprite_29: 507829877336382254
+      lava sprite_3: -97992518336599374
+      lava sprite_30: -3016722258922242181
+      lava sprite_31: -8104316091808788405
+      lava sprite_32: 6316136602779468870
+      lava sprite_33: 7898514702532275090
+      lava sprite_34: -6478460397848495910
+      lava sprite_35: -7113226504549344016
+      lava sprite_36: -3287841533032063653
+      lava sprite_37: 4083886009204650572
+      lava sprite_38: -6123805409697863048
+      lava sprite_39: 5195546316599080770
+      lava sprite_4: 3321705131969747212
+      lava sprite_40: -3188719024246356289
+      lava sprite_41: -4426309503137736659
+      lava sprite_42: -5596825748637978263
+      lava sprite_43: -8595568689676582980
+      lava sprite_44: -2131415657381604175
+      lava sprite_45: 3617863680691118227
+      lava sprite_46: 9118709400090400993
+      lava sprite_47: -4059747600778458497
+      lava sprite_48: -5550820310343762844
+      lava sprite_49: -5773318901434364425
+      lava sprite_5: 6030408516987100541
+      lava sprite_50: 2834933012421214283
+      lava sprite_51: 4074349922774975398
+      lava sprite_52: 496614334804807910
+      lava sprite_53: 3058095328520779943
+      lava sprite_54: -4896681206861693388
+      lava sprite_55: 8293173986275082972
+      lava sprite_56: -3208425446775106176
+      lava sprite_57: 691181215464358595
+      lava sprite_58: 3658707419177419477
+      lava sprite_59: 3447768628902916095
+      lava sprite_6: -8633513079300977083
+      lava sprite_60: 8090361732863025384
+      lava sprite_61: -7349181792568853974
+      lava sprite_62: -4545477783173694490
+      lava sprite_63: 3742792084706919770
+      lava sprite_64: -5880066663211700797
+      lava sprite_65: 1366456698918882646
+      lava sprite_66: 5037436254987501631
+      lava sprite_67: 7288347003003718348
+      lava sprite_68: -5369401176089695453
+      lava sprite_69: 8693009953400376101
+      lava sprite_7: -6707999231372877403
+      lava sprite_70: -72640048896622464
+      lava sprite_71: -1797723148030732767
+      lava sprite_72: -1610719761689557172
+      lava sprite_73: -3837312749250955976
+      lava sprite_74: -6385943367669952242
+      lava sprite_75: -7599047272405008536
+      lava sprite_76: -8693861983012294224
+      lava sprite_77: 4359345026472602375
+      lava sprite_78: -2209196974477624509
+      lava sprite_79: -149781841154228795
+      lava sprite_8: -3491466083682614463
+      lava sprite_80: -462139328983237454
+      lava sprite_81: -2875991049893531750
+      lava sprite_82: -1593519905776861437
+      lava sprite_83: 577461919563683445
+      lava sprite_84: -1276201916138780675
+      lava sprite_85: -6341384248819830480
+      lava sprite_86: 7948972236063388593
+      lava sprite_87: 2587898916354729376
+      lava sprite_88: -9032177718356167511
+      lava sprite_89: 5551095813587075107
+      lava sprite_9: 8396416613302125409
+      lava sprite_90: 4333684886249435028
+      lava sprite_91: 1962464401341048039
+      lava sprite_92: 8900548670383055474
+      lava sprite_93: 1291605734675307557
+      lava sprite_94: 7131957980508070551
+      lava sprite_95: 6551631626400120355
+      lava sprite_96: -78188053623453104
+      lava sprite_97: -5557018106010198747
+      lava sprite_98: 8400535067353043214
+      lava sprite_99: 120647258337232394
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

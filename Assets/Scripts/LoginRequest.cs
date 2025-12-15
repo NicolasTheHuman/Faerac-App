@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 [Serializable]
 public class LoginRequest
@@ -12,5 +13,5 @@ public class LoginRequest
 public class LoginResponse
 {
     public string message;
-    public UserData user;
+    public UserData usuario;
 }
