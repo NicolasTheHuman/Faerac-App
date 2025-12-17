@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9be524d60c8d8494cb79faa73bb45437
+guid: 566c5cc0d7efeb143a5088c33bfd1fa0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7598536706171543207
-    second: Credencial@2x_0
+      213: -682117415194297095
+    second: Circuitos_portadaMask_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -52,7 +52,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 90, y: 94, z: 90, w: 87}
+  spriteBorder: {x: 34, y: 35, z: 35, w: 39}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Credencial@2x_0
+      name: Circuitos_portadaMask_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1634
-        height: 1104
+        width: 458
+        height: 572
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 951e0efdf139c8690800000000000000
-      internalID: -7598536706171543207
+      spriteID: 9fc7c3c23d1a886f0800000000000000
+      internalID: -682117415194297095
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Credencial@2x_0: -7598536706171543207
+      Circuitos_portadaMask_0: -682117415194297095
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
