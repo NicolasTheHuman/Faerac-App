@@ -1,0 +1,858 @@
+fileFormatVersion: 2
+guid: 922cd0adb3789ca4eb7d841189dce478
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4975660242963464752
+    second: "Selleciona una Categor\xEDa@3x_0"
+  - first:
+      213: 1218842991127015543
+    second: "Selleciona una Categor\xEDa@3x_1"
+  - first:
+      213: -6156971434222912308
+    second: "Selleciona una Categor\xEDa@3x_2"
+  - first:
+      213: 5379383963186048831
+    second: "Selleciona una Categor\xEDa@3x_3"
+  - first:
+      213: -610044829785819898
+    second: "Selleciona una Categor\xEDa@3x_4"
+  - first:
+      213: 3669554784857374484
+    second: "Selleciona una Categor\xEDa@3x_5"
+  - first:
+      213: -6106168032002081948
+    second: "Selleciona una Categor\xEDa@3x_6"
+  - first:
+      213: 43936143802220771
+    second: "Selleciona una Categor\xEDa@3x_7"
+  - first:
+      213: -1361715920159338449
+    second: "Selleciona una Categor\xEDa@3x_8"
+  - first:
+      213: 6961710238206340102
+    second: "Selleciona una Categor\xEDa@3x_9"
+  - first:
+      213: 2198714618510563459
+    second: "Selleciona una Categor\xEDa@3x_10"
+  - first:
+      213: -1355368467829534086
+    second: "Selleciona una Categor\xEDa@3x_11"
+  - first:
+      213: 7865608496589062712
+    second: "Selleciona una Categor\xEDa@3x_12"
+  - first:
+      213: -4398538002617337956
+    second: "Selleciona una Categor\xEDa@3x_13"
+  - first:
+      213: -1651990518802232813
+    second: "Selleciona una Categor\xEDa@3x_14"
+  - first:
+      213: 2783648784143497235
+    second: "Selleciona una Categor\xEDa@3x_15"
+  - first:
+      213: 6624676209385692073
+    second: "Selleciona una Categor\xEDa@3x_16"
+  - first:
+      213: 2464347475532735601
+    second: "Selleciona una Categor\xEDa@3x_17"
+  - first:
+      213: 292072947616963349
+    second: "Selleciona una Categor\xEDa@3x_18"
+  - first:
+      213: 3852769310364835190
+    second: "Selleciona una Categor\xEDa@3x_19"
+  - first:
+      213: 8637450822160265441
+    second: "Selleciona una Categor\xEDa@3x_20"
+  - first:
+      213: -6999363491851815700
+    second: "Selleciona una Categor\xEDa@3x_21"
+  - first:
+      213: -8637871695034092652
+    second: "Selleciona una Categor\xEDa@3x_22"
+  - first:
+      213: 2762837212253061036
+    second: "Selleciona una Categor\xEDa@3x_23"
+  - first:
+      213: -6480958231410523141
+    second: "Selleciona una Categor\xEDa@3x_24"
+  - first:
+      213: 7248406960563777695
+    second: "Selleciona una Categor\xEDa@3x_25"
+  - first:
+      213: 1331162198946520768
+    second: "Selleciona una Categor\xEDa@3x_26"
+  - first:
+      213: 1486859653385223219
+    second: "Selleciona una Categor\xEDa@3x_27"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "Selleciona una Categor\xEDa@3x_0"
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 359
+        width: 264
+        height: 436
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0320fd8f0a81d0540800000000000000
+      internalID: 4975660242963464752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Selleciona una Categor\xEDa@3x_1"
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 473
+        width: 128
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 770b9132e333ae010800000000000000
+      internalID: 1218842991127015543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Selleciona una Categor\xEDa@3x_2"
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 392
+        width: 447
+        height: 447
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccc7ae20a1b0e8aa0800000000000000
+      internalID: -6156971434222912308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Selleciona una Categor\xEDa@3x_3"
+      rect:
+        serializedVersion: 2
+        x: 1097
+        y: 373
+        width: 416
+        height: 409
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3f232c963967aa40800000000000000
+      internalID: 5379383963186048831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Selleciona una Categor\xEDa@3x_4"
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 48
+        width: 88
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6057d8f957fa887f0800000000000000
+      internalID: -610044829785819898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Selleciona una Categor\xEDa@3x_5"
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 50
+        width: 32
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41f324b72a0ece230800000000000000
+      internalID: 3669554784857374484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Selleciona una Categor\xEDa@3x_6"
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 159
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46b7ba9d688824ba0800000000000000
+      internalID: -6106168032002081948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Selleciona una Categor\xEDa@3x_7"
+      rect:
+        serializedVersion: 2
+        x: 1454
+        y: 48
+        width: 65
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e0c124a0b71c9000800000000000000
+      internalID: 43936143802220771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Selleciona una Categor\xEDa@3x_8"
+      rect:
+        serializedVersion: 2
+        x: 1916
+        y: 159
+        width: 46
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2098e5d5963a1de0800000000000000
+      internalID: -1361715920159338449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Selleciona una Categor\xEDa@3x_9"
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 48
+        width: 89
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60c2d71b396fc9060800000000000000
+      internalID: 6961710238206340102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Selleciona una Categor\xEDa@3x_10"
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 48
+        width: 89
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 388d7c6db47638e10800000000000000
+      internalID: 2198714618510563459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Selleciona una Categor\xEDa@3x_11"
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 48
+        width: 76
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a72514f3f83c03de0800000000000000
+      internalID: -1355368467829534086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Selleciona una Categor\xEDa@3x_12"
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 48
+        width: 76
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8324c7df041482d60800000000000000
+      internalID: 7865608496589062712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Selleciona una Categor\xEDa@3x_13"
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 50
+        width: 32
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c97ffe6bdf045f2c0800000000000000
+      internalID: -4398538002617337956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Selleciona una Categor\xEDa@3x_14"
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 47
+        width: 97
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31aca723063f219e0800000000000000
+      internalID: -1651990518802232813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Selleciona una Categor\xEDa@3x_15"
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 50
+        width: 91
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 318325e12d181a620800000000000000
+      internalID: 2783648784143497235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Selleciona una Categor\xEDa@3x_16"
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 47
+        width: 87
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ab5a64d9e39feb50800000000000000
+      internalID: 6624676209385692073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Selleciona una Categor\xEDa@3x_17"
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 47
+        width: 90
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 174624ae8fe133220800000000000000
+      internalID: 2464347475532735601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Selleciona una Categor\xEDa@3x_18"
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 50
+        width: 91
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51bd5336cc6ad0400800000000000000
+      internalID: 292072947616963349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Selleciona una Categor\xEDa@3x_19"
+      rect:
+        serializedVersion: 2
+        x: 1138
+        y: 47
+        width: 87
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67d92d16649c77530800000000000000
+      internalID: 3852769310364835190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Selleciona una Categor\xEDa@3x_20"
+      rect:
+        serializedVersion: 2
+        x: 1276
+        y: 48
+        width: 76
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e0b4c372c36ed770800000000000000
+      internalID: 8637450822160265441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Selleciona una Categor\xEDa@3x_21"
+      rect:
+        serializedVersion: 2
+        x: 1358
+        y: 47
+        width: 87
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce4b5560df34dde90800000000000000
+      internalID: -6999363491851815700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Selleciona una Categor\xEDa@3x_22"
+      rect:
+        serializedVersion: 2
+        x: 1525
+        y: 48
+        width: 89
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4937712757d102880800000000000000
+      internalID: -8637871695034092652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Selleciona una Categor\xEDa@3x_23"
+      rect:
+        serializedVersion: 2
+        x: 1624
+        y: 8
+        width: 95
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caff2907ec1975620800000000000000
+      internalID: 2762837212253061036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Selleciona una Categor\xEDa@3x_24"
+      rect:
+        serializedVersion: 2
+        x: 1732
+        y: 47
+        width: 97
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf3c1ac73d20f06a0800000000000000
+      internalID: -6480958231410523141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Selleciona una Categor\xEDa@3x_25"
+      rect:
+        serializedVersion: 2
+        x: 1843
+        y: 50
+        width: 60
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f907fd71ab3879460800000000000000
+      internalID: 7248406960563777695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Selleciona una Categor\xEDa@3x_26"
+      rect:
+        serializedVersion: 2
+        x: 1914
+        y: 50
+        width: 32
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ce92a697fc397210800000000000000
+      internalID: 1331162198946520768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Selleciona una Categor\xEDa@3x_27"
+      rect:
+        serializedVersion: 2
+        x: 1960
+        y: 47
+        width: 87
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33cf2ee1af262a410800000000000000
+      internalID: 1486859653385223219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      "Selleciona una Categor\xEDa@3x_0": 4975660242963464752
+      "Selleciona una Categor\xEDa@3x_1": 1218842991127015543
+      "Selleciona una Categor\xEDa@3x_10": 2198714618510563459
+      "Selleciona una Categor\xEDa@3x_11": -1355368467829534086
+      "Selleciona una Categor\xEDa@3x_12": 7865608496589062712
+      "Selleciona una Categor\xEDa@3x_13": -4398538002617337956
+      "Selleciona una Categor\xEDa@3x_14": -1651990518802232813
+      "Selleciona una Categor\xEDa@3x_15": 2783648784143497235
+      "Selleciona una Categor\xEDa@3x_16": 6624676209385692073
+      "Selleciona una Categor\xEDa@3x_17": 2464347475532735601
+      "Selleciona una Categor\xEDa@3x_18": 292072947616963349
+      "Selleciona una Categor\xEDa@3x_19": 3852769310364835190
+      "Selleciona una Categor\xEDa@3x_2": -6156971434222912308
+      "Selleciona una Categor\xEDa@3x_20": 8637450822160265441
+      "Selleciona una Categor\xEDa@3x_21": -6999363491851815700
+      "Selleciona una Categor\xEDa@3x_22": -8637871695034092652
+      "Selleciona una Categor\xEDa@3x_23": 2762837212253061036
+      "Selleciona una Categor\xEDa@3x_24": -6480958231410523141
+      "Selleciona una Categor\xEDa@3x_25": 7248406960563777695
+      "Selleciona una Categor\xEDa@3x_26": 1331162198946520768
+      "Selleciona una Categor\xEDa@3x_27": 1486859653385223219
+      "Selleciona una Categor\xEDa@3x_3": 5379383963186048831
+      "Selleciona una Categor\xEDa@3x_4": -610044829785819898
+      "Selleciona una Categor\xEDa@3x_5": 3669554784857374484
+      "Selleciona una Categor\xEDa@3x_6": -6106168032002081948
+      "Selleciona una Categor\xEDa@3x_7": 43936143802220771
+      "Selleciona una Categor\xEDa@3x_8": -1361715920159338449
+      "Selleciona una Categor\xEDa@3x_9": 6961710238206340102
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

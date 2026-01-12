@@ -56,8 +56,6 @@ public class UIManager : MonoBehaviour
     {
         var body = new RegisterRequest
         {
-            nombres = _namesInput.text,
-            apellido = _lastnamesInput.text,
             dni = _dniInputRegister.text,
             password = _passwordInputRegister.text
         };
@@ -66,19 +64,15 @@ public class UIManager : MonoBehaviour
         Debug.Log("JSON enviado: " + json);
 
         var response = await APIClient.Instance.Post<RegisterResponse>("usuarios/registrar", body, 
-            error => Debug.Log($"Error {error}: Datos incompletos. Se requieren: nombres, apellido, dni y password"));
+            error => Debug.Log($"Error {error}: Datos incompletos. Se requieren: dni y password"));
 
         if (response == null) 
             return;
         
         Debug.Log($"Register OK: {response.message} Usuario creado exitosamente");
-        SaveUserDataToPlayerPrefs(new UserData()
-        {
-            nombres = body.nombres,
-            apellido = body.apellido,
-            dni = body.dni,
-            password = body.password
-        });
+        Debug.Log("Usuario: " + response.usuario.nombres + " " + response.usuario.apellido);
+        
+        SaveUserDataToPlayerPrefs(response.usuario);
         LoadCredential();
             
         HidePanel(_registerPanelCG);

@@ -5,8 +5,6 @@ using UnityEngine.Serialization;
 [Serializable]
 public class RegisterRequest
 {
-    public string nombres;
-    public string apellido;
     public string dni;
     public string password;
 }
@@ -15,4 +13,5 @@ public class RegisterRequest
 public class RegisterResponse
 {
     public string message;
+    public UserData usuario;
 }
