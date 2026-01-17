@@ -50,6 +50,9 @@ public class UIManager : MonoBehaviour
     public UnityEvent hidePanelEvent;
 
     private Comercio _currentSelectedShop;
+
+    public UnityEvent OnRegisterSuccessful;
+    public UnityEvent OnLoginSuccessful;
     
     [UsedImplicitly]
     public async void Register()
@@ -63,11 +66,17 @@ public class UIManager : MonoBehaviour
         var json = JsonUtility.ToJson(body);
         Debug.Log("JSON enviado: " + json);
 
-        var response = await APIClient.Instance.Post<RegisterResponse>("usuarios/registrar", body, 
+        var result = await APIClient.Instance.Post<RegisterResponse>("usuarios/registrar", body, 
             error => Debug.Log($"Error {error}: Datos incompletos. Se requieren: dni y password"));
 
-        if (response == null) 
+        if (!result.Success)
+        {
+            PopUpManager.Instance.ChangePopUpText(result.ErrorMessage);
+            PopUpManager.Instance.ShowPopUp();
             return;
+        }
+
+        var response = result.Data;
         
         Debug.Log($"Register OK: {response.message} Usuario creado exitosamente");
         Debug.Log("Usuario: " + response.usuario.nombres + " " + response.usuario.apellido);
@@ -77,6 +86,8 @@ public class UIManager : MonoBehaviour
             
         HidePanel(_registerPanelCG);
         ShowPanel(_credentialPanelCG);
+        
+        OnRegisterSuccessful?.Invoke();
     }
 
     [UsedImplicitly]
@@ -88,15 +99,19 @@ public class UIManager : MonoBehaviour
             password = _passwordInputLogin.text,
         };
 
-        LoginResponse response = await APIClient.Instance.Post<LoginResponse>("usuarios/login", body,
+        var result = await APIClient.Instance.Post<LoginResponse>("usuarios/login", body,
             err => Debug.LogError("Error Login: " + err)
         );
 
-        if (response == null)
+
+        if (!result.Success)
         {
-            Debug.LogError("Login fail: null response");
+            PopUpManager.Instance.ChangePopUpText(result.ErrorMessage);
+            PopUpManager.Instance.ShowPopUp();
             return;
         }
+
+        var response = result.Data;
         
         
         Debug.Log("Login OK");
@@ -108,8 +123,10 @@ public class UIManager : MonoBehaviour
         LoadCredential();
         HidePanel(_loginPanelCG);
         ShowPanel(_credentialPanelCG);
+        
+        OnLoginSuccessful?.Invoke();
     }
-
+    
     public async void LoadShop(int id)
     {
         var response = await APIClient.Instance.Get<Comercio>($"comercios/{id}");
@@ -122,6 +139,10 @@ public class UIManager : MonoBehaviour
 
         Debug.Log($"{response.nombre} / {response.categoria}");
     }
+    
+    
+    private List<DiscountUIElement> _loadedShops = new ();
+
     
     public async void LoadShops()
     {
@@ -138,6 +159,7 @@ public class UIManager : MonoBehaviour
             Debug.Log($"{shop.nombre} / {shop.categoria}");
         }
     }
+
     
     public async void LoadShops(string category)
     {
@@ -148,6 +170,8 @@ public class UIManager : MonoBehaviour
             Debug.LogError("No shops received");
             return;
         }
+
+        ClearShops();
         
         foreach (var shop in response.records)
         {
@@ -158,6 +182,7 @@ public class UIManager : MonoBehaviour
             {
                 var uiElement = Instantiate(_discountsPrefab,_discountsContent.transform);
                 uiElement.Initialize(shop);
+                _loadedShops.Add(uiElement);
                 continue;
             }
             
@@ -174,9 +199,22 @@ public class UIManager : MonoBehaviour
                     _currentSelectedShop = comercio;
                     hidePanelEvent?.Invoke();
                 };
+                _loadedShops.Add(uiElement);
             }
 
         }
+    }
+
+    void ClearShops()
+    {
+        if (_loadedShops.Count <= 0) 
+            return;
+        
+        foreach (var loadedShop in _loadedShops)
+        {
+            Destroy(loadedShop.gameObject);
+        }
+        _loadedShops.Clear();
     }
 
     public async void LoadPromotions()

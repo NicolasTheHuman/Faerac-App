@@ -59,7 +59,7 @@ public class APIClient : MonoBehaviour
         }
     }
 
-    public async Task<T> Post<T>(string endpoint, object body, Action<string> onError = null)
+    public async Task<ApiResult<T>> Post<T>(string endpoint, object body, Action<string> onError = null)
     {
         var url = $"{BASE_URL}{endpoint}";
         Debug.Log("POST URL: " + url);
@@ -74,9 +74,8 @@ public class APIClient : MonoBehaviour
         request.SetRequestHeader("Content-Type", CONTENT_TYPE);
         request.timeout = 10;
 
-        var op = request.SendWebRequest();
-        while (!op.isDone) 
-            await Task.Yield();
+        await request.SendWebRequest();
+
 
         Debug.Log("HTTP result: " + request.result);
         Debug.Log("HTTP code: " + request.responseCode);
@@ -84,11 +83,36 @@ public class APIClient : MonoBehaviour
 
         if (request.result != UnityWebRequest.Result.Success)
         {
-            onError?.Invoke($"HTTP Error {request.responseCode}: {request.error}");
-            return default;
+            //onError?.Invoke($"HTTP Error {request.responseCode}: {request.error}");
+            //return default;
+
+            var errorMessage = "Unkown server error.";
+
+            try
+            {
+                var error = JsonConvert.DeserializeObject<ApiErrorResponse>(request.downloadHandler.text);
+
+                if (!string.IsNullOrEmpty(error.message))
+                    errorMessage = error.message;
+            }
+            catch (Exception e)
+            {
+                errorMessage = request.downloadHandler.text;
+            }
+
+            return ApiResult<T>.Fail(errorMessage, request.responseCode);
         }
 
-        return JsonConvert.DeserializeObject<T>(request.downloadHandler.text);
+        //return JsonConvert.DeserializeObject<T>(request.downloadHandler.text);
+        try
+        {
+            var data = JsonConvert.DeserializeObject<T>(request.downloadHandler.text);
+            return ApiResult<T>.Ok(data, request.responseCode);
+        }
+        catch (Exception e)
+        {
+            return ApiResult<T>.Fail("Invalid server response.", request.responseCode);
+        }
     }
     
     public async Task<T> PostUrlEncoded<T>(string endpoint, Dictionary<string, string> fields, Action<string> onError = null)
