@@ -271,7 +271,7 @@ PlayerSettings:
   AndroidTargetArchitectures: 3
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: D:/Creative D-Ploy/Faerac App/faerac.keystore
+  AndroidKeystoreName: D:/Users/nico/Desktop/Projects/Keystores/faerac.keystore
   AndroidKeyaliasName: faerac
   AndroidEnableArmv9SecurityFeatures: 0
   AndroidEnableArm64MTE: 0
