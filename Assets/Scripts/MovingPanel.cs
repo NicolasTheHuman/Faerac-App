@@ -24,22 +24,26 @@ public class MovingPanel : MonoBehaviour
 
     IEnumerator MovePanel(bool moveX, float target)
     {
-        float time = 0f;
-        Vector2 startPos = _rect.anchoredPosition;
-        Vector2 targetPos = startPos;
+        var time = 0f;
+        var startPos = _rect.anchoredPosition;
+        var targetPos = startPos;
 
         if (moveX)
             targetPos.x = target;
         else
             targetPos.y = target;
-
+        
+        Debug.Log($"moving to {targetPos} : {moveX} - {target}");
+        
         while (time < _transitionTime)
         {
             time += Time.deltaTime;
-            float t = time / _transitionTime;
+            var t = time / _transitionTime;
             _rect.anchoredPosition = Vector2.Lerp(startPos, targetPos, t);
             yield return null;
         }
+        
+        Debug.Log($"finished moving to {targetPos}");
 
         _rect.anchoredPosition = targetPos;
     }

@@ -6,20 +6,22 @@ using JetBrains.Annotations;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Networking;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
     [Header("Panels")] 
-    [SerializeField] private CanvasGroup _welcomePanelCG;
-    [SerializeField] private CanvasGroup _loginPanelCG;
-    [SerializeField] private CanvasGroup _registerPanelCG;
-    [SerializeField] private CanvasGroup _credentialPanelCG;
-    [SerializeField] private CanvasGroup _locationPanelCG;
-    [SerializeField] private CanvasGroup _discountsPanelCG;
+    [SerializeField] private PanelTransition _welcomePanel;
+    [SerializeField] private PanelTransition _loginPanel;
+    [SerializeField] private PanelTransition _registerPanel;
+    [SerializeField] private PanelTransition _credentialPanel;
+    [SerializeField] private PanelTransition _locationPanel;
+    [SerializeField] private PanelTransition _discountsPanel;
 
     [SerializeField] private float _transitionTime = 0.2f;
+    [SerializeField] private BackButtonHandler _backButtonHandler;
     
     [Header("Register")]
     [SerializeField] private TMP_InputField _namesInput;
@@ -32,6 +34,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private TMP_InputField _passwordInputLogin;
 
     [Header("Credential")] 
+    [SerializeField] private Image _profileImage;
     [SerializeField] private TMP_Text _credentialName;
     [SerializeField] private TMP_Text _credentialID;
     [SerializeField] private TMP_Text _credentialBirthdate;
@@ -50,6 +53,11 @@ public class UIManager : MonoBehaviour
     public UnityEvent hidePanelEvent;
 
     private Comercio _currentSelectedShop;
+
+    public UnityEvent OnRegisterSuccessful;
+    public UnityEvent OnLoginSuccessful;
+
+    #region Register
     
     [UsedImplicitly]
     public async void Register()
@@ -63,11 +71,17 @@ public class UIManager : MonoBehaviour
         var json = JsonUtility.ToJson(body);
         Debug.Log("JSON enviado: " + json);
 
-        var response = await APIClient.Instance.Post<RegisterResponse>("usuarios/registrar", body, 
+        var result = await APIClient.Instance.Post<RegisterResponse>("usuarios/registrar", body, 
             error => Debug.Log($"Error {error}: Datos incompletos. Se requieren: dni y password"));
 
-        if (response == null) 
+        if (!result.Success)
+        {
+            PopUpManager.Instance.ChangePopUpText(result.ErrorMessage);
+            PopUpManager.Instance.ShowPopUp();
             return;
+        }
+
+        var response = result.Data;
         
         Debug.Log($"Register OK: {response.message} Usuario creado exitosamente");
         Debug.Log("Usuario: " + response.usuario.nombres + " " + response.usuario.apellido);
@@ -75,9 +89,13 @@ public class UIManager : MonoBehaviour
         SaveUserDataToPlayerPrefs(response.usuario);
         LoadCredential();
             
-        HidePanel(_registerPanelCG);
-        ShowPanel(_credentialPanelCG);
+        _backButtonHandler.GoToPanel(_credentialPanel);
+        
+        OnRegisterSuccessful?.Invoke();
     }
+    #endregion
+
+    #region Log In
 
     [UsedImplicitly]
     public async void Login()
@@ -88,16 +106,28 @@ public class UIManager : MonoBehaviour
             password = _passwordInputLogin.text,
         };
 
-        LoginResponse response = await APIClient.Instance.Post<LoginResponse>("usuarios/login", body,
+        var result = await APIClient.Instance.Post<LoginResponse>("usuarios/login", body,
             err => Debug.LogError("Error Login: " + err)
         );
 
-        if (response == null)
+
+        if (!result.Success)
         {
-            Debug.LogError("Login fail: null response");
+            PopUpManager.Instance.ChangePopUpText(result.ErrorMessage);
+            PopUpManager.Instance.ShowPopUp();
             return;
         }
-        
+
+        var response = result.Data;
+
+        if (!string.IsNullOrEmpty(response.usuario.foto_perfil))
+        {
+            StartCoroutine(LoadProfileImage(response.usuario.foto_perfil));
+        }
+        else
+        {
+            Debug.Log("Usuario sin foto de perfil");
+        }
         
         Debug.Log("Login OK");
         Debug.Log($"Response {response.usuario}");
@@ -106,10 +136,14 @@ public class UIManager : MonoBehaviour
 
         SaveUserDataToPlayerPrefs(response.usuario);
         LoadCredential();
-        HidePanel(_loginPanelCG);
-        ShowPanel(_credentialPanelCG);
+        _backButtonHandler.GoToPanel(_credentialPanel);
+        
+        OnLoginSuccessful?.Invoke();
     }
+    #endregion
 
+    #region Shops
+    
     public async void LoadShop(int id)
     {
         var response = await APIClient.Instance.Get<Comercio>($"comercios/{id}");
@@ -122,6 +156,10 @@ public class UIManager : MonoBehaviour
 
         Debug.Log($"{response.nombre} / {response.categoria}");
     }
+    
+    
+    private List<DiscountUIElement> _loadedShops = new ();
+
     
     public async void LoadShops()
     {
@@ -138,6 +176,7 @@ public class UIManager : MonoBehaviour
             Debug.Log($"{shop.nombre} / {shop.categoria}");
         }
     }
+
     
     public async void LoadShops(string category)
     {
@@ -148,16 +187,28 @@ public class UIManager : MonoBehaviour
             Debug.LogError("No shops received");
             return;
         }
+
+        ClearShops();
         
         foreach (var shop in response.records)
         {
             Debug.Log($"{shop.nombre} / {shop.categoria}");
 
+            if (shop.horarios == null || shop.horarios.Count <= 0)
+            {
+                //shop is closed
+                var uiElement = Instantiate(_discountsPrefab, _discountsContent.transform);
+                uiElement.Initialize(shop, "Esta cerrado en este momento");
+                _loadedShops.Add(uiElement);
+                continue;
+            }
+            
             var discounts = await LoadPromotions(shop.id);
             if (discounts.Count <= 0)
             {
                 var uiElement = Instantiate(_discountsPrefab,_discountsContent.transform);
-                uiElement.Initialize(shop);
+                uiElement.Initialize(shop, "No hay descuentos por el momento");
+                _loadedShops.Add(uiElement);
                 continue;
             }
             
@@ -168,17 +219,34 @@ public class UIManager : MonoBehaviour
                 uiElement.OnClick += (comercio, promocion) =>
                 {
                     _selectedShopName.text = comercio.nombre;
-                    _selectedShopDescription.text = $"{comercio.direccion} \n {comercio.horarios}" ;
+                    _selectedShopDescription.text = $"{comercio.direccion} \nHoy: {ScheduleUtils.GetTodayScheduleText(comercio)}" ;
                     _selectedShopDiscount.text = promocion.descuento + "%";
                     _selectedShopContainer.SetActive(true);
                     _currentSelectedShop = comercio;
                     hidePanelEvent?.Invoke();
+                    _backButtonHandler.GoToPanel(_locationPanel);
                 };
+                _loadedShops.Add(uiElement);
             }
 
         }
     }
 
+    void ClearShops()
+    {
+        if (_loadedShops.Count <= 0) 
+            return;
+        
+        foreach (var loadedShop in _loadedShops)
+        {
+            Destroy(loadedShop.gameObject);
+        }
+        _loadedShops.Clear();
+    }
+    #endregion
+
+    #region Promotions
+    
     public async void LoadPromotions()
     {
         var response = await APIClient.Instance.Get<PromocionesResponse>("promociones");
@@ -212,6 +280,8 @@ public class UIManager : MonoBehaviour
 
         return response.records;
     }
+    #endregion
+
     
     public void OpenSelectedShopInMaps()
     {
@@ -229,6 +299,7 @@ public class UIManager : MonoBehaviour
         PlayerPrefs.SetString("name", userData.nombres);
         PlayerPrefs.SetString("lastname", userData.apellido);
         PlayerPrefs.SetString("dni", userData.dni);
+        PlayerPrefs.SetString("fecha_nacimiento", userData.fecha_nacimiento);
         PlayerPrefs.Save();
     }
 
@@ -237,7 +308,30 @@ public class UIManager : MonoBehaviour
         Debug.Log("Credential");
         _credentialName.text = PlayerPrefs.GetString("name") + " " + PlayerPrefs.GetString("lastname");
         _credentialID.text = PlayerPrefs.GetString("dni");
+        
+        var birthDate = PlayerPrefs.GetString("fecha_nacimiento");
+        _credentialBirthdate.text = string.IsNullOrEmpty(birthDate) ? "" : birthDate;
     }
+
+    public IEnumerator LoadProfileImage(string url)
+    {
+        var request = UnityWebRequestTexture.GetTexture(url);
+        yield return request.SendWebRequest();
+
+        if (request.result != UnityWebRequest.Result.Success)
+        {
+            Debug.LogError($"Error loading profile image: {request.error}");
+            yield break;
+        }
+
+        var tex = DownloadHandlerTexture.GetContent(request);
+
+        var sprite = Sprite.Create(tex, new Rect(0, 0, tex.width, tex.height), new Vector2(0.5f, 0.5f));
+
+        _profileImage.sprite = sprite;
+    }
+
+    #region Show Hide Panel
     
     public void HidePanel(CanvasGroup panelToHide)
     {
@@ -252,7 +346,7 @@ public class UIManager : MonoBehaviour
     IEnumerator ChangePanelAlpha(CanvasGroup panel , bool show)
     {
         var time = 0f;
-
+        
         panel.blocksRaycasts = show;
 
         while (time < _transitionTime)
@@ -264,6 +358,7 @@ public class UIManager : MonoBehaviour
 
         panel.interactable = show;
     }
+    #endregion
 
 
 }

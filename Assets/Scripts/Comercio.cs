@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Newtonsoft.Json;
 
 [Serializable]
 public class Comercio
@@ -10,7 +11,11 @@ public class Comercio
     public string categoria;
     public string direccion;
     public string telefono;
-    public string horarios;
+    
+    [JsonProperty]
+    public Dictionary<string,DaySchedule> horarios;
+    
+    
     public string latitud;
     public string longitud;
     public string created_at;
