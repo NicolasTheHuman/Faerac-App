@@ -470,7 +470,6 @@ MonoBehaviour:
   m_Cameras: []
   m_RendererIndex: -1
   m_VolumeLayerMask:
-    serializedVersion: 2
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
@@ -729,7 +728,11 @@ MonoBehaviour:
   m_LightType: 4
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color:
+    r: 1
+    g: 1
+    b: 1
+    a: 1
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
@@ -748,9 +751,14 @@ MonoBehaviour:
   m_ShadowSoftnessFalloffIntensity: 0.5
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
+  m_Mesh: {fileID: 0}
+  m_PreviousLightCookieSprite: 0
+  m_CachedPosition: {x: 0, y: 0, z: 0}
+  m_BatchSlotIndex: 0
   m_LocalBounds:
     m_Center: {x: 0, y: -0.00000011920929, z: 0}
     m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
+  forceUpdate: 0
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -765,6 +773,12 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+  m_PreviousShapeLightFalloffSize: -1
+  m_PreviousShapeLightParametricSides: -1
+  m_PreviousShapeLightParametricAngleOffset: -1
+  m_PreviousShapeLightParametricRadius: -1
+  m_PreviousShapePathHash: -1
+  m_PreviousLightType: 0
 --- !u!4 &619394802
 Transform:
   m_ObjectHideFlags: 0
@@ -1739,7 +1753,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 701743125}
   m_Enabled: 1
-  m_Alpha: 1
+  m_Alpha: 0
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
@@ -3688,6 +3702,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2141148636}
     m_Modifications:
+    - target: {fileID: 422928085831146950, guid: cdd00f30c351fc143b9ff347167ed992, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 6025370803802846469, guid: 0e86fe684931497408195e49188a1a24, type: 3}
+    - target: {fileID: 1177148946791450325, guid: cdd00f30c351fc143b9ff347167ed992, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1473604976786205509, guid: 97d620842eadfc34e9ff99feabb25ae3, type: 3}
     - target: {fileID: 3561789226095829240, guid: cdd00f30c351fc143b9ff347167ed992, type: 3}
       propertyPath: m_SizeDelta.x
       value: -360
@@ -3748,6 +3770,14 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4016779147976440623, guid: cdd00f30c351fc143b9ff347167ed992, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -7550870404262208703, guid: 62294e6f88a297d4bb474f5b1d4b167d, type: 3}
+    - target: {fileID: 4194547903521406838, guid: cdd00f30c351fc143b9ff347167ed992, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1473604976786205509, guid: 97d620842eadfc34e9ff99feabb25ae3, type: 3}
     - target: {fileID: 4479404524315673744, guid: cdd00f30c351fc143b9ff347167ed992, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

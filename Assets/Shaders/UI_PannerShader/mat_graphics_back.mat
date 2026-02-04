@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: mat_graphics_back
-  m_Shader: {fileID: -6465566751694194690, guid: aa003d9661583d64bbbc72a04f40bb2c, type: 3}
+  m_Shader: {fileID: 10770, guid: 0000000000000000f000000000000000, type: 0}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -45,6 +45,8 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _BUILTIN_QueueControl: -1
+    - _BUILTIN_QueueOffset: 0
     - _ColorMask: 15
     - _Stencil: 0
     - _StencilComp: 8
@@ -53,10 +55,12 @@ Material:
     - _StencilWriteMask: 255
     - _UIMaskSoftnessX: 1
     - _UIMaskSoftnessY: 1
+    - _UseUIAlphaClip: 0
     - _useAlpha: 1
     - _useRotator: 0
     m_Colors:
     - _ClipRect: {r: 0, g: 0, b: 0, a: 0}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _ContentOffsetSpeed: {r: 0.15, g: 0.1, b: 0, a: 0}
     - _ContentTiling: {r: 1, g: 1, b: 0, a: 0}
     - _InitialOffset: {r: 0.5, g: 0, b: 0, a: 0}
