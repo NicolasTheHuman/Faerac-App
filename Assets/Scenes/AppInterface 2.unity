@@ -1739,9 +1739,9 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 701743125}
   m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
+  m_Alpha: 0
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
 --- !u!1 &785189912
 GameObject:
@@ -1967,7 +1967,6 @@ GameObject:
   m_Component:
   - component: {fileID: 808592306}
   - component: {fileID: 808592305}
-  - component: {fileID: 808592307}
   m_Layer: 0
   m_Name: BackButtonHandler
   m_TagString: Untagged
@@ -2004,36 +2003,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &808592307
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 808592304}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.PlayerInput
-  m_Actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
-  m_NotificationBehavior: 0
-  m_UIInputModule: {fileID: 1672397002}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ControlsChangedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ActionEvents: []
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
-  m_DefaultActionMap: UI
-  m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
 --- !u!114 &808787902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2213,7 +2182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54df3123c3613474597cd746c8e96278, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ImagePicker
-  uiImage: {fileID: 0}
+  uiImage: {fileID: 8350810251677134093}
   imageSize: 200
 --- !u!4 &846835450
 Transform:
@@ -2383,6 +2352,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+--- !u!1 &1344924612 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3497472036496056658, guid: c499b90f40fb39441adae93cd9833bfe, type: 3}
+  m_PrefabInstance: {fileID: 8350810251677134087}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &1382674017 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 111982216223370804, guid: 4028e16d0867dba418ea264e1590abae, type: 3}
@@ -3289,7 +3263,7 @@ MonoBehaviour:
   _passwordInputRegister: {fileID: 228858784}
   _dniInputLogin: {fileID: 894281844}
   _passwordInputLogin: {fileID: 1187096982}
-  _profileImage: {fileID: 8350810251677134088}
+  _profileImage: {fileID: 0}
   _credentialName: {fileID: 1335645569}
   _credentialID: {fileID: 405647098}
   _credentialBirthdate: {fileID: 1572389316}
@@ -7252,6 +7226,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7829110961682841962, guid: c499b90f40fb39441adae93cd9833bfe, type: 3}
+      propertyPath: m_TargetGraphic
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7829110961682841962, guid: c499b90f40fb39441adae93cd9833bfe, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -7283,25 +7261,45 @@ PrefabInstance:
       propertyPath: m_Name
       value: Panel - Credential
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8858046749160967248, guid: c499b90f40fb39441adae93cd9833bfe, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 8152415352554448065, guid: c499b90f40fb39441adae93cd9833bfe, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1449021002}
+    - targetCorrespondingSourceObject: {fileID: 3497472036496056658, guid: c499b90f40fb39441adae93cd9833bfe, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8350810251677134093}
   m_SourcePrefab: {fileID: 100100000, guid: c499b90f40fb39441adae93cd9833bfe, type: 3}
---- !u!114 &8350810251677134088 stripped
+--- !u!114 &8350810251677134093
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8858046749160967248, guid: c499b90f40fb39441adae93cd9833bfe, type: 3}
-  m_PrefabInstance: {fileID: 8350810251677134087}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1344924612}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.RawImage
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 2800000, guid: f3bf34137fdf79e4093e93d5405733ee, type: 3}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

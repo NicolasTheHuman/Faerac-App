@@ -60,7 +60,6 @@ public class BackButtonHandler : MonoBehaviour
     
     private void ShowExitPopup()
     {
-        Debug.Log("Show exit confirmation");
         PopUpManager.Instance.ChangePopUpText("¿Seguro que quieres salir?");
         PopUpManager.Instance.ShowPopUp(Application.Quit);
     }

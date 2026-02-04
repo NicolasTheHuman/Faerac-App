@@ -33,8 +33,6 @@ public class MovingPanel : MonoBehaviour
         else
             targetPos.y = target;
         
-        Debug.Log($"moving to {targetPos} : {moveX} - {target}");
-        
         while (time < _transitionTime)
         {
             time += Time.deltaTime;
@@ -43,8 +41,6 @@ public class MovingPanel : MonoBehaviour
             yield return null;
         }
         
-        Debug.Log($"finished moving to {targetPos}");
-
         _rect.anchoredPosition = targetPos;
     }
 }

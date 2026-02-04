@@ -193,15 +193,6 @@ public class UIManager : MonoBehaviour
         foreach (var shop in response.records)
         {
             Debug.Log($"{shop.nombre} / {shop.categoria}");
-
-            if (shop.horarios == null || shop.horarios.Count <= 0)
-            {
-                //shop is closed
-                var uiElement = Instantiate(_discountsPrefab, _discountsContent.transform);
-                uiElement.Initialize(shop, "Esta cerrado en este momento");
-                _loadedShops.Add(uiElement);
-                continue;
-            }
             
             var discounts = await LoadPromotions(shop.id);
             if (discounts.Count <= 0)
@@ -215,9 +206,15 @@ public class UIManager : MonoBehaviour
             foreach (var discount in discounts)
             {
                 var uiElement = Instantiate(_discountsPrefab, _discountsContent.transform);
-                uiElement.Initialize(shop, discount);
+                
+                if(shop.horarios == null || shop.horarios.Count <= 0)
+                    uiElement.Initialize(shop, discount,"Esta cerrado en este momento");
+                else
+                    uiElement.Initialize(shop, discount);
+
                 uiElement.OnClick += (comercio, promocion) =>
                 {
+                    Debug.Log("CLICKINGNGNG");
                     _selectedShopName.text = comercio.nombre;
                     _selectedShopDescription.text = $"{comercio.direccion} \nHoy: {ScheduleUtils.GetTodayScheduleText(comercio)}" ;
                     _selectedShopDiscount.text = promocion.descuento + "%";
