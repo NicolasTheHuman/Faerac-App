@@ -1546,6 +1546,7 @@ GameObject:
   - component: {fileID: 3045522315139214413}
   - component: {fileID: 8449270741037332880}
   - component: {fileID: 4514179344954294831}
+  - component: {fileID: 3615444985702878049}
   m_Layer: 5
   m_Name: Button - Discounts Header
   m_TagString: Untagged
@@ -1691,6 +1692,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &3615444985702878049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3242883323711215139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e156693a1040b244595a54aba676a52b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SoundInstance
+  _audioClip: {fileID: 8300000, guid: 41c5c2b983676c14abbebce504e00d9a, type: 3}
 --- !u!1 &3752506657002306776
 GameObject:
   m_ObjectHideFlags: 0
@@ -1703,6 +1717,7 @@ GameObject:
   - component: {fileID: 1406183148668462411}
   - component: {fileID: 5341126814479466654}
   - component: {fileID: 32191596606168878}
+  - component: {fileID: 2973242886220665620}
   m_Layer: 5
   m_Name: Button - Discounts Header - Hide
   m_TagString: Untagged
@@ -1848,6 +1863,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &2973242886220665620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3752506657002306776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e156693a1040b244595a54aba676a52b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SoundInstance
+  _audioClip: {fileID: 8300000, guid: 4e002e449fed29440b6a89814af2e231, type: 3}
 --- !u!1 &3758799013327147732
 GameObject:
   m_ObjectHideFlags: 0

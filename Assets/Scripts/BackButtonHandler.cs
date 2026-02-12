@@ -10,6 +10,8 @@ public class BackButtonHandler : MonoBehaviour
     
     [SerializeField] private PanelTransition _startPanel;
 
+    [SerializeField] private AudioClip _backSFX;
+    
     private PanelTransition _currentPanel;
 
     private void Start()
@@ -40,6 +42,7 @@ public class BackButtonHandler : MonoBehaviour
     
     private void OnBackPressed(InputAction.CallbackContext ctx)
     {
+        AudioManager.Instance.PlaySFX(_backSFX);
         HandleBackAction();
     }
 

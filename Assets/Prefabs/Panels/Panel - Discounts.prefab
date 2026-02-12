@@ -980,6 +980,7 @@ GameObject:
   - component: {fileID: 3698294448652319891}
   - component: {fileID: 7986245297396408788}
   - component: {fileID: 6691696717943016793}
+  - component: {fileID: 5182733444043047937}
   m_Layer: 5
   m_Name: Button - More discounts
   m_TagString: Untagged
@@ -1149,6 +1150,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &5182733444043047937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4024171145921574627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e156693a1040b244595a54aba676a52b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SoundInstance
+  _audioClip: {fileID: 8300000, guid: 4e002e449fed29440b6a89814af2e231, type: 3}
 --- !u!1 &4649380755019638947
 GameObject:
   m_ObjectHideFlags: 0
@@ -1377,6 +1391,7 @@ GameObject:
   - component: {fileID: 7343322768777994182}
   - component: {fileID: 7073140521125126161}
   - component: {fileID: 1194596002427830663}
+  - component: {fileID: 2880084687042840798}
   m_Layer: 5
   m_Name: Button - Map
   m_TagString: Untagged
@@ -1546,6 +1561,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &2880084687042840798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5674700174921702390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e156693a1040b244595a54aba676a52b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SoundInstance
+  _audioClip: {fileID: 8300000, guid: 4e002e449fed29440b6a89814af2e231, type: 3}
 --- !u!1 &6014591122878617592
 GameObject:
   m_ObjectHideFlags: 0
