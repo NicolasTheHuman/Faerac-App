@@ -139,8 +139,14 @@ public class UIManager : MonoBehaviour
         _backButtonHandler.GoToPanel(_credentialPanel);
         
         OnLoginSuccessful?.Invoke();
+
+        
     }
     #endregion
+    public void ForgotPasswordRequest()
+    {
+        Application.OpenURL(APIClient.BASE_URL+"Recovery_Password");
+    }
 
     #region Shops
     

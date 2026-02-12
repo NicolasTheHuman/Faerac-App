@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 3272210842964818861}
   - component: {fileID: 6156621694984165000}
   - component: {fileID: 2134822227941703051}
-  - component: {fileID: 4252727257774371798}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -137,19 +136,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &4252727257774371798
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 350589841763008737}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf40e400c5466954486da1afc4b6c81e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::OpenWebsiteButton
-  website: https://play.google.com/store/apps/details?id=com.CreativeDPloy.FaeracApp
 --- !u!1 &709699404325129032
 GameObject:
   m_ObjectHideFlags: 0
@@ -1898,6 +1884,7 @@ GameObject:
   - component: {fileID: 3911001727358233363}
   - component: {fileID: 5953617171161740376}
   - component: {fileID: 7401363126350642045}
+  - component: {fileID: 6432490057738688326}
   m_Layer: 5
   m_Name: Button - Profile (3)
   m_TagString: Untagged
@@ -2019,9 +2006,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2014652974325394718}
-        m_TargetAssemblyTypeName: EmailReport, Assembly-CSharp
-        m_MethodName: SendEmail
+      - m_Target: {fileID: 6432490057738688326}
+        m_TargetAssemblyTypeName: OpenWebsiteButton, Assembly-CSharp
+        m_MethodName: OpenWebsite
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2044,6 +2031,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SoundInstance
   _audioClip: {fileID: 8300000, guid: 41c5c2b983676c14abbebce504e00d9a, type: 3}
+--- !u!114 &6432490057738688326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5823464186578037619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf40e400c5466954486da1afc4b6c81e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OpenWebsiteButton
+  website: https://play.google.com/store/apps/details?id=com.CreativeDPloy.FaeracApp
 --- !u!1 &6036552552269412945
 GameObject:
   m_ObjectHideFlags: 0
