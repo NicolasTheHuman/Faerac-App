@@ -13,7 +13,9 @@ public class ImagePicker : MonoBehaviour
             Debug.Log($"Image path {filePath}");
             if (filePath == null) 
                 return;
-            
+
+            byte[] imageBytes = System.IO.File.ReadAllBytes(filePath);
+            UploadProfile(imageBytes);
             
             Texture2D texture2D = NativeGallery.LoadImageAtPath(filePath, imageSize);
             if (texture2D == null)
@@ -26,5 +28,25 @@ public class ImagePicker : MonoBehaviour
             uiImage.SetNativeSize();
 
         }, "Select a profile picture", "image/*");
+    }
+
+    public async void UploadProfile(byte[] imageBytes)
+    {
+        int id;
+        if (!int.TryParse(PlayerPrefs.GetString("id"), out id))
+        {
+            return;
+        }
+        
+        var response = await APIClient.Instance.UploadProfilePhoto(id, imageBytes);
+
+        if (response != null)
+        {
+            Debug.Log("Foto actualizada");
+        }
+        else
+        {
+            Debug.LogError("Foto no pudo ser actualizada");
+        }
     }
 }

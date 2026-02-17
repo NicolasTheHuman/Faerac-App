@@ -10,7 +10,7 @@ public class APIClient : MonoBehaviour
 {
     public static APIClient Instance { get; private set; }
 
-    private const string BASE_URL = "https://aconcaguastudios.com/faerac-api/";
+    public const string BASE_URL = "https://aconcaguastudios.com/faerac-api/";
     private const string CONTENT_TYPE = "application/json";
     
     private void Awake()
@@ -157,5 +157,26 @@ public class APIClient : MonoBehaviour
         }
     }
 
+    public async Task<UploadPhotoResponse> UploadProfilePhoto(int userID, byte[] imageBytes, string fileName = "profile.jpg")
+    {
+        var url = $"{BASE_URL}usuarios/{userID}/foto-perfil";
+        Debug.Log($"Upload URL: {url}");
 
+        var form = new WWWForm();
+        form.AddBinaryData("foto", imageBytes, fileName, "image/jpeg");
+
+        var request = UnityWebRequest.Post(url, form);
+        await request.SendWebRequest();
+
+        var responseText = request.downloadHandler.text;
+        Debug.Log($"UPLOAD RESPONSE: {responseText}");
+
+        if (request.result != UnityWebRequest.Result.Success)
+        {
+            Debug.LogError($"Upload error {request.responseCode}: {request.error}");
+            return null;
+        }
+
+        return JsonConvert.DeserializeObject<UploadPhotoResponse>(responseText);
+    }
 }

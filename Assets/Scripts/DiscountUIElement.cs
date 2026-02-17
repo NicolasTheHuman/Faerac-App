@@ -13,11 +13,22 @@ public class DiscountUIElement : MonoBehaviour
 
     public event Action<Comercio, Promocion> OnClick = delegate {};
     
+    
     public void Initialize(Comercio shop, string message = "")
     {
         _shopText.text = shop.nombre;
         _shopAvailabilityText.text = shop.direccion;
         _discountText.text = message;
+        _shopData = shop;
+    }
+    
+    public void Initialize(Comercio shop, Promocion discount, string message = "")
+    {
+        _shopText.text = shop.nombre;
+        _shopAvailabilityText.text = shop.direccion;
+        _discountText.text = message;
+        _shopData = shop;
+        _discountData = discount;
     }
 
     public void Initialize(Comercio shop, Promocion discount)

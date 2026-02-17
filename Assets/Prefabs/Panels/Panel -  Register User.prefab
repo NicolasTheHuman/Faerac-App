@@ -2043,6 +2043,7 @@ GameObject:
   - component: {fileID: 8565241409334276260}
   - component: {fileID: 8874176862539326006}
   - component: {fileID: 6173593434854561860}
+  - component: {fileID: 5766015097436209505}
   m_Layer: 5
   m_Name: Button - Create Acount
   m_TagString: Untagged
@@ -2184,6 +2185,19 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
+--- !u!114 &5766015097436209505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4039754988152975777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e156693a1040b244595a54aba676a52b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SoundInstance
+  _audioClip: {fileID: 8300000, guid: 41c5c2b983676c14abbebce504e00d9a, type: 3}
 --- !u!1 &4154272010703648924
 GameObject:
   m_ObjectHideFlags: 0

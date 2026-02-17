@@ -10,6 +10,8 @@ public class BackButtonHandler : MonoBehaviour
     
     [SerializeField] private PanelTransition _startPanel;
 
+    [SerializeField] private AudioClip _backSFX;
+    
     private PanelTransition _currentPanel;
 
     private void Start()
@@ -40,6 +42,7 @@ public class BackButtonHandler : MonoBehaviour
     
     private void OnBackPressed(InputAction.CallbackContext ctx)
     {
+        AudioManager.Instance.PlaySFX(_backSFX);
         HandleBackAction();
     }
 
@@ -60,7 +63,6 @@ public class BackButtonHandler : MonoBehaviour
     
     private void ShowExitPopup()
     {
-        Debug.Log("Show exit confirmation");
         PopUpManager.Instance.ChangePopUpText("¿Seguro que quieres salir?");
         PopUpManager.Instance.ShowPopUp(Application.Quit);
     }
