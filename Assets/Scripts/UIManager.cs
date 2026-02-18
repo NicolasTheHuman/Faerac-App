@@ -34,7 +34,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private TMP_InputField _passwordInputLogin;
 
     [Header("Credential")] 
-    [SerializeField] private Image _profileImage;
+    [SerializeField] private RawImage _profileImage;
     [SerializeField] private TMP_Text _credentialName;
     [SerializeField] private TMP_Text _credentialID;
     [SerializeField] private TMP_Text _credentialBirthdate;
@@ -299,10 +299,12 @@ public class UIManager : MonoBehaviour
     
     void SaveUserDataToPlayerPrefs(UserData userData)
     {
+        PlayerPrefs.SetString("id", userData.id.ToString());
         PlayerPrefs.SetString("name", userData.nombres);
         PlayerPrefs.SetString("lastname", userData.apellido);
         PlayerPrefs.SetString("dni", userData.dni);
         PlayerPrefs.SetString("fecha_nacimiento", userData.fecha_nacimiento);
+        PlayerPrefs.SetString("foto_perfil", userData.foto_perfil);
         PlayerPrefs.Save();
     }
 
@@ -329,9 +331,13 @@ public class UIManager : MonoBehaviour
 
         var tex = DownloadHandlerTexture.GetContent(request);
 
-        var sprite = Sprite.Create(tex, new Rect(0, 0, tex.width, tex.height), new Vector2(0.5f, 0.5f));
+        if (_profileImage == null)
+        {
+            Debug.LogError("LoadProfileImage: _profileImage no está asignado en el Inspector.");
+            yield break;
+        }
 
-        _profileImage.sprite = sprite;
+        _profileImage.texture = tex;
     }
 
     #region Show Hide Panel

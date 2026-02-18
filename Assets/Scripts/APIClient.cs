@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.Networking;
 using Newtonsoft.Json;
+using System.Collections;
     
 public class APIClient : MonoBehaviour
 {
@@ -162,10 +163,26 @@ public class APIClient : MonoBehaviour
         var url = $"{BASE_URL}usuarios/{userID}/foto-perfil";
         Debug.Log($"Upload URL: {url}");
 
-        var form = new WWWForm();
-        form.AddBinaryData("foto", imageBytes, fileName, "image/jpeg");
+        // Crear manualmente el cuerpo multipart para evitar que Unity agregue encabezados Expect/Fragments que Apache rechaza
+        string boundary = "----UnityBoundary" + System.DateTime.Now.Ticks.ToString("x");
+        byte[] boundaryBytes = Encoding.ASCII.GetBytes("\r\n--" + boundary + "\r\n");
+        byte[] endBoundaryBytes = Encoding.ASCII.GetBytes("\r\n--" + boundary + "--\r\n");
+        byte[] headerBytes = Encoding.ASCII.GetBytes($"Content-Disposition: form-data; name=\"foto\"; filename=\"{fileName}\"\r\nContent-Type: image/jpeg\r\n\r\n");
 
-        var request = UnityWebRequest.Post(url, form);
+        var body = new List<byte>();
+        body.AddRange(Encoding.ASCII.GetBytes("--" + boundary + "\r\n"));
+        body.AddRange(headerBytes);
+        body.AddRange(imageBytes);
+        body.AddRange(endBoundaryBytes);
+
+        byte[] bodyBytes = body.ToArray();
+
+        var request = new UnityWebRequest(url, "POST");
+        request.uploadHandler = new UploadHandlerRaw(bodyBytes);
+        request.downloadHandler = new DownloadHandlerBuffer();
+        request.chunkedTransfer = false;
+        request.SetRequestHeader("Content-Type", $"multipart/form-data; boundary={boundary}");
+        request.SetRequestHeader("Content-Length", bodyBytes.Length.ToString());
         await request.SendWebRequest();
 
         var responseText = request.downloadHandler.text;
