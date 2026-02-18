@@ -25,7 +25,14 @@ public class ImagePicker : MonoBehaviour
             }
 
             uiImage.texture = texture2D;
-            uiImage.SetNativeSize();
+            float aspect = (float)texture2D.width / texture2D.height;
+            //  uiImage.SetNativeSize();float aspect = (float)texture2D.width / texture2D.height;
+
+            AspectRatioFitter fitter = uiImage.GetComponent<AspectRatioFitter>();
+            if (fitter != null)
+            {
+                fitter.aspectRatio = aspect;
+            }
 
         }, "Select a profile picture", "image/*");
     }
