@@ -11,7 +11,7 @@ public class APIClient : MonoBehaviour
 {
     public static APIClient Instance { get; private set; }
 
-    public const string BASE_URL = "https://aconcaguastudios.com/faerac-api/";
+    public const string BASE_URL = "https://faerac-app.com/API/";
     private const string CONTENT_TYPE = "application/json";
     
     private void Awake()
