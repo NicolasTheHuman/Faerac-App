@@ -4,6 +4,7 @@ using UnityEngine.UI;
 public class ImagePicker : MonoBehaviour
 {
     public RawImage uiImage;
+    public RawImage firtPhoto;
     public int imageSize = 512;
     
     public void OnPickImageButton()
@@ -29,8 +30,10 @@ public class ImagePicker : MonoBehaviour
             //  uiImage.SetNativeSize();float aspect = (float)texture2D.width / texture2D.height;
 
             AspectRatioFitter fitter = uiImage.GetComponent<AspectRatioFitter>();
+            firtPhoto = uiImage;
             if (fitter != null)
             {
+                firtPhoto.color = new Color(1,1,1, 1);
                 fitter.aspectRatio = aspect;
             }
 
