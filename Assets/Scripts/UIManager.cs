@@ -28,7 +28,8 @@ public class UIManager : MonoBehaviour
     [SerializeField] private TMP_InputField _lastnamesInput;
     [FormerlySerializedAs("_dniInput")] [SerializeField] private TMP_InputField _dniInputRegister;
     [FormerlySerializedAs("_passwordInput")] [SerializeField] private TMP_InputField _passwordInputRegister;
-    
+    [FormerlySerializedAs("_mailInput")][SerializeField] private TMP_InputField _mailInputRegister;
+
     [Header("Login")]
     [SerializeField] private TMP_InputField _dniInputLogin;
     [SerializeField] private TMP_InputField _passwordInputLogin;
@@ -65,14 +66,15 @@ public class UIManager : MonoBehaviour
         var body = new RegisterRequest
         {
             dni = _dniInputRegister.text,
-            password = _passwordInputRegister.text
+            password = _passwordInputRegister.text,
+            email = _mailInputRegister.text
         };
         
         var json = JsonUtility.ToJson(body);
         Debug.Log("JSON enviado: " + json);
 
         var result = await APIClient.Instance.Post<RegisterResponse>("usuarios/registrar", body, 
-            error => Debug.Log($"Error {error}: Datos incompletos. Se requieren: dni y password"));
+            error => Debug.Log($"Error {error}: Datos incompletos. Se requieren: dni, password y email"));
 
         if (!result.Success)
         {

@@ -1877,6 +1877,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 785189912}
   m_CullTransparentMesh: 1
+--- !u!114 &800356679 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5413286874826436519, guid: b97d437517df4394d86e71dcf3762004, type: 3}
+  m_PrefabInstance: {fileID: 6600027411553667097}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2da0c512f12947e489f739169773d7ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TMP_InputField
 --- !u!1 &808337052
 GameObject:
   m_ObjectHideFlags: 0
@@ -3263,6 +3274,7 @@ MonoBehaviour:
   _lastnamesInput: {fileID: 0}
   _dniInputRegister: {fileID: 1209194014}
   _passwordInputRegister: {fileID: 228858784}
+  _mailInputRegister: {fileID: 800356679}
   _dniInputLogin: {fileID: 894281844}
   _passwordInputLogin: {fileID: 1187096982}
   _profileImage: {fileID: 608954161}
@@ -6144,9 +6156,57 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 581614447892360281, guid: b97d437517df4394d86e71dcf3762004, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 581614447892360281, guid: b97d437517df4394d86e71dcf3762004, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 581614447892360281, guid: b97d437517df4394d86e71dcf3762004, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 581614447892360281, guid: b97d437517df4394d86e71dcf3762004, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1292761158220143046, guid: b97d437517df4394d86e71dcf3762004, type: 3}
       propertyPath: m_Name
       value: Button - Back
+      objectReference: {fileID: 0}
+    - target: {fileID: 1370154920611787462, guid: b97d437517df4394d86e71dcf3762004, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1370154920611787462, guid: b97d437517df4394d86e71dcf3762004, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1370154920611787462, guid: b97d437517df4394d86e71dcf3762004, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1370154920611787462, guid: b97d437517df4394d86e71dcf3762004, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1997991182049495043, guid: b97d437517df4394d86e71dcf3762004, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1997991182049495043, guid: b97d437517df4394d86e71dcf3762004, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1997991182049495043, guid: b97d437517df4394d86e71dcf3762004, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1997991182049495043, guid: b97d437517df4394d86e71dcf3762004, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2236921097446862487, guid: b97d437517df4394d86e71dcf3762004, type: 3}
       propertyPath: m_ContentType
@@ -6175,6 +6235,10 @@ PrefabInstance:
     - target: {fileID: 2643425926261396499, guid: b97d437517df4394d86e71dcf3762004, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4154272010703648924, guid: b97d437517df4394d86e71dcf3762004, type: 3}
+      propertyPath: m_Name
+      value: InputField - Password
       objectReference: {fileID: 0}
     - target: {fileID: 4978185466489007129, guid: b97d437517df4394d86e71dcf3762004, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -6495,6 +6559,10 @@ PrefabInstance:
     - target: {fileID: 8753502692579620063, guid: b97d437517df4394d86e71dcf3762004, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8862409854454062370, guid: b97d437517df4394d86e71dcf3762004, type: 3}
+      propertyPath: m_Name
+      value: InputField - Email
       objectReference: {fileID: 0}
     - target: {fileID: 8874176862539326006, guid: b97d437517df4394d86e71dcf3762004, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
