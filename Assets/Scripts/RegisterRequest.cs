@@ -7,6 +7,7 @@ public class RegisterRequest
 {
     public string dni;
     public string password;
+    public string email;
 }
 
 [Serializable]

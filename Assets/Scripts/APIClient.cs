@@ -163,12 +163,11 @@ public class APIClient : MonoBehaviour
         var url = $"{BASE_URL}usuarios/{userID}/foto-perfil";
         Debug.Log($"Upload URL: {url}");
 
-        // Crear manualmente el cuerpo multipart para evitar que Unity agregue encabezados Expect/fragmentados que Apache rechaza
+        // Crear manualmente el cuerpo multipart para evitar que Unity agregue encabezados Expect/Fragments que Apache rechaza
         string boundary = "----UnityBoundary" + System.DateTime.Now.Ticks.ToString("x");
         byte[] boundaryBytes = Encoding.ASCII.GetBytes("\r\n--" + boundary + "\r\n");
         byte[] endBoundaryBytes = Encoding.ASCII.GetBytes("\r\n--" + boundary + "--\r\n");
-        byte[] headerBytes = Encoding.ASCII.GetBytes(
-            $"Content-Disposition: form-data; name=\"foto\"; filename=\"{fileName}\"\r\nContent-Type: image/jpeg\r\n\r\n");
+        byte[] headerBytes = Encoding.ASCII.GetBytes($"Content-Disposition: form-data; name=\"foto\"; filename=\"{fileName}\"\r\nContent-Type: image/jpeg\r\n\r\n");
 
         var body = new List<byte>();
         body.AddRange(Encoding.ASCII.GetBytes("--" + boundary + "\r\n"));
