@@ -1110,7 +1110,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Mail
+  m_text: Email
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1638,7 +1638,7 @@ GameObject:
   - component: {fileID: 4296101166760675043}
   - component: {fileID: 7744946218706389592}
   m_Layer: 5
-  m_Name: InputField - Mail
+  m_Name: InputField - Password
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1756,7 +1756,7 @@ MonoBehaviour:
   m_AsteriskChar: 42
   m_KeyboardType: 0
   m_LineType: 0
-  m_HideMobileInput: 0
+  m_HideMobileInput: 1
   m_HideSoftKeyboard: 0
   m_CharacterValidation: 0
   m_RegexValue: 
@@ -1796,10 +1796,10 @@ MonoBehaviour:
   m_RichText: 1
   m_GlobalFontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_OnFocusSelectAll: 1
-  m_ResetOnDeActivation: 1
+  m_ResetOnDeActivation: 0
   m_KeepTextSelectionVisible: 0
   m_RestoreOriginalTextOnEscape: 1
-  m_isRichTextEditingAllowed: 0
+  m_isRichTextEditingAllowed: 1
   m_LineLimit: 0
   isAlert: 0
   m_InputValidator: {fileID: 0}
@@ -2357,7 +2357,7 @@ GameObject:
   - component: {fileID: 5199035508537310022}
   - component: {fileID: 2854031934494478117}
   m_Layer: 5
-  m_Name: Image - Mail field
+  m_Name: Image - EMail field
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2974,7 +2974,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7230294066597684055}
   m_Enabled: 1
-  m_Alpha: 0
+  m_Alpha: 1
   m_Interactable: 0
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
@@ -3161,7 +3161,7 @@ MonoBehaviour:
   m_AsteriskChar: 42
   m_KeyboardType: 2
   m_LineType: 0
-  m_HideMobileInput: 0
+  m_HideMobileInput: 1
   m_HideSoftKeyboard: 0
   m_CharacterValidation: 2
   m_RegexValue: 
@@ -3201,10 +3201,10 @@ MonoBehaviour:
   m_RichText: 1
   m_GlobalFontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_OnFocusSelectAll: 1
-  m_ResetOnDeActivation: 1
+  m_ResetOnDeActivation: 0
   m_KeepTextSelectionVisible: 0
   m_RestoreOriginalTextOnEscape: 1
-  m_isRichTextEditingAllowed: 0
+  m_isRichTextEditingAllowed: 1
   m_LineLimit: 0
   isAlert: 0
   m_InputValidator: {fileID: 0}
@@ -3625,7 +3625,7 @@ GameObject:
   - component: {fileID: 3692252760450661990}
   - component: {fileID: 5413286874826436519}
   m_Layer: 5
-  m_Name: InputField - Password
+  m_Name: InputField - email
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3742,7 +3742,7 @@ MonoBehaviour:
   m_AsteriskChar: 42
   m_KeyboardType: 0
   m_LineType: 0
-  m_HideMobileInput: 0
+  m_HideMobileInput: 1
   m_HideSoftKeyboard: 0
   m_CharacterValidation: 0
   m_RegexValue: 
@@ -3782,10 +3782,10 @@ MonoBehaviour:
   m_RichText: 1
   m_GlobalFontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_OnFocusSelectAll: 1
-  m_ResetOnDeActivation: 1
+  m_ResetOnDeActivation: 0
   m_KeepTextSelectionVisible: 0
   m_RestoreOriginalTextOnEscape: 1
-  m_isRichTextEditingAllowed: 0
+  m_isRichTextEditingAllowed: 1
   m_LineLimit: 0
   isAlert: 0
   m_InputValidator: {fileID: 0}
