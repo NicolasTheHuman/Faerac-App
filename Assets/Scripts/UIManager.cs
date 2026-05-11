@@ -12,7 +12,8 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
-    [Header("Panels")] 
+    [Header("Panels")]
+    [SerializeField] private PanelTransition _startPanel;
     [SerializeField] private PanelTransition _welcomePanel;
     [SerializeField] private PanelTransition _loginPanel;
     [SerializeField] private PanelTransition _registerPanel;
