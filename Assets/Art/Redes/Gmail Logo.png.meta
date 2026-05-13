@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: ec7e807e52b65dc40b161ce2ffe30945
+guid: 0dbc37bcecc561b498afee0cdd0da57c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7225096784291753402
-    second: Ventana de descuento seleccionado@3x_0
+      213: -1402774080148236957
+    second: Gmail Logo_0
+  - first:
+      213: 2866951248636173359
+    second: Gmail Logo_1
+  - first:
+      213: 2517984989674417039
+    second: Gmail Logo_2
+  - first:
+      213: 6275853280432586211
+    second: Gmail Logo_3
+  - first:
+      213: 6043741920747117235
+    second: Gmail Logo_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +58,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -126,23 +138,111 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ventana de descuento seleccionado@3x_0
+      name: Gmail Logo_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 2978
-        height: 1415
+        x: 65
+        y: 2298
+        width: 1025
+        height: 1613
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 80, y: 83, z: 90, w: 80}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 642197041cc4bbb90800000000000000
-      internalID: -7225096784291753402
+      spriteID: 36593a40868588ce0800000000000000
+      internalID: -1402774080148236957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gmail Logo_1
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 589
+        width: 1028
+        height: 2390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2c525b88f479c720800000000000000
+      internalID: 2866951248636173359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gmail Logo_2
+      rect:
+        serializedVersion: 2
+        x: 1156
+        y: 1430
+        width: 2183
+        height: 2104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8b2f4bd10ea1f220800000000000000
+      internalID: 2517984989674417039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gmail Logo_3
+      rect:
+        serializedVersion: 2
+        x: 3405
+        y: 2296
+        width: 1030
+        height: 1615
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ed77a2ce4f481750800000000000000
+      internalID: 6275853280432586211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gmail Logo_4
+      rect:
+        serializedVersion: 2
+        x: 3405
+        y: 589
+        width: 1028
+        height: 2391
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bad44c714fafd350800000000000000
+      internalID: 6043741920747117235
       vertices: []
       indices: 
       edges: []
@@ -151,7 +251,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 9d3cf8be91b5bf6479f77b803c4617e3
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +261,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Ventana de descuento seleccionado@3x_0: -7225096784291753402
+      Gmail Logo_0: -1402774080148236957
+      Gmail Logo_1: 2866951248636173359
+      Gmail Logo_2: 2517984989674417039
+      Gmail Logo_3: 6275853280432586211
+      Gmail Logo_4: 6043741920747117235
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

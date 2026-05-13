@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ec7e807e52b65dc40b161ce2ffe30945
+guid: 7423569c3cecacc42bc88488f1c90dc5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7225096784291753402
-    second: Ventana de descuento seleccionado@3x_0
+      213: -5256424462040999547
+    second: boton 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,13 +46,13 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteBorder: {x: 40, y: 39, z: 40, w: 41}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -126,23 +126,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ventana de descuento seleccionado@3x_0
+      name: boton 1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 2978
-        height: 1415
+        width: 745
+        height: 177
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 80, y: 83, z: 90, w: 80}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 642197041cc4bbb90800000000000000
-      internalID: -7225096784291753402
+      spriteID: 5895f5f2dcd6d07b0800000000000000
+      internalID: -5256424462040999547
       vertices: []
       indices: 
       edges: []
@@ -151,8 +151,8 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 9d3cf8be91b5bf6479f77b803c4617e3
-    internalID: 0
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Ventana de descuento seleccionado@3x_0: -7225096784291753402
+      boton 1_0: -5256424462040999547
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

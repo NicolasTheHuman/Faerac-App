@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ec7e807e52b65dc40b161ce2ffe30945
+guid: 55e1b73f9d5565d499d3afef907ab363
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7225096784291753402
-    second: Ventana de descuento seleccionado@3x_0
+      213: -6177299327261986840
+    second: Circulo_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,23 +126,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ventana de descuento seleccionado@3x_0
+      name: Circulo_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 2978
-        height: 1415
+        width: 416
+        height: 415
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 80, y: 83, z: 90, w: 80}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 642197041cc4bbb90800000000000000
-      internalID: -7225096784291753402
+      spriteID: 8ef2a479df2d54aa0800000000000000
+      internalID: -6177299327261986840
       vertices: []
       indices: 
       edges: []
@@ -151,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 9d3cf8be91b5bf6479f77b803c4617e3
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Ventana de descuento seleccionado@3x_0: -7225096784291753402
+      Circulo_0: -6177299327261986840
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
