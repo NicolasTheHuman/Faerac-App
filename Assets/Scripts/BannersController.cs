@@ -1,14 +1,135 @@
 using System;
 using System.Collections;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class BannersController : MonoBehaviour
 {
+    public static BannersController Instance { get; private set; }
+
     [SerializeField] private Image _logo;
     [SerializeField] private Banner _topBanner;
     [SerializeField] private Banner _downBanner;
     [SerializeField] private float _transitionTime = 0.2f;
+    [SerializeField] private TextMeshProUGUI _sectionLabel;
+
+    private struct BannerState
+    {
+        public Vector2 posBack, posFront;
+        public Quaternion rotBack, rotFront;
+    }
+
+    private struct LogoState
+    {
+        public Vector2 pos;
+        public Vector3 scale;
+    }
+
+    private BannerState _topInitial, _downInitial;
+    private LogoState _logoInitial;
+
+    private void Awake()
+    {
+        if (Instance != null) { Destroy(gameObject); return; }
+        Instance = this;
+        if (_sectionLabel != null) _sectionLabel.gameObject.SetActive(false);
+    }
+
+    private void Start()
+    {
+        _topInitial = new BannerState
+        {
+            posBack  = _topBanner.bannerBack.rectTransform.anchoredPosition,
+            posFront = _topBanner.bannerFront.rectTransform.anchoredPosition,
+            rotBack  = _topBanner.bannerBack.rectTransform.rotation,
+            rotFront = _topBanner.bannerFront.rectTransform.rotation,
+        };
+        _downInitial = new BannerState
+        {
+            posBack  = _downBanner.bannerBack.rectTransform.anchoredPosition,
+            posFront = _downBanner.bannerFront.rectTransform.anchoredPosition,
+            rotBack  = _downBanner.bannerBack.rectTransform.rotation,
+            rotFront = _downBanner.bannerFront.rectTransform.rotation,
+        };
+        _logoInitial = new LogoState
+        {
+            pos   = _logo.rectTransform.anchoredPosition,
+            scale = _logo.rectTransform.localScale,
+        };
+    }
+
+    public void ResetToInitial()
+    {
+        StopAllCoroutines();
+        StartCoroutine(ResetCoroutine());
+        _sectionLabel.gameObject.SetActive(false );
+    }
+
+    private IEnumerator ResetCoroutine()
+    {
+        var elapsed = 0f;
+
+        var topBackStart   = _topBanner.bannerBack.rectTransform.anchoredPosition;
+        var topFrontStart  = _topBanner.bannerFront.rectTransform.anchoredPosition;
+        var topBackRotStart  = _topBanner.bannerBack.rectTransform.rotation;
+        var topFrontRotStart = _topBanner.bannerFront.rectTransform.rotation;
+
+        var downBackStart  = _downBanner.bannerBack.rectTransform.anchoredPosition;
+        var downFrontStart = _downBanner.bannerFront.rectTransform.anchoredPosition;
+        var downBackRotStart  = _downBanner.bannerBack.rectTransform.rotation;
+        var downFrontRotStart = _downBanner.bannerFront.rectTransform.rotation;
+
+        var logoPosStart   = _logo.rectTransform.anchoredPosition;
+        var logoScaleStart = _logo.rectTransform.localScale;
+
+        while (elapsed < _transitionTime)
+        {
+            elapsed += Time.deltaTime;
+            float t = elapsed / _transitionTime;
+
+            _topBanner.bannerBack.rectTransform.anchoredPosition  = Vector2.Lerp(topBackStart,  _topInitial.posBack,  t);
+            _topBanner.bannerFront.rectTransform.anchoredPosition = Vector2.Lerp(topFrontStart, _topInitial.posFront, t);
+            _topBanner.bannerBack.rectTransform.rotation  = Quaternion.Lerp(topBackRotStart,  _topInitial.rotBack,  t);
+            _topBanner.bannerFront.rectTransform.rotation = Quaternion.Lerp(topFrontRotStart, _topInitial.rotFront, t);
+
+            _downBanner.bannerBack.rectTransform.anchoredPosition  = Vector2.Lerp(downBackStart,  _downInitial.posBack,  t);
+            _downBanner.bannerFront.rectTransform.anchoredPosition = Vector2.Lerp(downFrontStart, _downInitial.posFront, t);
+            _downBanner.bannerBack.rectTransform.rotation  = Quaternion.Lerp(downBackRotStart,  _downInitial.rotBack,  t);
+            _downBanner.bannerFront.rectTransform.rotation = Quaternion.Lerp(downFrontRotStart, _downInitial.rotFront, t);
+
+            _logo.rectTransform.anchoredPosition = Vector2.Lerp(logoPosStart, _logoInitial.pos, t);
+            _logo.rectTransform.localScale       = Vector3.Lerp(logoScaleStart, _logoInitial.scale, t);
+
+            yield return null;
+        }
+
+        _topBanner.bannerBack.rectTransform.anchoredPosition  = _topInitial.posBack;
+        _topBanner.bannerFront.rectTransform.anchoredPosition = _topInitial.posFront;
+        _topBanner.bannerBack.rectTransform.rotation  = _topInitial.rotBack;
+        _topBanner.bannerFront.rectTransform.rotation = _topInitial.rotFront;
+
+        _downBanner.bannerBack.rectTransform.anchoredPosition  = _downInitial.posBack;
+        _downBanner.bannerFront.rectTransform.anchoredPosition = _downInitial.posFront;
+        _downBanner.bannerBack.rectTransform.rotation  = _downInitial.rotBack;
+        _downBanner.bannerFront.rectTransform.rotation = _downInitial.rotFront;
+
+        _logo.rectTransform.anchoredPosition = _logoInitial.pos;
+        _logo.rectTransform.localScale       = _logoInitial.scale;
+    }
+
+    public void SetSection(string sectionName)
+    {
+        if (_sectionLabel == null) return;
+        _sectionLabel.text = sectionName;
+        _sectionLabel.gameObject.SetActive(true);
+    }
+
+    public void HideSection()
+    {
+        if (_sectionLabel == null) return;
+        _sectionLabel.gameObject.SetActive(false);
+    }
 
     #region Vector moving banners
 
