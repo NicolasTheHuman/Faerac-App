@@ -1,0 +1,49 @@
+using System.Collections.Generic;
+using UnityEngine;
+
+public class TurnoInicio : MonoBehaviour
+{
+    private List<Profesional> _profesionales;
+    private List<Profesional> _profesionalesFiltrados;
+    [SerializeField] private GameObject PrefabTarjetaProfesional;
+    [SerializeField] private GameObject GridProfesionales;
+    [SerializeField] private GameObject PopUpObrasSociales;
+
+    private void Start()
+    {
+        ObtenerProfesionales();
+    }
+
+    private async void ObtenerProfesionales()
+    {
+        var response = await APIClient.Instance.Get<ProfesionalesResponse>("turnos/profesionales",
+            error => Debug.LogError("Error al obtener profesionales: " + error));
+
+        if (response == null || !response.success || response.profesionales == null) return;
+
+        _profesionales = response.profesionales;
+        foreach (var profesional in _profesionales) {
+            GameObject tarjeta = Instantiate(PrefabTarjetaProfesional, GridProfesionales.transform);
+            tarjeta.GetComponent<TarjetaProfesional>().Configurar(profesional);
+             tarjeta.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(() => {
+                PopUpObrasSociales.SetActive(true);
+            });
+        }
+    }
+
+    public void FiltrarNombre(string nombre)
+    {
+        if (_profesionales == null) return;
+
+        _profesionalesFiltrados = _profesionales.FindAll(p => p.nombre.ToLower().Contains(nombre.ToLower()));
+
+        foreach (Transform child in GridProfesionales.transform) {
+            Destroy(child.gameObject);
+        }
+
+        foreach (var profesional in _profesionalesFiltrados) {
+            GameObject tarjeta = Instantiate(PrefabTarjetaProfesional, GridProfesionales.transform);
+            tarjeta.GetComponent<TarjetaProfesional>().Configurar(profesional);
+        }
+    }
+}
