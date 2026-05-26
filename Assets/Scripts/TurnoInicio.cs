@@ -7,7 +7,7 @@ public class TurnoInicio : MonoBehaviour
     private List<Profesional> _profesionalesFiltrados;
     [SerializeField] private GameObject PrefabTarjetaProfesional;
     [SerializeField] private GameObject GridProfesionales;
-    [SerializeField] private GameObject PopUpObrasSociales;
+    [SerializeField] private GameObject PopUpProfesional;
 
     private void Start()
     {
@@ -24,9 +24,11 @@ public class TurnoInicio : MonoBehaviour
         _profesionales = response.profesionales;
         foreach (var profesional in _profesionales) {
             GameObject tarjeta = Instantiate(PrefabTarjetaProfesional, GridProfesionales.transform);
+            tarjeta.name = profesional.nombre;
             tarjeta.GetComponent<TarjetaProfesional>().Configurar(profesional);
-             tarjeta.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(() => {
-                PopUpObrasSociales.SetActive(true);
+            tarjeta.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(() => {
+                PopUpProfesional.GetComponent<TurnoPopUpProfesional>().Configurar(profesional);
+                PopUpProfesional.SetActive(true);
             });
         }
     }
@@ -38,12 +40,14 @@ public class TurnoInicio : MonoBehaviour
         _profesionalesFiltrados = _profesionales.FindAll(p => p.nombre.ToLower().Contains(nombre.ToLower()));
 
         foreach (Transform child in GridProfesionales.transform) {
-            Destroy(child.gameObject);
+            child.gameObject.SetActive(false);
         }
 
         foreach (var profesional in _profesionalesFiltrados) {
-            GameObject tarjeta = Instantiate(PrefabTarjetaProfesional, GridProfesionales.transform);
-            tarjeta.GetComponent<TarjetaProfesional>().Configurar(profesional);
+            Transform tarjeta = GridProfesionales.transform.Find(profesional.nombre);
+            if (tarjeta != null) {
+                tarjeta.gameObject.SetActive(true);
+            }
         }
     }
 }
