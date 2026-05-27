@@ -8,6 +8,7 @@ public class Profesional
     public string nombre;
     public string categoria;
     public string descripcion;
+    public string whatsapp;
 }
 
 [Serializable]

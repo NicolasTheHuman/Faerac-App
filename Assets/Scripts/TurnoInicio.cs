@@ -9,13 +9,10 @@ public class TurnoInicio : MonoBehaviour
     [SerializeField] private GameObject GridProfesionales;
     [SerializeField] private GameObject PopUpProfesional;
 
-    private void Start()
+    public async void ObtenerProfesionales()
     {
-        ObtenerProfesionales();
-    }
+        PopUpManager.Instance.ShowPopUp();
 
-    private async void ObtenerProfesionales()
-    {
         var response = await APIClient.Instance.Get<ProfesionalesResponse>("turnos/profesionales",
             error => Debug.LogError("Error al obtener profesionales: " + error));
 
@@ -31,6 +28,8 @@ public class TurnoInicio : MonoBehaviour
                 PopUpProfesional.SetActive(true);
             });
         }
+
+        PopUpManager.Instance.HidePopUp();
     }
 
     public void FiltrarNombre(string nombre)

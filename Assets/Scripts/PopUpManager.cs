@@ -15,6 +15,8 @@ public class PopUpManager : MonoBehaviour
     [SerializeField] private Button _continueBtn;
     [SerializeField] private Button _yesBtn;
     [SerializeField] private Button _noBtn;
+    [SerializeField] private GameObject _messagePanel;
+    [SerializeField] private GameObject _loading;
     
     private void Awake()
     {
@@ -28,6 +30,8 @@ public class PopUpManager : MonoBehaviour
 
     public void ChangePopUpText(string message)
     {
+        _loading.SetActive(false);
+        _messagePanel.SetActive(true);
         _popUpText.text = message;
     }
     
@@ -66,6 +70,8 @@ public class PopUpManager : MonoBehaviour
 
     public void HidePopUp()
     {
+        _messagePanel.SetActive(false);
+        _loading.SetActive(true);
         VisualizeCanvas(_popUpPanel, false);
     }
 
