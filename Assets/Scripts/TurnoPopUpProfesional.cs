@@ -12,6 +12,7 @@ public class TurnoPopUpProfesional : MonoBehaviour
     [SerializeField] private GameObject ObrasSocialesToggle;
     [SerializeField] private GameObject ContinuarButton;
     [SerializeField] private GameObject WhatsAppButton;
+    [SerializeField] private GameObject PopUpCalendar;
 
     public void Configurar(Profesional profesional)
     {
@@ -31,7 +32,9 @@ public class TurnoPopUpProfesional : MonoBehaviour
             ContinuarButton.GetComponent<UnityEngine.UI.Button>().interactable = true;
             ContinuarButton.GetComponent<UnityEngine.UI.Button>().onClick.RemoveAllListeners();
             ContinuarButton.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(() => {
-                Debug.Log("Ir a Turno Calendar con: " + profesional.nombre);
+                gameObject.SetActive(false);
+                PopUpCalendar.GetComponent<TurnoPopUpCalendar>().Configurar(profesional);
+                PopUpCalendar.SetActive(true);
             });
         } else {
             WhatsAppButton.SetActive(true);
