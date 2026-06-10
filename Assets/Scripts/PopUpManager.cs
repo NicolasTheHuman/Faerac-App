@@ -43,6 +43,7 @@ public class PopUpManager : MonoBehaviour
         _yesBtn.onClick.AddListener(yesAction);
         _noBtn.onClick.AddListener(HidePopUp);
         
+        _popUpPanel.transform.SetAsLastSibling();
         VisualizeCanvas(_popUpPanel, true);
         VisualizeCanvas(_yesNoPanel, true);
         VisualizeCanvas(_continuePanel,false);
@@ -56,6 +57,7 @@ public class PopUpManager : MonoBehaviour
         _yesBtn.onClick.AddListener(yesAction);
         _noBtn.onClick.AddListener(noAction);
         
+        _popUpPanel.transform.SetAsLastSibling();
         VisualizeCanvas(_popUpPanel, true);
         VisualizeCanvas(_yesNoPanel, true);
         VisualizeCanvas(_continuePanel,false);
@@ -63,6 +65,7 @@ public class PopUpManager : MonoBehaviour
     
     public void ShowPopUp()
     {
+        _popUpPanel.transform.SetAsLastSibling();
         VisualizeCanvas(_popUpPanel,true);
         VisualizeCanvas(_continuePanel, true);
         VisualizeCanvas(_yesNoPanel, false);

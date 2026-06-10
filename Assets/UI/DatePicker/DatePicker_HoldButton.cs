@@ -21,6 +21,7 @@ namespace UI.Dates
 
         private bool pointerDown = false;
         private Action action;
+        public Action OnClickAction;
         private float lastInvokeTime = 0;
         private int executionCount = 0;
 
@@ -89,6 +90,7 @@ namespace UI.Dates
             executionCount++;
 
             action.Invoke();
+            OnClickAction?.Invoke();
         }
     }
 }
