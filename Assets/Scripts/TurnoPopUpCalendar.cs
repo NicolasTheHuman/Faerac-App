@@ -45,6 +45,7 @@ public class TurnoPopUpCalendar : MonoBehaviour
         DateTime hoy = DateTime.Today;
         CargarMes(hoy.Month, hoy.Year);
         PrefetchMes(hoy.AddMonths(1).Month, hoy.AddMonths(1).Year);
+        Calendar.Show();
     }
 
     private void LimpiarSeleccionHorario()
