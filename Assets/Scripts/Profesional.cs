@@ -9,6 +9,7 @@ public class Profesional
     public string categoria;
     public string descripcion;
     public string whatsapp;
+    public List<Mutual> obrasSociales;
 }
 
 [Serializable]

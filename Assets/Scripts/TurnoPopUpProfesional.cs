@@ -26,10 +26,10 @@ public class TurnoPopUpProfesional : MonoBehaviour
         ObrasSocialesToggle.GetComponent<ToggleSwitch>().CurrentValue = false;
 
         if (string.IsNullOrEmpty(profesional.whatsapp)) {
-            GetObrasSociales(profesional.id);
+            GetObrasSociales(profesional);
             WhatsAppButton.SetActive(false);
             ObrasSocialesToggle.SetActive(true);
-            ContinuarButton.GetComponent<UnityEngine.UI.Button>().interactable = true;
+            ContinuarButton.GetComponent<UnityEngine.UI.Button>().interactable = false;
             ContinuarButton.GetComponent<UnityEngine.UI.Button>().onClick.RemoveAllListeners();
             ContinuarButton.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(() => {
                 gameObject.SetActive(false);
@@ -47,18 +47,20 @@ public class TurnoPopUpProfesional : MonoBehaviour
         }
     }
 
-    private async void GetObrasSociales(int profesionalId)
+    private async void GetObrasSociales(Profesional profesional)
     {
         PopUpManager.Instance.ShowPopUp();
 
-        var response = await APIClient.Instance.Get<ObrasSocialesResponse>("turnos/mutuales?profesional=" + profesionalId,
+        var response = await APIClient.Instance.Get<ObrasSocialesResponse>("turnos/mutuales?profesional=" + profesional.id,
             error => Debug.LogError("Error al obtener obras sociales: " + error));
+
+        PopUpManager.Instance.HidePopUp();
 
         if (response == null || !response.success || response.mutuales == null) return;
 
+        profesional.obrasSociales = response.mutuales;
         var nombres = response.mutuales.ConvertAll(m => m.nombre);
         ObrasSocialesText.GetComponentInChildren<TextMeshProUGUI>().text = string.Join("\n", nombres);
-        
-        PopUpManager.Instance.HidePopUp();
+        ContinuarButton.GetComponent<UnityEngine.UI.Button>().interactable = true;
     }
 }

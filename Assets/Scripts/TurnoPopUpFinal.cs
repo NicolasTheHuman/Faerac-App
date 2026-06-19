@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -10,6 +11,8 @@ public class TurnoPopUpFinal : MonoBehaviour
     [SerializeField] private TextMeshProUGUI HoraText;
     [SerializeField] private GameObject AtrasButton;
 
+    public Profesional Profesional { get; private set; }
+    public List<Mutual> ObrasSociales => Profesional?.obrasSociales;
     public int ProfesionalId { get; private set; }
     public string Fecha { get; private set; }
     public string Hora { get; private set; }
@@ -23,14 +26,15 @@ public class TurnoPopUpFinal : MonoBehaviour
         SuscribirAtras();
     }
 
-    public void Configurar(int profesionalId, string profesionalNombre, DateTime fecha, string hora, int nroInt)
+    public void Configurar(Profesional profesional, DateTime fecha, string hora, int nroInt)
     {
-        ProfesionalId = profesionalId;
+        Profesional = profesional;
+        ProfesionalId = profesional.id;
         Fecha = fecha.ToString("yyyy-MM-dd");
         Hora = hora;
         NroInt = nroInt;
 
-        if (ProfesionalText != null) ProfesionalText.text = profesionalNombre;
+        if (ProfesionalText != null) ProfesionalText.text = profesional.nombre;
         if (FechaText != null) FechaText.text = fecha.ToString("dd/MM/yyyy");
         if (HoraText != null) HoraText.text = hora;
     }

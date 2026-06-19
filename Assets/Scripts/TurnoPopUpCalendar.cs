@@ -15,8 +15,8 @@ public class TurnoPopUpCalendar : MonoBehaviour
     [SerializeField] private GameObject TurnoFin;
     [SerializeField] private GameObject ContinuarButton;
 
+    private Profesional _profesional;
     private int _profesionalId;
-    private string _profesionalNombre;
     private DateTime _fechaSeleccionada;
     private string _horaSeleccionada;
     private int _nrointSeleccionado;
@@ -25,9 +25,9 @@ public class TurnoPopUpCalendar : MonoBehaviour
 
     public void Configurar(Profesional profesional)
     {
+        _profesional = profesional;
         ProfesionalNameText.text = profesional.nombre;
         _profesionalId = profesional.id;
-        _profesionalNombre = profesional.nombre;
         _lastNavMonth = -1;
 
         Calendar.SelectedDate = new SerializableDate();
@@ -232,8 +232,7 @@ public class TurnoPopUpCalendar : MonoBehaviour
         if (turnoFin != null)
         {
             turnoFin.Configurar(
-                _profesionalId,
-                _profesionalNombre,
+                _profesional,
                 _fechaSeleccionada,
                 _horaSeleccionada,
                 _nrointSeleccionado);
