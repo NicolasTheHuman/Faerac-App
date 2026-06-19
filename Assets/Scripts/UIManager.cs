@@ -42,7 +42,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private TMP_Text _credentialBirthdate;
 
     [Header("Shops")] 
-    [SerializeField] private ContentSizeFitter _discountsContent;
+    [SerializeField] private VerticalLayoutGroup _discountsContent;
     [SerializeField] private DiscountUIElement _discountsPrefab;
 
     [Header("Selected Shop")] 
