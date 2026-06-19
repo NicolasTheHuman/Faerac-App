@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 [Serializable]
 public class ApiResult<T>
@@ -33,4 +34,5 @@ public class ApiResult<T>
 public class ApiErrorResponse
 {
     public string message;
+    public List<string> errores;
 }

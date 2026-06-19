@@ -2227,6 +2227,11 @@ MonoBehaviour:
   ProfesionalText: {fileID: 7243529617428568053}
   FechaText: {fileID: 3852801252635365733}
   HoraText: {fileID: 7994222144330784192}
+  AtrasButton: {fileID: 0}
+  ContinuarButton: {fileID: 2535674286292618482}
+  DniInputField: {fileID: 3719396550321118562}
+  CelularInputField: {fileID: 2327848188620712964}
+  EmailInputField: {fileID: 1403645119310265746}
 --- !u!1 &4535609725106385279
 GameObject:
   m_ObjectHideFlags: 0

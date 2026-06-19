@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -10,6 +11,10 @@ public class TurnoPopUpFinal : MonoBehaviour
     [SerializeField] private TextMeshProUGUI FechaText;
     [SerializeField] private TextMeshProUGUI HoraText;
     [SerializeField] private GameObject AtrasButton;
+    [SerializeField] private GameObject ContinuarButton;
+    [SerializeField] private TMP_InputField DniInputField;
+    [SerializeField] private TMP_InputField CelularInputField;
+    [SerializeField] private TMP_InputField EmailInputField;
 
     public Profesional Profesional { get; private set; }
     public List<Mutual> ObrasSociales => Profesional?.obrasSociales;
@@ -19,11 +24,39 @@ public class TurnoPopUpFinal : MonoBehaviour
     public int NroInt { get; private set; }
 
     private CanvasGroup _canvasGroup;
+    private static readonly Regex EmailRegex = new Regex(@"^[^@\s]+@[^@\s]+\.[^@\s]+$");
 
     private void Awake()
     {
         _canvasGroup = GetComponent<CanvasGroup>();
         SuscribirAtras();
+        SuscribirContinuar();
+        ConfigurarInputFields();
+    }
+
+    private void ConfigurarInputFields()
+    {
+        if (DniInputField != null)
+        {
+            DniInputField.contentType = TMP_InputField.ContentType.IntegerNumber;
+            DniInputField.onValueChanged.AddListener(value => SanitizarNumerico(DniInputField, value));
+        }
+        if (CelularInputField != null)
+        {
+            CelularInputField.contentType = TMP_InputField.ContentType.IntegerNumber;
+            CelularInputField.onValueChanged.AddListener(value => SanitizarNumerico(CelularInputField, value));
+        }
+        if (EmailInputField != null)
+        {
+            EmailInputField.contentType = TMP_InputField.ContentType.EmailAddress;
+        }
+    }
+
+    private void SanitizarNumerico(TMP_InputField field, string value)
+    {
+        var clean = Regex.Replace(value, @"[^\d]", "");
+        if (clean != value)
+            field.text = clean;
     }
 
     public void Configurar(Profesional profesional, DateTime fecha, string hora, int nroInt)
@@ -42,12 +75,81 @@ public class TurnoPopUpFinal : MonoBehaviour
     private void SuscribirAtras()
     {
         if (AtrasButton == null) return;
-
         var button = AtrasButton.GetComponent<Button>();
         if (button == null) return;
-
         button.onClick.RemoveListener(VolverAtras);
         button.onClick.AddListener(VolverAtras);
+    }
+
+    private void SuscribirContinuar()
+    {
+        if (ContinuarButton == null) return;
+        var button = ContinuarButton.GetComponent<Button>();
+        if (button == null) return;
+        button.onClick.RemoveListener(ConfirmarTurno);
+        button.onClick.AddListener(ConfirmarTurno);
+    }
+
+    private bool ValidarCampos(out string error)
+    {
+        error = string.Empty;
+
+        string dni = DniInputField != null ? DniInputField.text : "";
+        string celular = CelularInputField != null ? CelularInputField.text : "";
+        string email = EmailInputField != null ? EmailInputField.text : "";
+
+        if (dni.Length < 7 || dni.Length > 8)
+        {
+            error = "DNI inválido (debe tener 7 u 8 dígitos)";
+            return false;
+        }
+        if (celular.Length != 10)
+        {
+            error = "Celular inválido (debe tener 10 dígitos)";
+            return false;
+        }
+        if (!EmailRegex.IsMatch(email))
+        {
+            error = "Email inválido";
+            return false;
+        }
+        return true;
+    }
+
+    private async void ConfirmarTurno()
+    {
+        if (!ValidarCampos(out string error))
+        {
+            PopUpManager.Instance.ShowPopUp();
+            PopUpManager.Instance.ChangePopUpText(error);
+            return;
+        }
+
+        var request = new ConfirmarTurnoRequest
+        {
+            nro_int = NroInt,
+            cod_profesional = ProfesionalId,
+            fecha = Fecha,
+            dni = DniInputField.text,
+            celular = CelularInputField.text,
+            email = EmailInputField.text,
+            codMutual = 0
+        };
+
+        PopUpManager.Instance.ShowPopUp();
+
+        var result = await APIClient.Instance.Post<ConfirmarTurnoResponse>("turnos/confirmar", request);
+
+        if (result.Success && result.Data != null && result.Data.success)
+        {
+            PopUpManager.Instance.ChangePopUpText(result.Data.message);
+        }
+        else
+        {
+            string msg = result.Data != null ? result.Data.message : result.ErrorMessage;
+            if (string.IsNullOrEmpty(msg)) msg = "Error al confirmar el turno";
+            PopUpManager.Instance.ChangePopUpText(msg);
+        }
     }
 
     private void VolverAtras()

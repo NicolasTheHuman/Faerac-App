@@ -93,7 +93,9 @@ public class APIClient : MonoBehaviour
             {
                 var error = JsonConvert.DeserializeObject<ApiErrorResponse>(request.downloadHandler.text);
 
-                if (!string.IsNullOrEmpty(error.message))
+                if (error.errores != null && error.errores.Count > 0)
+                    errorMessage = string.Join("\n", error.errores);
+                else if (!string.IsNullOrEmpty(error.message))
                     errorMessage = error.message;
             }
             catch (Exception e)
