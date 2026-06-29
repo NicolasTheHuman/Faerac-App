@@ -21632,6 +21632,17 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1660046370 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5794679622305295956, guid: cf29278dde898c4419ae8f4b7f257d1e, type: 3}
+  m_PrefabInstance: {fileID: 1997913891}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b743370ac3e4ec2a1668f5455a8ef8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TMP_Dropdown
 --- !u!1 &1672397001
 GameObject:
   m_ObjectHideFlags: 0
@@ -25664,6 +25675,10 @@ PrefabInstance:
       propertyPath: ProfesionalText
       value: 
       objectReference: {fileID: 1569714231}
+    - target: {fileID: 6917775266221589723, guid: cf29278dde898c4419ae8f4b7f257d1e, type: 3}
+      propertyPath: DropdownObrasSociales
+      value: 
+      objectReference: {fileID: 1660046370}
     - target: {fileID: 7346339126426180689, guid: cf29278dde898c4419ae8f4b7f257d1e, type: 3}
       propertyPath: m_fontSize
       value: 65

@@ -10,11 +10,12 @@ public class TurnoPopUpFinal : MonoBehaviour
     [SerializeField] private TextMeshProUGUI ProfesionalText;
     [SerializeField] private TextMeshProUGUI FechaText;
     [SerializeField] private TextMeshProUGUI HoraText;
-    [SerializeField] private GameObject AtrasButton;
-    [SerializeField] private GameObject ContinuarButton;
     [SerializeField] private TMP_InputField DniInputField;
     [SerializeField] private TMP_InputField CelularInputField;
     [SerializeField] private TMP_InputField EmailInputField;
+    [SerializeField] private TMP_Dropdown DropdownObrasSociales;
+    [SerializeField] private GameObject AtrasButton;
+    [SerializeField] private GameObject ContinuarButton;
 
     public Profesional Profesional { get; private set; }
     public List<Mutual> ObrasSociales => Profesional?.obrasSociales;
@@ -24,6 +25,7 @@ public class TurnoPopUpFinal : MonoBehaviour
     public int NroInt { get; private set; }
 
     private CanvasGroup _canvasGroup;
+    private int _codMutualSeleccionado;
     private static readonly Regex EmailRegex = new Regex(@"^[^@\s]+@[^@\s]+\.[^@\s]+$");
 
     private void Awake()
@@ -70,6 +72,35 @@ public class TurnoPopUpFinal : MonoBehaviour
         if (ProfesionalText != null) ProfesionalText.text = profesional.nombre;
         if (FechaText != null) FechaText.text = fecha.ToString("dd/MM/yyyy");
         if (HoraText != null) HoraText.text = hora;
+
+        if (DropdownObrasSociales != null)
+        {
+            var options = new List<string>();
+            DropdownObrasSociales.ClearOptions();
+            options.Add("Seleccionar");
+            if (ObrasSociales != null && ObrasSociales.Count > 0)
+            {
+                foreach (var obra in ObrasSociales)
+                {
+                    options.Add(obra.nombre);
+                }
+                DropdownObrasSociales.AddOptions(options);
+            }
+            DropdownObrasSociales.onValueChanged.RemoveListener(OnObraSocialCambiada);
+            DropdownObrasSociales.onValueChanged.AddListener(OnObraSocialCambiada);
+            DropdownObrasSociales.value = 0;
+            _codMutualSeleccionado = 0;
+        }
+    }
+
+    private void OnObraSocialCambiada(int index)
+    {
+        if (index <= 0 || ObrasSociales == null || index - 1 >= ObrasSociales.Count)
+        {
+            _codMutualSeleccionado = 0;
+            return;
+        }
+        _codMutualSeleccionado = ObrasSociales[index - 1].codMutual;
     }
 
     private void SuscribirAtras()
@@ -133,8 +164,10 @@ public class TurnoPopUpFinal : MonoBehaviour
             dni = DniInputField.text,
             celular = CelularInputField.text,
             email = EmailInputField.text,
-            codMutual = 0
+            codMutual = _codMutualSeleccionado
         };
+
+        Debug.Log($"Confirmando turno: {JsonUtility.ToJson(request)}");
 
         PopUpManager.Instance.ShowPopUp();
 
