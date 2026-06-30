@@ -41,6 +41,16 @@
                 "com.unity3d.player.UnityPlayerActivity"
             ]
         },
-        "DrawableResources": []
+        "DrawableResources": [
+            {
+                "Id": "ic_notification",
+                "Type": 0,
+                "Asset": {
+                    "fileID": 2800000,
+                    "guid": "b729b08aca868494c926079d138b93b5",
+                    "type": 3
+                }
+            }
+        ]
     }
 }

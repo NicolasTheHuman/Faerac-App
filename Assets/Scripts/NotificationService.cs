@@ -164,11 +164,33 @@ public class NotificationService : MonoBehaviour
         }, CHANNEL_NOTICIAS, ID_NOTICIA);
     }
 
+// #else
+//     // Stubs para el Editor y otras plataformas
+//     public void ScheduleAppointmentReminders(string profesionalNombre, DateTime turnoDateTime) { }
+//     public void CancelAppointmentReminders() { }
+//     public void ShowUpdateNotification(string nuevaVersion) { }
+//     public void ShowNewsNotification(string titulo, string cuerpo) { }
+// #endif
 #else
-    // Stubs para el Editor y otras plataformas
-    public void ScheduleAppointmentReminders(string profesionalNombre, DateTime turnoDateTime) { }
-    public void CancelAppointmentReminders() { }
-    public void ShowUpdateNotification(string nuevaVersion) { }
-    public void ShowNewsNotification(string titulo, string cuerpo) { }
+    // Stubs para el Editor y otras plataformas (Modificalos para verlos en consola)
+    public void ScheduleAppointmentReminders(string profesionalNombre, DateTime turnoDateTime) 
+    { 
+        Debug.Log($"[EDITOR TEST] Se agendó turno local con {profesionalNombre} para el {turnoDateTime}");
+    }
+    
+    public void CancelAppointmentReminders() 
+    { 
+        Debug.Log("[EDITOR TEST] Se cancelaron las notificaciones de turnos.");
+    }
+    
+    public void ShowUpdateNotification(string nuevaVersion) 
+    { 
+        Debug.Log($"[EDITOR TEST] Trigger de Actualización disparado. Versión: {nuevaVersion}");
+    }
+    
+    public void ShowNewsNotification(string titulo, string cuerpo) 
+    { 
+        Debug.Log($"[EDITOR TEST] Trigger de Novedad disparado. Título: {titulo} | Cuerpo: {cuerpo}");
+    }
 #endif
 }
