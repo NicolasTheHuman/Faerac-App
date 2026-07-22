@@ -6,18 +6,39 @@ using UnityEngine;
 using Unity.Notifications.Android;
 #endif
 
+#if UNITY_IOS
+using Unity.Notifications.iOS;
+#endif
+
 public class NotificationService : MonoBehaviour
 {
     public static NotificationService Instance { get; private set; }
 
+    // ── Android: canales (iOS no usa canales) ────────────────────────────────
     private const string CHANNEL_TURNOS   = "faerac_turnos";
     private const string CHANNEL_UPDATES  = "faerac_updates";
     private const string CHANNEL_NOTICIAS = "faerac_noticias";
 
+    // ── Android: IDs numéricos ───────────────────────────────────────────────
     private const int ID_TURNO_DIA   = 1001;
     private const int ID_TURNO_30MIN = 1002;
     private const int ID_UPDATE      = 2001;
     private const int ID_NOTICIA     = 3001;
+
+    // ── iOS: los identificadores son strings, no ints ────────────────────────
+    private const string IOS_ID_TURNO_DIA   = "faerac_turno_dia";
+    private const string IOS_ID_TURNO_30MIN = "faerac_turno_30min";
+    private const string IOS_ID_UPDATE      = "faerac_update";
+    private const string IOS_ID_NOTICIA     = "faerac_noticia";
+
+    // Nombre de la tienda según plataforma.
+    // En el build de iOS la cadena "Google Play" queda excluida en tiempo de
+    // compilación, así que nunca entra al binario (guideline 2.3.10 de Apple).
+#if UNITY_IOS
+    private const string STORE_NAME = "App Store";
+#else
+    private const string STORE_NAME = "Google Play";
+#endif
 
     private void Awake()
     {
@@ -30,12 +51,122 @@ public class NotificationService : MonoBehaviour
     {
 #if UNITY_ANDROID && !UNITY_EDITOR
         RegisterChannels();
-        yield return RequestPermission();
+        yield return RequestPermissionAndroid();
+#elif UNITY_IOS && !UNITY_EDITOR
+        yield return RequestPermissionIOS();
+        // Limpia el badge y las notificaciones ya entregadas al abrir la app.
+        iOSNotificationCenter.ApplicationBadge = 0;
+        iOSNotificationCenter.RemoveAllDeliveredNotifications();
 #else
         yield return null;
 #endif
     }
 
+    // ═════════════════════════════════════════════════════════════════════════
+    //  API PÚBLICA (idéntica en ambas plataformas: VersionChecker, NewsChecker
+    //  y el flujo de turnos no necesitan cambiar nada)
+    // ═════════════════════════════════════════════════════════════════════════
+
+    /// <summary>
+    /// Agenda dos notificaciones: una a las 8 AM del día del turno y otra 30
+    /// minutos antes. Llámalo cuando el turno se confirme exitosamente.
+    /// </summary>
+    public void ScheduleAppointmentReminders(string profesionalNombre, DateTime turnoDateTime)
+    {
+        CancelAppointmentReminders();
+
+        var fireTimeDia = turnoDateTime.Date.AddHours(8);
+        var fireTime30  = turnoDateTime.AddMinutes(-30);
+
+#if UNITY_ANDROID && !UNITY_EDITOR
+        if (fireTimeDia > DateTime.Now)
+        {
+            SendAndroid(CHANNEL_TURNOS, ID_TURNO_DIA,
+                "Recordatorio de turno",
+                $"Hoy tenés turno con {profesionalNombre}",
+                fireTimeDia);
+        }
+
+        if (fireTime30 > DateTime.Now)
+        {
+            SendAndroid(CHANNEL_TURNOS, ID_TURNO_30MIN,
+                "Tu turno es pronto",
+                $"En 30 minutos tenés turno con {profesionalNombre}",
+                fireTime30);
+        }
+
+#elif UNITY_IOS && !UNITY_EDITOR
+        if (fireTimeDia > DateTime.Now)
+        {
+            ScheduleIOSAt(IOS_ID_TURNO_DIA,
+                "Recordatorio de turno",
+                $"Hoy tenés turno con {profesionalNombre}",
+                fireTimeDia,
+                threadId: "turnos");
+        }
+
+        if (fireTime30 > DateTime.Now)
+        {
+            ScheduleIOSAt(IOS_ID_TURNO_30MIN,
+                "Tu turno es pronto",
+                $"En 30 minutos tenés turno con {profesionalNombre}",
+                fireTime30,
+                threadId: "turnos");
+        }
+#endif
+    }
+
+    /// <summary>Cancela las notificaciones de turno agendadas.</summary>
+    public void CancelAppointmentReminders()
+    {
+#if UNITY_ANDROID && !UNITY_EDITOR
+        AndroidNotificationCenter.CancelNotification(ID_TURNO_DIA);
+        AndroidNotificationCenter.CancelNotification(ID_TURNO_30MIN);
+
+#elif UNITY_IOS && !UNITY_EDITOR
+        iOSNotificationCenter.RemoveScheduledNotification(IOS_ID_TURNO_DIA);
+        iOSNotificationCenter.RemoveScheduledNotification(IOS_ID_TURNO_30MIN);
+#endif
+    }
+
+    /// <summary>
+    /// Muestra una notificación indicando que hay una nueva versión disponible.
+    /// Llamado desde VersionChecker cuando detecta una versión más nueva.
+    /// </summary>
+    public void ShowUpdateNotification(string nuevaVersion)
+    {
+        var titulo = "Nueva versión disponible";
+        var cuerpo = $"Actualizá FAERAC a la versión {nuevaVersion} en {STORE_NAME}";
+
+#if UNITY_ANDROID && !UNITY_EDITOR
+        SendAndroid(CHANNEL_UPDATES, ID_UPDATE, titulo, cuerpo,
+            DateTime.Now.AddSeconds(3), intentData: "open_store");
+
+#elif UNITY_IOS && !UNITY_EDITOR
+        ScheduleIOSIn(IOS_ID_UPDATE, titulo, cuerpo, seconds: 3,
+            threadId: "updates", data: "open_store");
+#endif
+    }
+
+    /// <summary>
+    /// Muestra una notificación de novedad o publicidad.
+    /// Llamado desde NewsChecker cuando detecta contenido nuevo en el servidor.
+    /// </summary>
+    public void ShowNewsNotification(string titulo, string cuerpo)
+    {
+#if UNITY_ANDROID && !UNITY_EDITOR
+        SendAndroid(CHANNEL_NOTICIAS, ID_NOTICIA, titulo, cuerpo,
+            DateTime.Now.AddSeconds(3));
+
+#elif UNITY_IOS && !UNITY_EDITOR
+        ScheduleIOSIn(IOS_ID_NOTICIA, titulo, cuerpo, seconds: 3,
+            threadId: "noticias");
+#endif
+    }
+
+    // ═════════════════════════════════════════════════════════════════════════
+    //  ANDROID
+    // ═════════════════════════════════════════════════════════════════════════
 #if UNITY_ANDROID && !UNITY_EDITOR
 
     private void RegisterChannels()
@@ -55,7 +186,7 @@ public class NotificationService : MonoBehaviour
             Id          = CHANNEL_UPDATES,
             Name        = "Actualizaciones",
             Importance  = Importance.Default,
-            Description = "Nueva versión disponible en Google Play",
+            Description = $"Nueva versión disponible en {STORE_NAME}",
             EnableVibration = false,
             CanShowBadge    = false,
         });
@@ -71,87 +202,19 @@ public class NotificationService : MonoBehaviour
         });
     }
 
-    private IEnumerator RequestPermission()
+    private IEnumerator RequestPermissionAndroid()
     {
         if (AndroidNotificationCenter.UserPermissionToPost != PermissionStatus.Allowed)
         {
+            // PermissionRequest NO es un YieldInstruction: hay que hacer polling.
             var req = new PermissionRequest();
-            yield return req;
+            while (req.Status == PermissionStatus.RequestPending)
+                yield return null;
         }
     }
 
-    // ── Turnos ──────────────────────────────────────────────────────────────
-
-    /// <summary>
-    /// Agenda dos notificaciones: una a las 8 AM del día del turno y otra 30
-    /// minutos antes. Llámalo cuando el turno se confirme exitosamente.
-    /// </summary>
-    public void ScheduleAppointmentReminders(string profesionalNombre, DateTime turnoDateTime)
-    {
-        CancelAppointmentReminders();
-
-        var fireTimeDia = turnoDateTime.Date.AddHours(8);
-        if (fireTimeDia > DateTime.Now)
-        {
-            AndroidNotificationCenter.SendNotificationWithExplicitID(new AndroidNotification
-            {
-                Title  = "Recordatorio de turno",
-                Text   = $"Hoy tenés turno con {profesionalNombre}",
-                SmallIcon  = "ic_notification",
-                LargeIcon  = "ic_launcher",
-                FireTime   = fireTimeDia,
-                Style      = NotificationStyle.BigTextStyle,
-            }, CHANNEL_TURNOS, ID_TURNO_DIA);
-        }
-
-        var fireTime30 = turnoDateTime.AddMinutes(-30);
-        if (fireTime30 > DateTime.Now)
-        {
-            AndroidNotificationCenter.SendNotificationWithExplicitID(new AndroidNotification
-            {
-                Title  = "Tu turno es pronto",
-                Text   = $"En 30 minutos tenés turno con {profesionalNombre}",
-                SmallIcon  = "ic_notification",
-                LargeIcon  = "ic_launcher",
-                FireTime   = fireTime30,
-                Style      = NotificationStyle.BigTextStyle,
-            }, CHANNEL_TURNOS, ID_TURNO_30MIN);
-        }
-    }
-
-    /// <summary>Cancela las notificaciones de turno agendadas.</summary>
-    public void CancelAppointmentReminders()
-    {
-        AndroidNotificationCenter.CancelNotification(ID_TURNO_DIA);
-        AndroidNotificationCenter.CancelNotification(ID_TURNO_30MIN);
-    }
-
-    // ── Actualización ────────────────────────────────────────────────────────
-
-    /// <summary>
-    /// Muestra una notificación indicando que hay una nueva versión disponible.
-    /// Llamado desde VersionChecker cuando detecta una versión más nueva.
-    /// </summary>
-    public void ShowUpdateNotification(string nuevaVersion)
-    {
-        AndroidNotificationCenter.SendNotificationWithExplicitID(new AndroidNotification
-        {
-            Title      = "Nueva versión disponible",
-            Text       = $"Actualizá FAERAC a la versión {nuevaVersion} en Google Play",
-            SmallIcon  = "ic_notification",
-            LargeIcon  = "ic_launcher",
-            FireTime   = DateTime.Now.AddSeconds(3),
-            IntentData = "open_play_store",
-        }, CHANNEL_UPDATES, ID_UPDATE);
-    }
-
-    // ── Novedades / Publicidad ───────────────────────────────────────────────
-
-    /// <summary>
-    /// Muestra una notificación de novedad o publicidad.
-    /// Llamado desde NewsChecker cuando detecta contenido nuevo en el servidor.
-    /// </summary>
-    public void ShowNewsNotification(string titulo, string cuerpo)
+    private void SendAndroid(string channel, int id, string titulo, string cuerpo,
+                             DateTime fireTime, string intentData = null)
     {
         AndroidNotificationCenter.SendNotificationWithExplicitID(new AndroidNotification
         {
@@ -159,16 +222,93 @@ public class NotificationService : MonoBehaviour
             Text       = cuerpo,
             SmallIcon  = "ic_notification",
             LargeIcon  = "ic_launcher",
-            FireTime   = DateTime.Now.AddSeconds(3),
+            FireTime   = fireTime,
             Style      = NotificationStyle.BigTextStyle,
-        }, CHANNEL_NOTICIAS, ID_NOTICIA);
+            IntentData = intentData,
+        }, channel, id);
     }
 
-#else
-    // Stubs para el Editor y otras plataformas
-    public void ScheduleAppointmentReminders(string profesionalNombre, DateTime turnoDateTime) { }
-    public void CancelAppointmentReminders() { }
-    public void ShowUpdateNotification(string nuevaVersion) { }
-    public void ShowNewsNotification(string titulo, string cuerpo) { }
+#endif
+
+    // ═════════════════════════════════════════════════════════════════════════
+    //  iOS
+    // ═════════════════════════════════════════════════════════════════════════
+#if UNITY_IOS && !UNITY_EDITOR
+
+    private IEnumerator RequestPermissionIOS()
+    {
+        // registerForRemoteNotifications: false → solo notificaciones locales,
+        // así no hace falta la capability de Push Notifications ni un servidor APNs.
+        var options = AuthorizationOption.Alert
+                    | AuthorizationOption.Badge
+                    | AuthorizationOption.Sound;
+
+        using (var req = new AuthorizationRequest(options, false))
+        {
+            while (!req.IsFinished)
+                yield return null;
+
+            if (!req.Granted)
+                Debug.Log("[NotificationService] El usuario rechazó las notificaciones.");
+        }
+    }
+
+    /// <summary>Agenda una notificación iOS para una fecha/hora concreta.</summary>
+    private void ScheduleIOSAt(string id, string titulo, string cuerpo,
+                               DateTime fireTime, string threadId = null,
+                               string data = null)
+    {
+        var trigger = new iOSNotificationCalendarTrigger
+        {
+            Year    = fireTime.Year,
+            Month   = fireTime.Month,
+            Day     = fireTime.Day,
+            Hour    = fireTime.Hour,
+            Minute  = fireTime.Minute,
+            Second  = fireTime.Second,
+            Repeats = false,
+        };
+
+        ScheduleIOS(id, titulo, cuerpo, trigger, threadId, data);
+    }
+
+    /// <summary>Agenda una notificación iOS dentro de N segundos.</summary>
+    private void ScheduleIOSIn(string id, string titulo, string cuerpo,
+                               int seconds, string threadId = null,
+                               string data = null)
+    {
+        var trigger = new iOSNotificationTimeIntervalTrigger
+        {
+            TimeInterval = TimeSpan.FromSeconds(Mathf.Max(1, seconds)),
+            Repeats      = false,
+        };
+
+        ScheduleIOS(id, titulo, cuerpo, trigger, threadId, data);
+    }
+
+    private void ScheduleIOS(string id, string titulo, string cuerpo,
+                             iOSNotificationTrigger trigger,
+                             string threadId, string data)
+    {
+        var notification = new iOSNotification
+        {
+            Identifier = id,
+            Title      = titulo,
+            Body       = cuerpo,
+            Data       = data ?? string.Empty,
+            // iOS no muestra notificaciones con la app en primer plano salvo
+            // que se lo pidas explícitamente:
+            ShowInForeground = true,
+            ForegroundPresentationOption = PresentationOption.Alert
+                                         | PresentationOption.Sound
+                                         | PresentationOption.Badge,
+            ThreadIdentifier = threadId ?? "faerac",
+            Trigger = trigger,
+        };
+
+        // Reemplaza cualquier notificación previa con el mismo Identifier.
+        iOSNotificationCenter.ScheduleNotification(notification);
+    }
+
 #endif
 }

@@ -1965,7 +1965,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf40e400c5466954486da1afc4b6c81e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::OpenWebsiteButton
-  website: https://play.google.com/store/apps/details?id=com.CreativeDPloy.FaeracApp
+  website: https://apps.apple.com/app/id6779349051
 --- !u!1 &7266583353446525748
 GameObject:
   m_ObjectHideFlags: 0
