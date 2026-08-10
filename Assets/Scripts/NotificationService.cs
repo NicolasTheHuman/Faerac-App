@@ -24,12 +24,14 @@ public class NotificationService : MonoBehaviour
     private const int ID_TURNO_30MIN = 1002;
     private const int ID_UPDATE      = 2001;
     private const int ID_NOTICIA     = 3001;
+    private const int ID_TEST_TURNO  = 9001;
 
     // ── iOS: los identificadores son strings, no ints ────────────────────────
     private const string IOS_ID_TURNO_DIA   = "faerac_turno_dia";
     private const string IOS_ID_TURNO_30MIN = "faerac_turno_30min";
     private const string IOS_ID_UPDATE      = "faerac_update";
     private const string IOS_ID_NOTICIA     = "faerac_noticia";
+    private const string IOS_ID_TEST_TURNO  = "faerac_test_turno";
 
     // Nombre de la tienda según plataforma.
     // En el build de iOS la cadena "Google Play" queda excluida en tiempo de
@@ -161,6 +163,35 @@ public class NotificationService : MonoBehaviour
 #elif UNITY_IOS && !UNITY_EDITOR
         ScheduleIOSIn(IOS_ID_NOTICIA, titulo, cuerpo, seconds: 3,
             threadId: "noticias");
+#endif
+    }
+
+    // ── Debug ────────────────────────────────────────────────────────────────
+
+    /// <summary>
+    /// Dispara una notificación de cada canal en pocos segundos, para verificar
+    /// permisos, canales e íconos en un build. Solo para testing.
+    /// </summary>
+    public void FireTestNotifications()
+    {
+#if UNITY_ANDROID && !UNITY_EDITOR
+        SendAndroid(CHANNEL_TURNOS, ID_TEST_TURNO,
+            "Test: Recordatorio de turno",
+            "El canal faerac_turnos funciona correctamente",
+            DateTime.Now.AddSeconds(5));
+
+        ShowNewsNotification("Test: Novedad", "El canal faerac_noticias funciona correctamente");
+
+#elif UNITY_IOS && !UNITY_EDITOR
+        ScheduleIOSIn(IOS_ID_TEST_TURNO,
+            "Test: Recordatorio de turno",
+            "El canal de turnos funciona correctamente",
+            seconds: 5, threadId: "turnos");
+
+        ShowNewsNotification("Test: Novedad", "El canal de novedades funciona correctamente");
+
+#else
+        Debug.Log("[EDITOR TEST] Se dispararían las notificaciones de prueba (turno, noticias).");
 #endif
     }
 

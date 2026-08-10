@@ -4,20 +4,19 @@ using UnityEngine.UI;
 public class ImagePicker : MonoBehaviour
 {
     public RawImage uiImage;
-    public RawImage firtPhoto;
     public int imageSize = 512;
-    
+
     public void OnPickImageButton()
     {
         NativeGallery.GetImageFromGallery((filePath) =>
         {
             Debug.Log($"Image path {filePath}");
-            if (filePath == null) 
+            if (filePath == null)
                 return;
 
             byte[] imageBytes = System.IO.File.ReadAllBytes(filePath);
             UploadProfile(imageBytes);
-            
+
             Texture2D texture2D = NativeGallery.LoadImageAtPath(filePath, imageSize);
             if (texture2D == null)
             {
@@ -26,15 +25,12 @@ public class ImagePicker : MonoBehaviour
             }
 
             uiImage.texture = texture2D;
-            float aspect = (float)texture2D.width / texture2D.height;
-            //  uiImage.SetNativeSize();float aspect = (float)texture2D.width / texture2D.height;
+            uiImage.color = Color.white;
 
             AspectRatioFitter fitter = uiImage.GetComponent<AspectRatioFitter>();
-            firtPhoto = uiImage;
             if (fitter != null)
             {
-                firtPhoto.color = new Color(1,1,1, 1);
-                fitter.aspectRatio = aspect;
+                fitter.aspectRatio = (float)texture2D.width / texture2D.height;
             }
 
         }, "Select a profile picture", "image/*");

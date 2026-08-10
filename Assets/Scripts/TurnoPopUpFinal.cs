@@ -16,6 +16,7 @@ public class TurnoPopUpFinal : MonoBehaviour
     [SerializeField] private TMP_Dropdown DropdownObrasSociales;
     [SerializeField] private GameObject AtrasButton;
     [SerializeField] private GameObject ContinuarButton;
+    [SerializeField] private CanvasGroup AgregarRecordatorioCanvasGroup;
 
     public Profesional Profesional { get; private set; }
     public List<Mutual> ObrasSociales => Profesional?.obrasSociales;
@@ -51,7 +52,20 @@ public class TurnoPopUpFinal : MonoBehaviour
         if (EmailInputField != null)
         {
             EmailInputField.contentType = TMP_InputField.ContentType.EmailAddress;
+            EmailInputField.onValueChanged.AddListener(ActualizarBotonRecordatorio);
         }
+
+        ActualizarBotonRecordatorio(EmailInputField != null ? EmailInputField.text : "");
+    }
+
+    private void ActualizarBotonRecordatorio(string email)
+    {
+        if (AgregarRecordatorioCanvasGroup == null) return;
+
+        bool hayEmail = !string.IsNullOrWhiteSpace(email);
+        AgregarRecordatorioCanvasGroup.alpha = hayEmail ? 1f : 0f;
+        AgregarRecordatorioCanvasGroup.interactable = hayEmail;
+        AgregarRecordatorioCanvasGroup.blocksRaycasts = hayEmail;
     }
 
     private void SanitizarNumerico(TMP_InputField field, string value)
