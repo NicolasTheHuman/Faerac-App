@@ -25,6 +25,7 @@ public class TurnoPopUpFinal : MonoBehaviour
     public string Hora { get; private set; }
     public int NroInt { get; private set; }
 
+    private DateTime _fechaSeleccionada;
     private CanvasGroup _canvasGroup;
     private int _codMutualSeleccionado;
     private static readonly Regex EmailRegex = new Regex(@"^[^@\s]+@[^@\s]+\.[^@\s]+$");
@@ -79,6 +80,7 @@ public class TurnoPopUpFinal : MonoBehaviour
     {
         Profesional = profesional;
         ProfesionalId = profesional.id;
+        _fechaSeleccionada = fecha;
         Fecha = fecha.ToString("yyyy-MM-dd");
         Hora = hora;
         NroInt = nroInt;
@@ -190,6 +192,11 @@ public class TurnoPopUpFinal : MonoBehaviour
         if (result.Success && result.Data != null && result.Data.success)
         {
             PopUpManager.Instance.ChangePopUpText(result.Data.message);
+
+            if (TimeSpan.TryParse(Hora, out var horaTurno))
+            {
+                NotificationService.Instance.ScheduleAppointmentReminders(Profesional.nombre, _fechaSeleccionada.Date + horaTurno);
+            }
         }
         else
         {

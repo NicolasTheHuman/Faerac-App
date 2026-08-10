@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.google.play.appupdate": "1.8.5",
     "com.ivanmurzak.unity.mcp": "0.72.0",
     "com.unity.2d.animation": "13.0.4",
     "com.unity.2d.aseprite": "3.0.1",
@@ -65,7 +66,11 @@
         "org.nuget.com.ivanmurzak",
         "org.nuget.microsoft",
         "org.nuget.system",
-        "org.nuget.r3"
+        "org.nuget.r3",
+        "com.google.external-dependency-manager",
+        "com.google.play.common",
+        "com.google.play.core",
+        "com.google.play.appupdate"
       ]
     }
   ]
