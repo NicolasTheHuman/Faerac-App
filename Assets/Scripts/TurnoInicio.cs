@@ -8,15 +8,33 @@ public class TurnoInicio : MonoBehaviour
     [SerializeField] private GameObject PrefabTarjetaProfesional;
     [SerializeField] private GameObject GridProfesionales;
     [SerializeField] private GameObject PopUpProfesional;
+    [SerializeField] private BackButtonHandler _backButtonHandler;
+    [SerializeField] private PanelTransition _panelInicio;
 
     public async void ObtenerProfesionales()
     {
         PopUpManager.Instance.ShowPopUp();
 
+        string errorDeConexion = null;
         var response = await APIClient.Instance.Get<ProfesionalesResponse>("turnos/profesionales",
-            error => Debug.LogError("Error al obtener profesionales: " + error));
+            error =>
+            {
+                errorDeConexion = error;
+                Debug.LogError("Error al obtener profesionales: " + error);
+            });
 
-        if (response == null || !response.success || response.profesionales == null) return;
+        if (errorDeConexion != null)
+        {
+            PopUpManager.Instance.ChangePopUpText("No se pudo conectar con el sistema de turnos. Intentá nuevamente más tarde.");
+            _backButtonHandler.GoToPanel(_panelInicio, true);
+            return;
+        }
+
+        if (response == null || !response.success || response.profesionales == null)
+        {
+            PopUpManager.Instance.ChangePopUpText("Ocurrió un error al obtener los profesionales. Intentá nuevamente más tarde.");
+            return;
+        }
 
         _profesionales = response.profesionales;
         foreach (var profesional in _profesionales) {

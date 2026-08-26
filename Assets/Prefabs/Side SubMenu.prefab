@@ -1966,6 +1966,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::OpenWebsiteButton
   website: https://apps.apple.com/app/id6779349051
+  androidWebsite: https://play.google.com/store/apps/details?id=com.CreativeDPloy.FaeracApp
+  iosWebsite: https://apps.apple.com/app/id6779349051
 --- !u!1 &7266583353446525748
 GameObject:
   m_ObjectHideFlags: 0

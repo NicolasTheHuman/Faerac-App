@@ -2,10 +2,23 @@ using UnityEngine;
 
 public class OpenWebsiteButton : MonoBehaviour
 {
-    // Esta función se llama desde el botón
+    // Esta funciï¿½n se llama desde el botï¿½n
     public string website;
+    public string androidWebsite;
+    public string iosWebsite;
+
     public void OpenWebsite()
     {
-        Application.OpenURL(website);
+        string url = website;
+
+#if UNITY_ANDROID
+        if (!string.IsNullOrEmpty(androidWebsite))
+            url = androidWebsite;
+#elif UNITY_IOS
+        if (!string.IsNullOrEmpty(iosWebsite))
+            url = iosWebsite;
+#endif
+
+        Application.OpenURL(url);
     }
 }

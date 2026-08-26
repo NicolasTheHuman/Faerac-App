@@ -1,4 +1,5 @@
 using System;
+using DG.Tweening;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
@@ -17,6 +18,7 @@ public class PopUpManager : MonoBehaviour
     [SerializeField] private Button _noBtn;
     [SerializeField] private GameObject _messagePanel;
     [SerializeField] private GameObject _loading;
+    [SerializeField] private float _fadeDuration = 0.2f;
     
     private void Awake()
     {
@@ -80,9 +82,11 @@ public class PopUpManager : MonoBehaviour
 
     private void VisualizeCanvas(CanvasGroup canvas, bool show)
     {
-        canvas.alpha = show ? 1 : 0;
         canvas.interactable = show;
         canvas.blocksRaycasts = show;
+
+        canvas.DOKill();
+        canvas.DOFade(show ? 1f : 0f, _fadeDuration);
     }
 
 }

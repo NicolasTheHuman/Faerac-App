@@ -18,9 +18,19 @@ public class ContactLinks : MonoBehaviour
 
     public void OpenWhatsApp()
     {
+        OpenWhatsAppNumber(_whatsappNumber);
+    }
+
+    public void OpenWhatsAppNumber(string phoneNumber)
+    {
         var encodedMessage = UnityWebRequest.EscapeURL(_whatsappMessage);
-        string url = "https://api.whatsapp.com/send?phone=" + _whatsappNumber + "&text=" + encodedMessage;
+        string url = "https://api.whatsapp.com/send?phone=" + phoneNumber + "&text=" + encodedMessage;
         Application.OpenURL(url);
+    }
+
+    public void CallPhone(string phoneNumber)
+    {
+        Application.OpenURL("tel:" + phoneNumber);
     }
 
     public void OpenEmail()
