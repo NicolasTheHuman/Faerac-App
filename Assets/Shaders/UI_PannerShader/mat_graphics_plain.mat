@@ -45,6 +45,8 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _BUILTIN_QueueControl: -1
+    - _BUILTIN_QueueOffset: 0
     - _ColorMask: 15
     - _Stencil: 0
     - _StencilComp: 8
@@ -58,11 +60,11 @@ Material:
     m_Colors:
     - _ClipRect: {r: 0, g: 0, b: 0, a: 0}
     - _ContentOffsetSpeed: {r: 0.15, g: 0.1, b: 0, a: 0}
-    - _ContentTiling: {r: 1, g: 1, b: 0, a: 0}
+    - _ContentTiling: {r: 0.28, g: 1, b: 0, a: 0}
     - _InitialOffset: {r: -0.02, g: 0, b: 0, a: 0}
-    - _MainColor: {r: 0.50480765, g: 0.75, b: 0.1875, a: 1}
+    - _MainColor: {r: 0.6746011, g: 0.8867924, b: 0.3973834, a: 0.68235296}
     - _MaskOffsetSpeed: {r: 0.05, g: 0, b: 0, a: 0}
-    - _SecondaryColor: {r: 0.40000004, g: 0.69411767, b: 0.10196079, a: 1}
+    - _SecondaryColor: {r: 0.31661713, g: 0.6037736, b: 0.025631888, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &72849340586760660

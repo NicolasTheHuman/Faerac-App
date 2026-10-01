@@ -195,7 +195,16 @@ public class TurnoPopUpFinal : MonoBehaviour
 
             if (TimeSpan.TryParse(Hora, out var horaTurno))
             {
-                NotificationService.Instance.ScheduleAppointmentReminders(Profesional.nombre, _fechaSeleccionada.Date + horaTurno);
+                NotificationService.Instance.ScheduleAppointmentReminders(NroInt, Profesional.nombre, _fechaSeleccionada.Date + horaTurno);
+
+                AppointmentStore.Add(new AppointmentRecord
+                {
+                    nroInt = NroInt,
+                    codProfesional = ProfesionalId,
+                    profesionalNombre = Profesional.nombre,
+                    fecha = Fecha,
+                    hora = Hora
+                });
             }
         }
         else
