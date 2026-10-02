@@ -20,9 +20,10 @@
     <uses-feature android:name="android.hardware.nfc" android:required="false"/>
 
     <application>
-        <activity android:name="com.unity3d.player.UnityPlayerActivity"
-                  android:theme="@style/UnityThemeSelector"
-                  android:screenOrientation="fullSensor"
+        <!-- Application Entry = GameActivity (androidApplicationEntry: 2 en ProjectSettings) -->
+        <activity android:name="com.unity3d.player.UnityPlayerGameActivity"
+                  android:theme="@style/BaseUnityGameActivityTheme"
+                  android:screenOrientation="portrait"
                   android:launchMode="singleTask"
                   android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
                   android:hardwareAccelerated="false"
@@ -32,6 +33,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
             <meta-data android:name="unityplayer.UnityActivity" android:value="true" />
+            <meta-data android:name="android.app.lib_name" android:value="game" />
         </activity>
     </application>
 

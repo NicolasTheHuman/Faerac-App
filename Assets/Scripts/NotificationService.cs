@@ -20,15 +20,16 @@ public class NotificationService : MonoBehaviour
     private const string CHANNEL_NOTICIAS = "faerac_noticias";
 
     // ── Android: IDs numéricos ───────────────────────────────────────────────
-    private const int ID_TURNO_DIA   = 1001;
-    private const int ID_TURNO_30MIN = 1002;
+    // Los recordatorios de turno usan IDs derivados del nro_int (ver
+    // TurnoIdDia/TurnoId30) a partir de esta base, para no pisar los fijos.
+    private const int ID_TURNO_BASE  = 1_000_000;
     private const int ID_UPDATE      = 2001;
     private const int ID_NOTICIA     = 3001;
     private const int ID_TEST_TURNO  = 9001;
 
     // ── iOS: los identificadores son strings, no ints ────────────────────────
-    private const string IOS_ID_TURNO_DIA   = "faerac_turno_dia";
-    private const string IOS_ID_TURNO_30MIN = "faerac_turno_30min";
+    private const string IOS_ID_TURNO_DIA   = "faerac_turno_dia_";   // + nro_int
+    private const string IOS_ID_TURNO_30MIN = "faerac_turno_30min_"; // + nro_int
     private const string IOS_ID_UPDATE      = "faerac_update";
     private const string IOS_ID_NOTICIA     = "faerac_noticia";
     private const string IOS_ID_TEST_TURNO  = "faerac_test_turno";
@@ -72,10 +73,12 @@ public class NotificationService : MonoBehaviour
     /// <summary>
     /// Agenda dos notificaciones: una a las 8 AM del día del turno y otra 30
     /// minutos antes. Llámalo cuando el turno se confirme exitosamente.
+    /// Cada turno (nro_int) tiene sus propios recordatorios, así que agendar
+    /// uno nuevo no cancela los de otros turnos.
     /// </summary>
-    public void ScheduleAppointmentReminders(string profesionalNombre, DateTime turnoDateTime)
+    public void ScheduleAppointmentReminders(int nroInt, string profesionalNombre, DateTime turnoDateTime)
     {
-        CancelAppointmentReminders();
+        CancelAppointmentReminders(nroInt);
 
         var fireTimeDia = turnoDateTime.Date.AddHours(8);
         var fireTime30  = turnoDateTime.AddMinutes(-30);
@@ -83,7 +86,7 @@ public class NotificationService : MonoBehaviour
 #if UNITY_ANDROID && !UNITY_EDITOR
         if (fireTimeDia > DateTime.Now)
         {
-            SendAndroid(CHANNEL_TURNOS, ID_TURNO_DIA,
+            SendAndroid(CHANNEL_TURNOS, TurnoIdDia(nroInt),
                 "Recordatorio de turno",
                 $"Hoy tenés turno con {profesionalNombre}",
                 fireTimeDia);
@@ -91,7 +94,7 @@ public class NotificationService : MonoBehaviour
 
         if (fireTime30 > DateTime.Now)
         {
-            SendAndroid(CHANNEL_TURNOS, ID_TURNO_30MIN,
+            SendAndroid(CHANNEL_TURNOS, TurnoId30(nroInt),
                 "Tu turno es pronto",
                 $"En 30 minutos tenés turno con {profesionalNombre}",
                 fireTime30);
@@ -100,7 +103,7 @@ public class NotificationService : MonoBehaviour
 #elif UNITY_IOS && !UNITY_EDITOR
         if (fireTimeDia > DateTime.Now)
         {
-            ScheduleIOSAt(IOS_ID_TURNO_DIA,
+            ScheduleIOSAt(IOS_ID_TURNO_DIA + nroInt,
                 "Recordatorio de turno",
                 $"Hoy tenés turno con {profesionalNombre}",
                 fireTimeDia,
@@ -109,7 +112,7 @@ public class NotificationService : MonoBehaviour
 
         if (fireTime30 > DateTime.Now)
         {
-            ScheduleIOSAt(IOS_ID_TURNO_30MIN,
+            ScheduleIOSAt(IOS_ID_TURNO_30MIN + nroInt,
                 "Tu turno es pronto",
                 $"En 30 minutos tenés turno con {profesionalNombre}",
                 fireTime30,
@@ -118,18 +121,23 @@ public class NotificationService : MonoBehaviour
 #endif
     }
 
-    /// <summary>Cancela las notificaciones de turno agendadas.</summary>
-    public void CancelAppointmentReminders()
+    /// <summary>Cancela las notificaciones agendadas de un turno.</summary>
+    public void CancelAppointmentReminders(int nroInt)
     {
 #if UNITY_ANDROID && !UNITY_EDITOR
-        AndroidNotificationCenter.CancelNotification(ID_TURNO_DIA);
-        AndroidNotificationCenter.CancelNotification(ID_TURNO_30MIN);
+        AndroidNotificationCenter.CancelNotification(TurnoIdDia(nroInt));
+        AndroidNotificationCenter.CancelNotification(TurnoId30(nroInt));
 
 #elif UNITY_IOS && !UNITY_EDITOR
-        iOSNotificationCenter.RemoveScheduledNotification(IOS_ID_TURNO_DIA);
-        iOSNotificationCenter.RemoveScheduledNotification(IOS_ID_TURNO_30MIN);
+        iOSNotificationCenter.RemoveScheduledNotification(IOS_ID_TURNO_DIA + nroInt);
+        iOSNotificationCenter.RemoveScheduledNotification(IOS_ID_TURNO_30MIN + nroInt);
 #endif
     }
+
+    // Dos IDs consecutivos por turno a partir de ID_TURNO_BASE. El módulo evita
+    // overflow de int con nro_int grandes.
+    private static int TurnoIdDia(int nroInt) => ID_TURNO_BASE + (int)((uint)nroInt % 500_000_000u) * 2;
+    private static int TurnoId30(int nroInt)  => TurnoIdDia(nroInt) + 1;
 
     /// <summary>
     /// Muestra una notificación indicando que hay una nueva versión disponible.
