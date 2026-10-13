@@ -23,9 +23,35 @@ public class ContactLinks : MonoBehaviour
 
     public void OpenWhatsAppNumber(string phoneNumber)
     {
-        var encodedMessage = UnityWebRequest.EscapeURL(_whatsappMessage);
-        string url = "https://api.whatsapp.com/send?phone=" + phoneNumber + "&text=" + encodedMessage;
+        var number = NormalizeWhatsAppNumber(phoneNumber);
+        if (string.IsNullOrEmpty(number))
+        {
+            Debug.LogError("Invalid WhatsApp number: " + phoneNumber);
+            return;
+        }
+
+        var encodedMessage = UnityWebRequest.EscapeURL(_whatsappMessage).Replace("+", "%20");
+        string url = "https://api.whatsapp.com/send?phone=" + number + "&text=" + encodedMessage;
         Application.OpenURL(url);
+    }
+
+    // WhatsApp necesita el número en formato internacional, solo dígitos.
+    // Celulares de Argentina: 54 + 9 + código de área + número (sin 0 ni 15).
+    public static string NormalizeWhatsAppNumber(string phoneNumber)
+    {
+        if (string.IsNullOrEmpty(phoneNumber)) return "";
+
+        var digits = new System.Text.StringBuilder();
+        foreach (var c in phoneNumber)
+        {
+            if (c >= '0' && c <= '9') digits.Append(c);
+        }
+
+        var number = digits.ToString().TrimStart('0');
+
+        if (number.Length == 10) return "549" + number;
+        if (number.Length == 12 && number.StartsWith("54")) return "549" + number.Substring(2);
+        return number;
     }
 
     public void CallPhone(string phoneNumber)

@@ -143,7 +143,7 @@ public class TurnoPopUpFinal : MonoBehaviour
 
         string dni = DniInputField != null ? DniInputField.text : "";
         string celular = CelularInputField != null ? CelularInputField.text : "";
-        string email = EmailInputField != null ? EmailInputField.text : "";
+        string email = EmailInputField != null ? EmailInputField.text.Trim() : "";
 
         if (dni.Length < 7 || dni.Length > 8)
         {
@@ -155,7 +155,8 @@ public class TurnoPopUpFinal : MonoBehaviour
             error = "Celular inválido (debe tener 10 dígitos)";
             return false;
         }
-        if (!EmailRegex.IsMatch(email))
+        // El email es opcional: solo se valida si el usuario lo completó.
+        if (email != "" && !EmailRegex.IsMatch(email))
         {
             error = "Email inválido";
             return false;
@@ -179,7 +180,7 @@ public class TurnoPopUpFinal : MonoBehaviour
             fecha = Fecha,
             dni = DniInputField.text,
             celular = CelularInputField.text,
-            email = EmailInputField.text,
+            email = EmailInputField != null ? EmailInputField.text.Trim() : "",
             codMutual = _codMutualSeleccionado
         };
 

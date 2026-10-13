@@ -39,9 +39,16 @@ public class NotificationService : MonoBehaviour
     // compilación, así que nunca entra al binario (guideline 2.3.10 de Apple).
 #if UNITY_IOS
     private const string STORE_NAME = "App Store";
+    private const string STORE_URL  = "https://apps.apple.com/app/id6779349051";
 #else
     private const string STORE_NAME = "Google Play";
+    private const string STORE_URL  = "https://play.google.com/store/apps/details?id=com.CreativeDPloy.FaeracApp";
 #endif
+
+    // Dato que viaja en la notificación de actualización. Se le agrega un
+    // sufijo único para no volver a abrir la tienda con un toque ya atendido.
+    private const string DATA_OPEN_STORE     = "open_store";
+    private const string PREFS_HANDLED_STORE = "HandledStoreNotification";
 
     private void Awake()
     {
@@ -55,11 +62,13 @@ public class NotificationService : MonoBehaviour
 #if UNITY_ANDROID && !UNITY_EDITOR
         RegisterChannels();
         yield return RequestPermissionAndroid();
+        yield return WatchStoreNotificationTaps();
 #elif UNITY_IOS && !UNITY_EDITOR
         yield return RequestPermissionIOS();
         // Limpia el badge y las notificaciones ya entregadas al abrir la app.
         iOSNotificationCenter.ApplicationBadge = 0;
         iOSNotificationCenter.RemoveAllDeliveredNotifications();
+        yield return WatchStoreNotificationTaps();
 #else
         yield return null;
 #endif
@@ -147,14 +156,15 @@ public class NotificationService : MonoBehaviour
     {
         var titulo = "Nueva versión disponible";
         var cuerpo = $"Actualizá FAERAC a la versión {nuevaVersion} en {STORE_NAME}";
+        var data   = DATA_OPEN_STORE + ":" + DateTime.UtcNow.Ticks;
 
 #if UNITY_ANDROID && !UNITY_EDITOR
         SendAndroid(CHANNEL_UPDATES, ID_UPDATE, titulo, cuerpo,
-            DateTime.Now.AddSeconds(3), intentData: "open_store");
+            DateTime.Now.AddSeconds(3), intentData: data);
 
 #elif UNITY_IOS && !UNITY_EDITOR
         ScheduleIOSIn(IOS_ID_UPDATE, titulo, cuerpo, seconds: 3,
-            threadId: "updates", data: "open_store");
+            threadId: "updates", data: data);
 #endif
     }
 
@@ -173,6 +183,40 @@ public class NotificationService : MonoBehaviour
             threadId: "noticias");
 #endif
     }
+
+    // ── Toque en la notificación de actualización → abre la tienda ───────────
+#if (UNITY_ANDROID || UNITY_IOS) && !UNITY_EDITOR
+
+    // Se consulta periódicamente porque en iOS tocar la notificación con la
+    // app en primer plano no dispara ningún evento de pausa/foco.
+    private IEnumerator WatchStoreNotificationTaps()
+    {
+        var wait = new WaitForSecondsRealtime(1f);
+        while (true)
+        {
+            var data = GetLastTappedNotificationData();
+            if (!string.IsNullOrEmpty(data)
+                && data.StartsWith(DATA_OPEN_STORE)
+                && PlayerPrefs.GetString(PREFS_HANDLED_STORE) != data)
+            {
+                PlayerPrefs.SetString(PREFS_HANDLED_STORE, data);
+                PlayerPrefs.Save();
+                Application.OpenURL(STORE_URL);
+            }
+            yield return wait;
+        }
+    }
+
+    private static string GetLastTappedNotificationData()
+    {
+#if UNITY_ANDROID
+        return AndroidNotificationCenter.GetLastNotificationIntent()?.Notification.IntentData;
+#else
+        return iOSNotificationCenter.GetLastRespondedNotification()?.Data;
+#endif
+    }
+
+#endif
 
     // ── Debug ────────────────────────────────────────────────────────────────
 

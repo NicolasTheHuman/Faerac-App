@@ -42,7 +42,7 @@ public class TurnoPopUpProfesional : MonoBehaviour
             ContinuarButton.GetComponent<UnityEngine.UI.Button>().interactable = false;
             WhatsAppButton.GetComponent<UnityEngine.UI.Button>().onClick.RemoveAllListeners();
             WhatsAppButton.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(() => {
-                Application.OpenURL("https://api.whatsapp.com/send?phone=" + profesional.whatsapp);
+                Application.OpenURL("https://api.whatsapp.com/send?phone=" + ContactLinks.NormalizeWhatsAppNumber(profesional.whatsapp));
             });
         }
     }
