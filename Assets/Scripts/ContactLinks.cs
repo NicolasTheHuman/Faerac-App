@@ -1,3 +1,5 @@
+using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Networking;
 
@@ -23,16 +25,34 @@ public class ContactLinks : MonoBehaviour
 
     public void OpenWhatsAppNumber(string phoneNumber)
     {
+        StartCoroutine(OpenWhatsAppChat(phoneNumber, _whatsappMessage));
+    }
+
+    // Abre el chat directamente en la app de WhatsApp. Si la app no está
+    // instalada (no salimos de nuestra app), cae al link web.
+    public static IEnumerator OpenWhatsAppChat(string phoneNumber, string message = null)
+    {
         var number = NormalizeWhatsAppNumber(phoneNumber);
         if (string.IsNullOrEmpty(number))
         {
             Debug.LogError("Invalid WhatsApp number: " + phoneNumber);
-            return;
+            yield break;
         }
 
-        var encodedMessage = UnityWebRequest.EscapeURL(_whatsappMessage).Replace("+", "%20");
-        string url = "https://api.whatsapp.com/send?phone=" + number + "&text=" + encodedMessage;
-        Application.OpenURL(url);
+        var query = "send?phone=" + number;
+        if (!string.IsNullOrEmpty(message))
+            query += "&text=" + UnityWebRequest.EscapeURL(message).Replace("+", "%20");
+
+        bool leftApp = false;
+        Action<bool> onFocusChanged = focused => { if (!focused) leftApp = true; };
+        Application.focusChanged += onFocusChanged;
+
+        Application.OpenURL("whatsapp://" + query);
+        yield return new WaitForSecondsRealtime(1.5f);
+
+        Application.focusChanged -= onFocusChanged;
+        if (!leftApp)
+            Application.OpenURL("https://api.whatsapp.com/" + query);
     }
 
     // WhatsApp necesita el número en formato internacional, solo dígitos.

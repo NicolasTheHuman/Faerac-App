@@ -3051,7 +3051,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 982e4dd306af301418f26d21dbb9571e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ContactLinks
-  _whatsappNumber: 2954665577
+  _whatsappNumber: +542954665577
   _whatsappMessage: Hola, me comunico desde la app Faerac.
   _emailRecipient: administracion@faerac.org.ar
   _emailSubject: Consulta desde la App

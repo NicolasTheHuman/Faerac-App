@@ -19,6 +19,14 @@
     <uses-feature android:name="android.hardware.bluetooth" android:required="false"/>
     <uses-feature android:name="android.hardware.nfc" android:required="false"/>
 
+    <!-- Permite abrir links whatsapp:// directamente en la app (Android 11+) -->
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <data android:scheme="whatsapp" />
+        </intent>
+    </queries>
+
     <application>
         <!-- Application Entry = GameActivity (androidApplicationEntry: 2 en ProjectSettings) -->
         <activity android:name="com.unity3d.player.UnityPlayerGameActivity"
