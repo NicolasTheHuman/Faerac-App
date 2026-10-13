@@ -192,9 +192,14 @@ public class TurnoPopUpFinal : MonoBehaviour
 
         if (result.Success && result.Data != null && result.Data.success)
         {
-            PopUpManager.Instance.ChangePopUpText(result.Data.message);
+            bool horaValida = TimeSpan.TryParse(Hora, out var horaTurno);
+            string horaTexto = horaValida ? horaTurno.ToString(@"hh\:mm") : Hora;
+            string mensaje = string.IsNullOrEmpty(result.Data.message) ? "Turno agendado con éxito" : result.Data.message;
 
-            if (TimeSpan.TryParse(Hora, out var horaTurno))
+            PopUpManager.Instance.ChangePopUpText(
+                $"{mensaje}\n\nProfesional: {Profesional?.nombre}\nDía:{_fechaSeleccionada:dd/MM/yyyy}\nHora: {horaTexto} hs");
+
+            if (horaValida)
             {
                 NotificationService.Instance.ScheduleAppointmentReminders(NroInt, Profesional.nombre, _fechaSeleccionada.Date + horaTurno);
 
@@ -207,6 +212,10 @@ public class TurnoPopUpFinal : MonoBehaviour
                     hora = Hora
                 });
             }
+
+            LimpiarCampos();
+            VolverAtras();
+            FindAnyObjectByType<TurnoInicio>(FindObjectsInactive.Include)?.VolverAlInicio();
         }
         else
         {
@@ -214,6 +223,15 @@ public class TurnoPopUpFinal : MonoBehaviour
             if (string.IsNullOrEmpty(msg)) msg = "Error al confirmar el turno";
             PopUpManager.Instance.ChangePopUpText(msg);
         }
+    }
+
+    private void LimpiarCampos()
+    {
+        if (DniInputField != null) DniInputField.text = "";
+        if (CelularInputField != null) CelularInputField.text = "";
+        if (EmailInputField != null) EmailInputField.text = "";
+        if (DropdownObrasSociales != null) DropdownObrasSociales.value = 0;
+        _codMutualSeleccionado = 0;
     }
 
     private void VolverAtras()

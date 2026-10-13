@@ -50,6 +50,11 @@ public class TurnoInicio : MonoBehaviour
         PopUpManager.Instance.HidePopUp();
     }
 
+    public void VolverAlInicio()
+    {
+        _backButtonHandler.GoToPanel(_panelInicio, true);
+    }
+
     public void FiltrarNombre(string nombre)
     {
         if (_profesionales == null) return;
